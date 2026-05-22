@@ -5,7 +5,7 @@ export function LeadBar() {
   const [done, setDone] = useState(false);
 
   return (
-    <section className="leadbar" aria-label="Operational Leak Audit Checklist">
+    <section className="leadbar" id="leadbar" aria-label="Operational Leak Audit Checklist">
       <div className="leadbar__inner">
         <div className="leadbar__copy">
           <h3>The Operational Leak Audit Checklist.</h3>

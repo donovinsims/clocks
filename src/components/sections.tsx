@@ -17,6 +17,7 @@ export function CostCalculator() {
   const [missed, setMissed] = useState(15);
   const [ticket, setTicket] = useState(800);
   const [animKey, setAnimKey] = useState(0);
+  const [interacted, setInteracted] = useState(false);
   const prevMissed = useRef(missed);
   const prevTicket = useRef(ticket);
 
@@ -25,6 +26,7 @@ export function CostCalculator() {
 
   useEffect(() => {
     if (missed !== prevMissed.current || ticket !== prevTicket.current) {
+      setInteracted(true);
       prevMissed.current = missed;
       prevTicket.current = ticket;
       setAnimKey((k) => k + 1);
@@ -158,7 +160,21 @@ export function CostCalculator() {
             <p className="math__cta-sub">
               20 minutes. No pitch. Written report either way.
             </p>
+            <p className="micro-cta">Not ready yet? <a href="#leadbar">Get the free checklist →</a></p>
           </div>
+          {interacted && (
+            <div className="math__prompt">
+              <p className="math__prompt-q">Is this number higher than you expected?</p>
+              <div className="math__prompt-btns">
+                <BookingButton className="cta cta--primary math__prompt-btn">
+                  Yes — book the audit
+                </BookingButton>
+                <a href="#how" className="cta cta--ghost math__prompt-btn">
+                  No — show me how
+                </a>
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="math__sidecards">
@@ -379,13 +395,14 @@ export function Guarantee() {
       <div className="guarantee__card">
         <p className="guarantee__eyebrow">The guarantee</p>
         <h2 className="guarantee__h" id="guar-h">
-          7 days to install. <em>30 days</em> to recover 10 hours a week.
+          7 days to install. <em>30 days</em> to put money back in your pocket.
         </h2>
         <p className="guarantee__p">
-          We install your system in 7 days. If it doesn't recover 10 hours a week within 30 days, we
+          We install your system in 7 days. If it doesn't put money back in your pocket within 30 days, we
           keep working for free until it does.
         </p>
         <BookingButton className="cta cta--primary cta--lg">Book your free audit</BookingButton>
+        <p className="micro-cta">Not ready yet? <a href="#leadbar">Get the free checklist →</a></p>
       </div>
     </section>
   );
@@ -449,6 +466,10 @@ export function Pricing() {
         </p>
       </header>
 
+      <p className="pricing__stat">
+        The average owner in this corridor loses <strong>$144,000</strong> a year to fixable leaks. The fix costs <strong>$250</strong>.
+      </p>
+
       <div className="pricing__grid">
         {TIERS.map((t) => (
           <div key={t.h} className={`tier ${t.feature ? "tier--feature" : ""}`}>
@@ -471,51 +492,8 @@ export function Pricing() {
               Book your free audit
             </BookingButton>
             <p className="tier__guar">{GUAR}</p>
+            <p className="micro-cta">Not ready yet? <a href="#leadbar">Get the free checklist →</a></p>
           </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-const TESTS = [
-  {
-    q: "Donovin installed the missed-call text-back on a Tuesday. By Friday we'd booked three jobs we would have lost. The math was real.",
-    name: "Mike R.",
-    role: "HVAC · Roscoe, IL",
-  },
-  {
-    q: "I stopped doing review requests at 9 PM. The system does it the hour the job ends. We went from 41 to 112 Google reviews in four months.",
-    name: "Sarah K.",
-    role: "Auto repair · Rockford, IL",
-  },
-  {
-    q: "Flat price. Done in five days. No login I had to remember, no monthly bill, no agency calling me about retainers. That's the whole sell.",
-    name: "Tom B.",
-    role: "General contractor · Beloit, WI",
-  },
-];
-
-export function Testimonials() {
-  return (
-    <section className="tests" aria-labelledby="tests-h">
-      <header className="section-head">
-        <p className="section-eyebrow">
-          <span className="num tnum">06</span> · From the corridor
-        </p>
-        <h2 className="section-h" id="tests-h">
-          Owners who don't usually leave reviews.
-        </h2>
-      </header>
-      <div className="tests__grid">
-        {TESTS.map((t) => (
-          <article key={t.name} className="test">
-            <p className="test__q">{t.q}</p>
-            <div className="test__meta">
-              <span className="test__name">{t.name}</span>
-              <span className="test__role">{t.role}</span>
-            </div>
-          </article>
         ))}
       </div>
     </section>
@@ -554,7 +532,7 @@ export function FAQ() {
     <section className="faq" id="faq" aria-labelledby="faq-h">
       <header className="section-head">
         <p className="section-eyebrow">
-          <span className="num tnum">07</span> · Questions
+          <span className="num tnum">06</span> · Questions
         </p>
         <h2 className="section-h" id="faq-h">
           Honest answers.
@@ -590,6 +568,7 @@ export function FinalCTA() {
           A 20-minute call. A written report. A number that says what the leak is costing you.
         </p>
         <BookingButton className="cta cta--primary cta--lg">Book your free audit</BookingButton>
+        <p className="micro-cta">Not ready yet? <a href="#leadbar">Get the free checklist →</a></p>
         <p className="finalcta__guar">
           7-day install. 30-day guarantee: 10 hours a week back, or we keep working free until it
           lands.
@@ -633,8 +612,8 @@ export function Hero() {
       </div>
 
       <h1 className="hero__display" id="hero-h">
-        <span className="hero__line">Stop Losing Jobs</span>
-        <span className="hero__line">to <em>Voicemail.</em></span>
+        <span className="hero__line">Stop Losing Jobs to</span>
+        <span className="hero__line"><em>Voicemail.</em></span>
       </h1>
 
       <p className="hero__subhead">

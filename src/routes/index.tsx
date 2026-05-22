@@ -8,7 +8,6 @@ import {
   WhatYouGet,
   Guarantee,
   Pricing,
-  Testimonials,
   FAQ,
   FinalCTA,
 } from "@/components/sections";
@@ -55,7 +54,6 @@ function Home() {
       <WhatYouGet />
       <Guarantee />
       <Pricing />
-      <Testimonials />
       <FAQ />
       <FinalCTA />
       <LeadBar />
