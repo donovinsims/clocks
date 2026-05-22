@@ -633,12 +633,14 @@ export function Hero() {
       </div>
 
       <h1 className="hero__display" id="hero-h">
-        <span className="hero__line">For owners</span>
-        <span className="hero__line">still answering</span>
-        <span className="hero__line">
-          <em>at 9 PM.</em>
-        </span>
+        <span className="hero__line">Stop Losing Jobs</span>
+        <span className="hero__line">to <em>Voicemail.</em></span>
       </h1>
+
+      <p className="hero__subhead">
+        Contractors miss 3+ calls a week. That&rsquo;s $3,000 in lost revenue.
+        Clockout fixes it in 7 days.
+      </p>
 
       <div className="hero__ctas">
         <BookingButton className="cta cta--primary cta--lg">
