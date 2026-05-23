@@ -16,11 +16,16 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
     return { email: d.email };
   })
   .handler(async ({ data }) => {
+    const apiKey = process.env.KIT_API_KEY;
+    if (!apiKey) {
+      throw new Error("Kit API key is not configured.");
+    }
+
     const res = await fetch("https://api.kit.com/v4/subscribers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-Kit-Api-Key": "SNVgIIserUl3FUR_KFbQsw",
+        "X-Kit-Api-Key": apiKey,
       },
       body: JSON.stringify({
         email_address: data.email,
