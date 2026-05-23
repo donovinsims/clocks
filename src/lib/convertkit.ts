@@ -23,16 +23,30 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
       throw new Error("Kit API key or Form ID is not configured.");
     }
 
-    const res = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        api_key: apiKey,
-        email: data.email,
-      }),
-    });
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+    let res: Response;
+    try {
+      res = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          api_key: apiKey,
+          email: data.email,
+        }),
+        signal: controller.signal,
+      });
+    } catch (err) {
+      if ((err as Error).name === "AbortError") {
+        throw new Error("API request timed out. Please try again.");
+      }
+      throw new Error("Failed to subscribe due to a network error. Please try again.");
+    } finally {
+      clearTimeout(timeoutId);
+    }
 
     if (!res.ok) {
       const body = await res.text();

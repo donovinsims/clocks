@@ -108,25 +108,25 @@ function getSeverity(total: number) {
 
 function getRecommendations(total: number, answers: number[]): string[] {
   const recs: string[] = [];
-  if (answers[0] >= 500)
+  if ((answers[0] ?? 0) >= 500)
     recs.push(
       "Missed calls are your #1 leak. A missed-call text-back system recovers 30-50% of those.",
     );
-  if (answers[0] >= 1500)
+  if ((answers[0] ?? 0) >= 1500)
     recs.push("You're losing serious revenue to unanswered phones. This should be fixed first.");
-  if (answers[1] >= 300)
+  if ((answers[1] ?? 0) >= 300)
     recs.push(
       "Invoice chasing is eating your time. Automated payment reminders would save those hours.",
     );
-  if (answers[2] >= 400)
+  if ((answers[2] ?? 0) >= 400)
     recs.push(
       "Slow quote responses lose deals. Instant quote acknowledgment + templated responses close faster.",
     );
-  if (answers[3] >= 300)
+  if ((answers[3] ?? 0) >= 300)
     recs.push(
       "Lost leads = lost revenue. A simple CRM pipeline with automated follow-ups fixes this.",
     );
-  if (answers[4] >= 200)
+  if ((answers[4] ?? 0) >= 200)
     recs.push(
       "Admin at the kitchen table is a sign. Scheduling and billing can be automated in a day.",
     );
@@ -437,7 +437,7 @@ function Assessment() {
               {QUESTIONS[currentQuestion].question}
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-              {QUESTIONS[currentQuestion].options.map((opt, idx) => {
+              {QUESTIONS[currentQuestion]?.options?.map((opt, idx) => {
                 const isSelected = selectedOptionIdx === idx;
                 return (
                   <button

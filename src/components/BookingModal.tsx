@@ -23,6 +23,8 @@ export function BookingProvider({ children }: { children: React.ReactNode }): JS
   const [open, setOpen] = useState(false);
   const [calReady, setCalReady] = useState(false);
 
+  const [calError, setCalError] = useState(false);
+
   useEffect(() => {
     (async () => {
       const cal = await getCalApi();
@@ -32,7 +34,10 @@ export function BookingProvider({ children }: { children: React.ReactNode }): JS
         layout: "month_view",
       });
       setCalReady(true);
-    })().catch(() => {});
+    })().catch((err) => {
+      console.error("Failed to load Cal embed:", err);
+      setCalError(true);
+    });
   }, []);
 
   const openModal = useCallback(() => setOpen(true), []);
@@ -54,10 +59,15 @@ export function BookingProvider({ children }: { children: React.ReactNode }): JS
             </DialogDescription>
           </DialogHeader>
           <div className="booking-dialog__body flex-1 overflow-y-auto overflow-x-hidden relative bg-[color:var(--color-paper)] min-h-[60vh] sm:h-[min(70vh,640px)]">
-            {!calReady && (
+            {!calReady && !calError && (
               <div className="booking-dialog__loading" aria-label="Loading booking calendar">
                 <div className="booking-dialog__spinner" />
                 <p className="booking-dialog__loading-text">Loading calendar…</p>
+              </div>
+            )}
+            {calError && (
+              <div className="booking-dialog__loading" aria-label="Error loading calendar">
+                <p className="booking-dialog__loading-text" style={{ color: "var(--color-danger)" }}>Failed to load calendar.</p>
               </div>
             )}
             {open && (
