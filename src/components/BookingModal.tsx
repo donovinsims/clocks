@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import Cal, { getCalApi } from "@calcom/embed-react";
 import {
   Dialog,
@@ -38,8 +38,10 @@ export function BookingProvider({ children }: { children: React.ReactNode }) {
   const openModal = useCallback(() => setOpen(true), []);
   const closeModal = useCallback(() => setOpen(false), []);
 
+  const ctxValue = useMemo(() => ({ open: openModal, close: closeModal }), [openModal, closeModal]);
+
   return (
-    <BookingCtx.Provider value={{ open: openModal, close: closeModal }}>
+    <BookingCtx.Provider value={ctxValue}>
       {children}
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="booking-dialog max-w-3xl w-[calc(100vw-1.5rem)] sm:w-[calc(100vw-2rem)] max-h-[calc(100dvh-2rem)] sm:max-h-[85dvh] p-0 overflow-hidden border-[color:var(--color-rule-strong)] bg-[color:var(--color-paper-2)] !rounded-2xl flex flex-col">
@@ -66,7 +68,6 @@ export function BookingProvider({ children }: { children: React.ReactNode }) {
               />
             )}
           </div>
-
         </DialogContent>
       </Dialog>
     </BookingCtx.Provider>
@@ -101,4 +102,3 @@ export function BookingButton({ className, children, arrow = true, style, onClic
     </button>
   );
 }
-
