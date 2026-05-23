@@ -13,13 +13,13 @@ const CAL_LINK = "donovin"; // cal.com/donovin
 type Ctx = { open: () => void; close: () => void };
 const BookingCtx = createContext<Ctx | null>(null);
 
-export function useBooking() {
+export function useBooking(): Ctx {
   const ctx = useContext(BookingCtx);
   if (!ctx) throw new Error("useBooking must be used inside <BookingProvider>");
   return ctx;
 }
 
-export function BookingProvider({ children }: { children: React.ReactNode }) {
+export function BookingProvider({ children }: { children: React.ReactNode }): JSX.Element {
   const [open, setOpen] = useState(false);
   const [calReady, setCalReady] = useState(false);
 
@@ -81,7 +81,7 @@ type BtnProps = {
   style?: React.CSSProperties;
   onClick?: () => void;
 };
-export function BookingButton({ className, children, arrow = true, style, onClick }: BtnProps) {
+export function BookingButton({ className, children, arrow = true, style, onClick }: BtnProps): JSX.Element {
   const { open } = useBooking();
   return (
     <button

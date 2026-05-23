@@ -1,4 +1,4 @@
-export function Ambient() {
+export function Ambient(): JSX.Element {
   return (
     <div className="ambient" aria-hidden="true">
       <div className="bloom bloom--1" />

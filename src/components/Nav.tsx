@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { BookingButton } from "@/components/BookingModal";
 
-export function Nav() {
+export function Nav(): JSX.Element {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 

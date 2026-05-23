@@ -9,7 +9,6 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
-    "test": "vitest run",
     "lint": "eslint .",
     "format": "prettier --write .",
     "postinstall": "node -e \"try { var p=require('fs'),j=JSON.parse(p.readFileSync('node_modules/@lovable.dev/vite-tanstack-config/package.json')); if(j.main==='./dist/index.cjs'){j.main='./dist/index.js';p.writeFileSync('node_modules/@lovable.dev/vite-tanstack-config/package.json',JSON.stringify(j,null,2));console.log('patched @lovable.dev/vite-tanstack-config main→index.js')} } catch(e){}\""
