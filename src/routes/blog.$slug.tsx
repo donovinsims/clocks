@@ -1,11 +1,11 @@
 import { createFileRoute, notFound, Link } from "@tanstack/react-router";
-import { blogPosts } from "@/lib/blog-posts";
+import { blogPostsBySlug } from "@/lib/blog-posts";
 import { LeadBar } from "@/components/LeadBar";
 import { BookingButton } from "@/components/BookingModal";
 
 export const Route = createFileRoute("/blog/$slug")({
   head: ({ params }) => {
-    const post = blogPosts.find((p) => p.slug === params.slug);
+    const post = blogPostsBySlug[params.slug];
     if (!post) return { meta: [] };
     return {
       meta: [
@@ -15,9 +15,7 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: post.description },
         { name: "twitter:card", content: "summary_large_image" },
       ],
-      links: [
-        { rel: "canonical", href: `https://clockout.io/blog/${post.slug}` },
-      ],
+      links: [{ rel: "canonical", href: `https://clockout.io/blog/${post.slug}` }],
     };
   },
   component: BlogPost,
@@ -25,21 +23,15 @@ export const Route = createFileRoute("/blog/$slug")({
 
 function BlogPost() {
   const { slug } = Route.useParams();
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = blogPostsBySlug[slug];
   if (!post) throw notFound();
 
   return (
     <>
-      <section
-        className="hero"
-        style={{ minHeight: "auto", paddingBottom: "var(--space-2xl)" }}
-      >
+      <section className="hero" style={{ minHeight: "auto", paddingBottom: "var(--space-2xl)" }}>
         <div className="hero__rail">
           <span className="hero__rail-dot" aria-hidden="true" />
-          <Link
-            to="/blog"
-            style={{ color: "var(--color-accent)", textDecoration: "none" }}
-          >
+          <Link to="/blog" style={{ color: "var(--color-accent)", textDecoration: "none" }}>
             ← Blog
           </Link>
           <span aria-hidden="true"> · </span>
