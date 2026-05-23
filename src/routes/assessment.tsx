@@ -85,11 +85,12 @@ function Assessment() {
         <iframe
           data-tally-src="https://tally.so/r/RGVJ1J"
           width="100%"
-          height="700"
+          height="400"
           frameBorder="0"
           marginHeight={0}
           marginWidth={0}
           title="Free Operational Audit"
+          style={{ borderRadius: "var(--radius-md)" }}
         />
       </section>
 
@@ -135,9 +136,9 @@ function Assessment() {
             </p>
             <h2 className="section-h">Tire-kickers. Big agencies.</h2>
             <p>
-              If you want a monthly retainer with a fancy dashboard and a quarterly business
-              review, I'm not your guy. If you want a SaaS tool with 47 features you'll never
-              use, also not me.
+              If you want a monthly retainer with a fancy dashboard and a quarterly business review,
+              I'm not your guy. If you want a SaaS tool with 47 features you'll never use, also not
+              me.
             </p>
             <ul className="proof__list">
               <li>Not a marketing agency</li>
@@ -156,12 +157,14 @@ function Assessment() {
           </h2>
           <p className="guarantee__p">
             Single System Fix: $300–$800. Operations Stack: $1,200–$3,000. One-time. You own the
-            system. We install your system in 7 days. If it doesn't recover 10 hours a week
-            within 30 days, we keep working for free until it does.
+            system. We install your system in 7 days. If it doesn't recover 10 hours a week within
+            30 days, we keep working for free until it does.
           </p>
           <button className="cta cta--primary cta--lg" onClick={scrollToTop}>
             Take the Assessment
-            <span className="cta__arrow" aria-hidden="true">→</span>
+            <span className="cta__arrow" aria-hidden="true">
+              →
+            </span>
           </button>
         </div>
       </section>
@@ -200,7 +203,9 @@ function Assessment() {
           </p>
           <button className="cta cta--primary cta--lg" onClick={scrollToTop}>
             Take the Assessment
-            <span className="cta__arrow" aria-hidden="true">→</span>
+            <span className="cta__arrow" aria-hidden="true">
+              →
+            </span>
           </button>
           <p className="finalcta__guar">
             No pitch on the call. You leave with a written report either way.
