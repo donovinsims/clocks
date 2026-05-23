@@ -102,6 +102,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       {
+        src: "https://tally.so/widgets/embed.js",
+        async: true,
+      },
+      {
         src: "https://plausible.io/js/script.js",
         defer: true,
         "data-domain": "clockout.io",
