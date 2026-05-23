@@ -1,10 +1,10 @@
 import { createFileRoute, notFound, Link } from "@tanstack/react-router";
-import { blogPosts } from "@/lib/blog-posts";
+import { blogPostsBySlug } from "@/lib/blog-posts";
 import { LeadBar } from "@/components/LeadBar";
 
 export const Route = createFileRoute("/blog/$slug")({
   head: ({ params }) => {
-    const post = blogPosts.find((p) => p.slug === params.slug);
+    const post = blogPostsBySlug[params.slug];
     if (!post) return { meta: [] };
     return {
       meta: [
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/blog/$slug")({
 
 function BlogPost() {
   const { slug } = Route.useParams();
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = blogPostsBySlug[slug];
   if (!post) throw notFound();
 
   return (
