@@ -311,21 +311,21 @@ function Solutions() {
         </p>
       </section>
 
-      <section className="solutions-grid" aria-label="Solutions catalogue">
+      <section className="agents-grid" aria-label="Solutions catalogue">
         {SOLUTIONS.map((a) => (
           <button
             key={a.num}
             type="button"
-            className="solution-card"
+            className="agent-card"
             onClick={() => setActive(a)}
             aria-haspopup="dialog"
           >
-            <p className="solution-card__num tnum">Solution {a.num}</p>
-            <h2 className="solution-card__h">{a.name}</h2>
-            <p className="solution-card__p">{a.payoff}</p>
-            <div className="solution-card__foot">
-              <span className="solution-card__tag">{a.channel}</span>
-              <span className="solution-card__open">
+            <p className="agent-card__num tnum">Solution {a.num}</p>
+            <h2 className="agent-card__h">{a.name}</h2>
+            <p className="agent-card__p">{a.payoff}</p>
+            <div className="agent-card__foot">
+              <span className="agent-card__tag">{a.channel}</span>
+              <span className="agent-card__open">
                 Open <span aria-hidden="true">→</span>
               </span>
             </div>
@@ -334,47 +334,47 @@ function Solutions() {
       </section>
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
-        <DialogContent className="solution-modal" aria-describedby="solution-desc">
+        <DialogContent className="agent-modal" aria-describedby="solution-desc">
           {active && (
             <>
-              <DialogHeader className="solution-modal__header">
-                <p className="solution-modal__num tnum">Solution {active.num}</p>
-                <DialogTitle className="solution-modal__h">{active.name}</DialogTitle>
+              <DialogHeader className="agent-modal__header">
+                <p className="agent-modal__num tnum">Solution {active.num}</p>
+                <DialogTitle className="agent-modal__h">{active.name}</DialogTitle>
                 <DialogDescription id="solution-desc" asChild>
-                  <span className="solution-modal__tag">{active.channel}</span>
+                  <span className="agent-modal__tag">{active.channel}</span>
                 </DialogDescription>
               </DialogHeader>
 
-              <div className="solution-modal__body">
-                <blockquote className="solution-modal__quote">{active.jawDrop}</blockquote>
+              <div className="agent-modal__body">
+                <blockquote className="agent-modal__quote">{active.jawDrop}</blockquote>
 
-                <div className="solution-modal__section">
+                <div className="agent-modal__section">
                   <h3>What it does</h3>
                   <p>{active.does}</p>
                 </div>
 
-                <div className="solution-modal__section">
+                <div className="agent-modal__section">
                   <h3>How it works</h3>
-                  <ol className="solution-modal__steps">
+                  <ol className="agent-modal__steps">
                     {active.steps.map((s, i) => (
                       <li key={i}>{s}</li>
                     ))}
                   </ol>
                 </div>
 
-                <div className="solution-modal__section">
+                <div className="agent-modal__section">
                   <h3>What the owner sees</h3>
                   <p>{active.result}</p>
                 </div>
 
-                <div className="solution-modal__section">
+                <div className="agent-modal__section">
                   <h3>Why it matters</h3>
                   <p>{active.why}</p>
                 </div>
               </div>
 
-              <div className="solution-modal__footer">
-                <BookingButton className="cta cta--primary cta--lg solution-modal__cta">
+              <div className="agent-modal__footer">
+                <BookingButton className="cta cta--primary cta--lg agent-modal__cta">
                   See this working in my business
                 </BookingButton>
               </div>
