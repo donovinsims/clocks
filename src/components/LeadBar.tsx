@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { subscribeToConvertKit } from "@/lib/convertkit";
 
-export function LeadBar() {
+export function LeadBar(): JSX.Element {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -24,7 +24,7 @@ export function LeadBar() {
     <section className="leadbar" id="leadbar" aria-label="Operational Leak Audit Checklist">
       <div className="leadbar__inner">
         <div className="leadbar__copy">
-          <h3>The Operational Leak Audit Checklist.</h3>
+          <h2>The Operational Leak Audit Checklist.</h2>
           <p>The 5 most common revenue leaks in local service businesses. One page.</p>
         </div>
         <form className="leadbar__form" onSubmit={handleSubmit}>
@@ -40,6 +40,7 @@ export function LeadBar() {
               <input
                 type="email"
                 required
+                aria-label="Email address for checklist"
                 placeholder="you@yourshop.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -52,7 +53,7 @@ export function LeadBar() {
                 </span>
               </button>
               {status === "error" && (
-                <p style={{ color: "var(--color-danger, #dc2626)", margin: 0, fontSize: "0.85em" }}>
+                <p style={{ color: "var(--color-danger)", margin: 0, fontSize: "0.85em" }}>
                   {errorMsg}
                 </p>
               )}

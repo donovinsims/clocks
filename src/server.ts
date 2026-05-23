@@ -11,9 +11,17 @@ let serverEntryPromise: Promise<ServerEntry> | undefined;
 
 async function getServerEntry(): Promise<ServerEntry> {
   if (!serverEntryPromise) {
-    serverEntryPromise = import("@tanstack/react-start/server-entry").then(
-      (m) => (m as { default?: ServerEntry }).default ?? (m as unknown as ServerEntry),
-    );
+    serverEntryPromise = import("@tanstack/react-start/server-entry").then((m) => {
+      if (m && typeof m === "object") {
+        if ("default" in m) {
+          return m.default as ServerEntry;
+        }
+        if ("fetch" in m && typeof (m as Record<string, unknown>).fetch === "function") {
+          return m as unknown as ServerEntry;
+        }
+      }
+      throw new Error("Invalid server entry");
+    });
   }
   return serverEntryPromise;
 }

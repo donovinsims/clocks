@@ -891,35 +891,21 @@ function Assessment() {
                   <div style={{ display: "grid", gap: "0.5rem" }}>
                     <input
                       type="text"
+                      aria-label="Your name"
                       placeholder="Your name"
                       value={leadName}
                       onChange={(e) => setLeadName(e.target.value)}
                       disabled={saving}
-                      style={{
-                        padding: "0.75rem 1rem",
-                        backgroundColor: "var(--color-paper)",
-                        border: "1px solid var(--color-border)",
-                        borderRadius: "var(--radius-sm)",
-                        color: "var(--color-ink)",
-                        fontSize: "var(--text-md)",
-                        width: "100%",
-                      }}
+                      className="assessment-input"
                     />
                     <input
                       type="email"
+                      aria-label="Your email"
                       placeholder="Your email"
                       value={leadEmail}
                       onChange={(e) => setLeadEmail(e.target.value)}
                       disabled={saving}
-                      style={{
-                        padding: "0.75rem 1rem",
-                        backgroundColor: "var(--color-paper)",
-                        border: "1px solid var(--color-border)",
-                        borderRadius: "var(--radius-sm)",
-                        color: "var(--color-ink)",
-                        fontSize: "var(--text-md)",
-                        width: "100%",
-                      }}
+                      className="assessment-input"
                     />
                     <button
                       onClick={handleSaveResults}
@@ -943,7 +929,7 @@ function Assessment() {
                   {saveStatus === "error" && (
                     <p
                       style={{
-                        color: "var(--color-danger, #dc2626)",
+                        color: "var(--color-danger)",
                         margin: "0.5rem 0 0",
                         fontSize: "0.85em",
                       }}
@@ -957,7 +943,7 @@ function Assessment() {
 
             {/* CTA section */}
             <div style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-              <h3
+              <h2
                 style={{
                   fontSize: "1.25rem",
                   marginBottom: "0.5rem",
@@ -966,7 +952,7 @@ function Assessment() {
                 }}
               >
                 Want a custom plan to fix this?
-              </h3>
+              </h2>
               <p
                 style={{
                   color: "var(--color-ink-2)",

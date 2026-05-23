@@ -334,13 +334,13 @@ function Solutions() {
       </section>
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
-        <DialogContent className="solution-modal" aria-describedby={undefined}>
+        <DialogContent className="solution-modal" aria-describedby="solution-desc">
           {active && (
             <>
               <DialogHeader className="solution-modal__header">
                 <p className="solution-modal__num tnum">Solution {active.num}</p>
                 <DialogTitle className="solution-modal__h">{active.name}</DialogTitle>
-                <DialogDescription asChild>
+                <DialogDescription id="solution-desc" asChild>
                   <span className="solution-modal__tag">{active.channel}</span>
                 </DialogDescription>
               </DialogHeader>
