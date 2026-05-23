@@ -20,8 +20,10 @@ export const Route = createFileRoute("/about")({
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_US" },
       { property: "og:site_name", content: "Clockout" },
+      { property: "og:image", content: "https://clockout.io/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "About Clockout — Local Automation from Roscoe, IL" },
+      { name: "twitter:image", content: "https://clockout.io/og-image.jpg" },
       {
         name: "keywords",
         content:

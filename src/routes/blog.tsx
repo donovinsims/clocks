@@ -23,8 +23,10 @@ export const Route = createFileRoute("/blog")({
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_US" },
       { property: "og:site_name", content: "Clockout" },
+      { property: "og:image", content: "https://clockout.io/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Clockout Blog — Trade-by-Leak Field Notes" },
+      { name: "twitter:image", content: "https://clockout.io/og-image.jpg" },
       {
         name: "keywords",
         content:
@@ -144,24 +146,41 @@ function Blog() {
 
       <section className="blog">
         <div className="blog__grid">
-          {POSTS.map((post) => (
-            <Link
-              key={post.title}
-              to={post.slug ? "/blog/$slug" : "/assessment"}
-              params={post.slug ? { slug: post.slug } : undefined}
-              className="blog__card"
-              aria-label={`${post.trade} — ${post.title}`}
-            >
-              <p className="blog__tag tnum">
-                {post.trade} <span aria-hidden="true">×</span> {post.leak}
-              </p>
-              <h2 className="blog__h">{post.title}</h2>
-              <p className="blog__p">{post.p}</p>
-              <span className="blog__more">
-                {post.slug ? "Read the post →" : "Get the audit instead →"}
-              </span>
-            </Link>
-          ))}
+          {POSTS.map((post) => {
+            if (post.slug) {
+              return (
+                <Link
+                  key={post.title}
+                  to="/blog/$slug"
+                  params={{ slug: post.slug }}
+                  className="blog__card"
+                  aria-label={`${post.trade} — ${post.title}`}
+                >
+                  <p className="blog__tag tnum">
+                    {post.trade} <span aria-hidden="true">×</span> {post.leak}
+                  </p>
+                  <h2 className="blog__h">{post.title}</h2>
+                  <p className="blog__p">{post.p}</p>
+                  <span className="blog__more">Read the post →</span>
+                </Link>
+              );
+            }
+            return (
+              <div
+                key={post.title}
+                className="blog__card blog__card--disabled"
+                aria-label={`${post.trade} — ${post.title}`}
+                style={{ opacity: 0.6, cursor: "not-allowed" }}
+              >
+                <p className="blog__tag tnum">
+                  {post.trade} <span aria-hidden="true">×</span> {post.leak}
+                </p>
+                <h2 className="blog__h">{post.title}</h2>
+                <p className="blog__p">{post.p}</p>
+                <span className="blog__more">Coming soon</span>
+              </div>
+            );
+          })}
         </div>
       </section>
 

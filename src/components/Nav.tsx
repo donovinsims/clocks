@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { BookingButton } from "@/components/BookingModal";
+import FocusLock from "react-focus-lock";
 
 export function Nav(): JSX.Element {
   const [scrolled, setScrolled] = useState(false);
@@ -56,33 +57,35 @@ export function Nav(): JSX.Element {
         </button>
       </div>
 
-      <div
-        id="mobile-menu"
-        className="nav__sheet"
-        data-open={open}
-        aria-hidden={!open}
-        onClick={(e) => {
-          if (e.target === e.currentTarget) close();
-        }}
-      >
-        <nav className="nav__sheet-links" aria-label="Mobile primary">
-          <Link to="/solutions" onClick={close}>
-            Solutions
-          </Link>
-          <Link to="/operator-os" onClick={close}>
-            Operator OS
-          </Link>
-          <Link to="/about" onClick={close}>
-            About
-          </Link>
-          <Link to="/blog" onClick={close}>
-            Blog
-          </Link>
-        </nav>
-        <BookingButton className="cta cta--primary cta--lg nav__sheet-cta" onClick={close}>
-          Book free audit
-        </BookingButton>
-      </div>
+      <FocusLock disabled={!open} autoFocus={false} returnFocus>
+        <div
+          id="mobile-menu"
+          className="nav__sheet"
+          data-open={open}
+          aria-hidden={!open}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) close();
+          }}
+        >
+          <nav className="nav__sheet-links" aria-label="Mobile primary">
+            <Link to="/solutions" tabIndex={open ? 0 : -1} onClick={close}>
+              Solutions
+            </Link>
+            <Link to="/operator-os" tabIndex={open ? 0 : -1} onClick={close}>
+              Operator OS
+            </Link>
+            <Link to="/about" tabIndex={open ? 0 : -1} onClick={close}>
+              About
+            </Link>
+            <Link to="/blog" tabIndex={open ? 0 : -1} onClick={close}>
+              Blog
+            </Link>
+          </nav>
+          <BookingButton className="cta cta--primary cta--lg nav__sheet-cta" onClick={close}>
+            Book free audit
+          </BookingButton>
+        </div>
+      </FocusLock>
     </header>
   );
 }

@@ -1008,6 +1008,15 @@ a { color: inherit; text-decoration: none; }
 .faq__a {
   padding: 0 0 var(--space-lg); max-width: 60ch;
   color: var(--color-ink-2); font-size: var(--text-md); line-height: var(--leading-body);
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--dur-base) var(--ease-out), padding var(--dur-base) var(--ease-out);
+}
+.faq__item[open] .faq__a {
+  grid-template-rows: 1fr;
+}
+.faq__a > div {
+  overflow: hidden;
 }
 .faq__a p { margin: 0; }
 

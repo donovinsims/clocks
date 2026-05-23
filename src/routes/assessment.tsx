@@ -1,6 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
+declare global {
+  interface Window {
+    Tally?: {
+      loadEmbeds: () => void;
+    };
+  }
+}
+
 export const Route = createFileRoute("/assessment")({
   head: () => ({
     meta: [
@@ -16,6 +24,10 @@ export const Route = createFileRoute("/assessment")({
         content:
           "20 minutes. Written report. The exact leak, in dollars. Then you decide what to do with it.",
       },
+      { property: "og:image", content: "https://clockout.io/og-image.jpg" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Free Operations Audit — Clockout" },
+      { name: "twitter:image", content: "https://clockout.io/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://clockout.io/assessment" }],
   }),
@@ -66,9 +78,36 @@ const ITEMS_FAQ = [
 
 function Assessment() {
   useEffect(() => {
-    if (typeof window !== "undefined" && (window as any).Tally) {
-      (window as any).Tally.loadEmbeds();
+    if (typeof window === "undefined") return;
+
+    if (window.Tally) {
+      window.Tally.loadEmbeds();
+      return;
     }
+
+    const onTallyLoaded = () => {
+      if (window.Tally) {
+        window.Tally.loadEmbeds();
+      }
+    };
+
+    // Add event listener in case the script isn't loaded yet
+    window.addEventListener("message", (e) => {
+      if (e.data && typeof e.data === 'string' && e.data.includes('Tally')) {
+        onTallyLoaded();
+      }
+    });
+
+    const observer = new MutationObserver((mutations, obs) => {
+        if (window.Tally) {
+            window.Tally.loadEmbeds();
+            obs.disconnect();
+        }
+    });
+
+    observer.observe(document, { childList: true, subtree: true });
+
+    return () => observer.disconnect();
   }, []);
 
   const scrollToTop = () => {
@@ -82,13 +121,12 @@ function Assessment() {
         style={{ minHeight: "auto", paddingBottom: "4rem" }}
         aria-labelledby="as-h"
       >
+        <h1 id="as-h" className="sr-only" style={{ position: "absolute", width: 1, height: 1, padding: 0, margin: -1, overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", borderWidth: 0 }}>Free Operations Audit</h1>
         <iframe
           data-tally-src="https://tally.so/r/RGVJ1J"
           width="100%"
           height="700"
-          frameBorder="0"
-          marginHeight={0}
-          marginWidth={0}
+          style={{ border: 0, margin: 0 }}
           title="Free Operational Audit"
         />
       </section>
@@ -183,7 +221,9 @@ function Assessment() {
                 </span>
               </summary>
               <div className="faq__a">
-                <p>{f.a}</p>
+                <div>
+                  <p>{f.a}</p>
+                </div>
               </div>
             </details>
           ))}

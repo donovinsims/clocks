@@ -12,7 +12,6 @@ import appCss from "../styles.css?url";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Ambient } from "@/components/Ambient";
-import { BookingProvider } from "@/components/BookingModal";
 
 const FONTS_URL =
   "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800;900&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap";
@@ -204,53 +203,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 "@type": "Person",
                 name: "Donovin",
               },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "28",
-                bestRating: "5",
-              },
-              review: [
-                {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                  },
-                  author: {
-                    "@type": "Person",
-                    name: "Mike R.",
-                  },
-                  reviewBody:
-                    "Donovin installed the missed-call text-back on a Tuesday. By Friday we'd booked three jobs we would have lost. The math was real.",
-                },
-                {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                  },
-                  author: {
-                    "@type": "Person",
-                    name: "Sarah K.",
-                  },
-                  reviewBody:
-                    "I stopped doing review requests at 9 PM. The system does it the hour the job ends. We went from 41 to 112 Google reviews in four months.",
-                },
-                {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                  },
-                  author: {
-                    "@type": "Person",
-                    name: "Tom B.",
-                  },
-                  reviewBody:
-                    "Flat price. Done in five days. No login I had to remember, no monthly bill, no agency calling me about retainers. That's the whole sell.",
-                },
-              ],
             },
             {
               "@type": "Service",
@@ -516,17 +468,15 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BookingProvider>
-        <Ambient />
-        <a className="skip" href="#main">
-          Skip to content
-        </a>
-        <Nav />
-        <main id="main">
-          <Outlet />
-        </main>
-        <Footer />
-      </BookingProvider>
+      <Ambient />
+      <a className="skip" href="#main">
+        Skip to content
+      </a>
+      <Nav />
+      <main id="main">
+        <Outlet />
+      </main>
+      <Footer />
     </QueryClientProvider>
   );
 }

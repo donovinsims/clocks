@@ -1,10 +1,5 @@
 import React from "react";
 
-export function BookingProvider({ children }: { children: React.ReactNode }): JSX.Element {
-  // No-op provider wrapper to avoid breaking dependencies
-  return <>{children}</>;
-}
-
 type BtnProps = {
   className?: string;
   children: React.ReactNode;

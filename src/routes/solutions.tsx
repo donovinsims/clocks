@@ -35,11 +35,13 @@ export const Route = createFileRoute("/solutions")({
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_US" },
       { property: "og:site_name", content: "Clockout" },
+      { property: "og:image", content: "https://clockout.io/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
         content: "Solutions — 12 Automations for Owner-Operators | Clockout",
       },
+      { name: "twitter:image", content: "https://clockout.io/og-image.jpg" },
       {
         name: "keywords",
         content:

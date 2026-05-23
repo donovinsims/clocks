@@ -544,7 +544,9 @@ export function FAQ(): JSX.Element {
               </span>
             </summary>
             <div className="faq__a">
-              <p>{f.a}</p>
+              <div>
+                <p>{f.a}</p>
+              </div>
             </div>
           </details>
         ))}
@@ -597,7 +599,10 @@ export function Hero(): JSX.Element {
       }
     };
     el.addEventListener("pointermove", onMove as EventListener);
-    return () => el.removeEventListener("pointermove", onMove as EventListener);
+    return () => {
+      el.removeEventListener("pointermove", onMove as EventListener);
+      if (raf) cancelAnimationFrame(raf);
+    };
   }, []);
 
   return (
@@ -662,7 +667,7 @@ export function TrustBar(): JSX.Element {
       <div className="trust__inner">
         <span className="trust__label">Local member · IL/WI corridor</span>
         {names.map((n) => (
-          <span key={n} className="trust__name">
+          <span key={n} className="trust__name" title={`Member of ${n}`}>
             {n}
           </span>
         ))}
