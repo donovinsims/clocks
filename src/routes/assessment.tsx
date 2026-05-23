@@ -82,16 +82,18 @@ function Assessment() {
         style={{ minHeight: "auto", paddingBottom: "4rem" }}
         aria-labelledby="as-h"
       >
-        <iframe
-          data-tally-src="https://tally.so/r/RGVJ1J"
-          width="100%"
-          height="620"
-          frameBorder="0"
-          marginHeight={0}
-          marginWidth={0}
-          title="Free Operational Audit"
-          style={{ borderRadius: "var(--radius-md)" }}
-        />
+        <div style={{ width: "100%", maxWidth: "var(--max-width)", margin: "0 auto" }}>
+          <iframe
+            data-tally-src="https://tally.so/r/RGVJ1J"
+            width="100%"
+            height="750"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            title="Free Operational Audit"
+            style={{ borderRadius: "var(--radius-md)" }}
+          />
+        </div>
       </section>
 
       <section className="how">
