@@ -13,10 +13,7 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
     if (typeof d.email !== "string" || !d.email) {
       throw new Error("Email is required");
     }
-    return {
-      email: d.email,
-      firstName: typeof d.firstName === "string" ? d.firstName : undefined
-    };
+    return { email: d.email, firstName: typeof d.firstName === "string" ? d.firstName : undefined };
   })
   .handler(async ({ data }) => {
     const apiKey = process.env.KIT_API_KEY;
@@ -34,7 +31,7 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
       body: JSON.stringify({
         api_key: apiKey,
         email: data.email,
-        ...(data.firstName && { first_name: data.firstName })
+        ...(data.firstName && { first_name: data.firstName }),
       }),
     });
 

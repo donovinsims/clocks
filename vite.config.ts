@@ -12,6 +12,7 @@ export default defineConfig({
   cloudflare: false,
   tanstackStart: {
     server: { entry: "server" },
+    serverFns: { disableCsrfMiddlewareWarning: true },
   },
   plugins: [nitro()],
 });

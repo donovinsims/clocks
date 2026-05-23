@@ -81,7 +81,13 @@ type BtnProps = {
   style?: React.CSSProperties;
   onClick?: () => void;
 };
-export function BookingButton({ className, children, arrow = true, style, onClick }: BtnProps): JSX.Element {
+export function BookingButton({
+  className,
+  children,
+  arrow = true,
+  style,
+  onClick,
+}: BtnProps): JSX.Element {
   const { open } = useBooking();
   return (
     <button
