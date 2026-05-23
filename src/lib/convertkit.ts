@@ -1,8 +1,8 @@
 import { createServerFn } from "@tanstack/react-start";
 
-// ConvertKit (Kit) v4 API — server-side only.
+// ConvertKit (Kit) v3 API — server-side only.
 // The handler is tree-shaken from client bundles by @tanstack/react-start.
-// For production, move the API key to an env var: KIT_API_KEY
+// For production, set these env vars: KIT_FORM_ID, KIT_API_KEY
 
 export const subscribeToConvertKit = createServerFn({ method: "POST" })
   .inputValidator((data: unknown) => {
@@ -17,19 +17,20 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
   })
   .handler(async ({ data }) => {
     const apiKey = process.env.KIT_API_KEY;
-    if (!apiKey) {
-      throw new Error("Kit API key is not configured.");
+    const formId = process.env.KIT_FORM_ID;
+
+    if (!apiKey || !formId) {
+      throw new Error("Kit API key or Form ID is not configured.");
     }
 
-    const res = await fetch("https://api.kit.com/v4/subscribers", {
+    const res = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-Kit-Api-Key": apiKey,
       },
       body: JSON.stringify({
-        email_address: data.email,
-        state: "active",
+        api_key: apiKey,
+        email: data.email,
       }),
     });
 
