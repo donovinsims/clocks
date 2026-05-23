@@ -84,14 +84,14 @@ function Assessment() {
       >
         <div style={{ width: "100%", maxWidth: "var(--max-width)", margin: "0 auto" }}>
           <iframe
-            data-tally-src="https://tally.so/r/RGVJ1J"
+            data-tally-src="https://tally.so/embed/RGVJ1J?alignLeft=1&hideTitle=1&dynamicHeight=1"
+            loading="lazy"
             width="100%"
-            height="750"
+            height="207"
             frameBorder="0"
             marginHeight={0}
             marginWidth={0}
-            title="Free Operational Audit"
-            style={{ borderRadius: "var(--radius-md)" }}
+            title="Free Operational Audit: Spot Your Revenue Leaks"
           />
         </div>
       </section>
