@@ -83,13 +83,14 @@ function Assessment() {
         aria-labelledby="as-h"
       >
         <iframe
-          data-tally-src="https://tally.so/r/RGVJ1J"
+          data-tally-src="https://tally.so/r/RGVJ1J?transparentBackground=1&dynamicHeight=1"
           width="100%"
           height="700"
           frameBorder="0"
           marginHeight={0}
           marginWidth={0}
           title="Free Operational Audit"
+          loading="lazy"
         />
       </section>
 

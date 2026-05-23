@@ -23,6 +23,7 @@ export function BookingButton({ className, children, arrow = true, style, onClic
       data-tally-open="RGVJ1J"
       data-tally-layout="modal"
       data-tally-width="600"
+      data-tally-auto-close="0"
     >
       <span>{children}</span>
       {arrow && (
