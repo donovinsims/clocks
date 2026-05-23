@@ -19,9 +19,7 @@ export const Route = createFileRoute("/assessment")({
           "20 minutes. Written report. The exact leak, in dollars. Then you decide what to do with it.",
       },
     ],
-    links: [
-      { rel: "canonical", href: "https://clockout.io/assessment" },
-    ],
+    links: [{ rel: "canonical", href: "https://clockout.io/assessment" }],
   }),
   component: Assessment,
 });
@@ -110,14 +108,34 @@ function getSeverity(total: number) {
 
 function getRecommendations(total: number, answers: number[]): string[] {
   const recs: string[] = [];
-  if (answers[0] >= 500) recs.push("Missed calls are your #1 leak. A missed-call text-back system recovers 30-50% of those.");
-  if (answers[0] >= 1500) recs.push("You're losing serious revenue to unanswered phones. This should be fixed first.");
-  if (answers[1] >= 300) recs.push("Invoice chasing is eating your time. Automated payment reminders would save those hours.");
-  if (answers[2] >= 400) recs.push("Slow quote responses lose deals. Instant quote acknowledgment + templated responses close faster.");
-  if (answers[3] >= 300) recs.push("Lost leads = lost revenue. A simple CRM pipeline with automated follow-ups fixes this.");
-  if (answers[4] >= 200) recs.push("Admin at the kitchen table is a sign. Scheduling and billing can be automated in a day.");
-  if (total === 0) recs.push("You're running lean. Invest in scaling your lead generation — your operations can handle it.");
-  if (recs.length === 0) recs.push("Book the audit and we'll map out the highest-impact fix first.");
+  if (answers[0] >= 500)
+    recs.push(
+      "Missed calls are your #1 leak. A missed-call text-back system recovers 30-50% of those.",
+    );
+  if (answers[0] >= 1500)
+    recs.push("You're losing serious revenue to unanswered phones. This should be fixed first.");
+  if (answers[1] >= 300)
+    recs.push(
+      "Invoice chasing is eating your time. Automated payment reminders would save those hours.",
+    );
+  if (answers[2] >= 400)
+    recs.push(
+      "Slow quote responses lose deals. Instant quote acknowledgment + templated responses close faster.",
+    );
+  if (answers[3] >= 300)
+    recs.push(
+      "Lost leads = lost revenue. A simple CRM pipeline with automated follow-ups fixes this.",
+    );
+  if (answers[4] >= 200)
+    recs.push(
+      "Admin at the kitchen table is a sign. Scheduling and billing can be automated in a day.",
+    );
+  if (total === 0)
+    recs.push(
+      "You're running lean. Invest in scaling your lead generation — your operations can handle it.",
+    );
+  if (recs.length === 0)
+    recs.push("Book the audit and we'll map out the highest-impact fix first.");
   return recs;
 }
 
@@ -297,15 +315,24 @@ function Assessment() {
     }, 300);
   };
 
-  const totalLeak = answers.reduce((a, b) => a + b, 0);
+  const reduced = answers.reduce(
+    (acc, val, idx) => {
+      acc.totalLeak += val;
+      if (val > acc.maxVal) {
+        acc.maxVal = val;
+        acc.biggestLeakIdx = idx;
+      }
+      return acc;
+    },
+    { totalLeak: 0, biggestLeakIdx: 0, maxVal: -Infinity },
+  );
+
+  const totalLeak = reduced.totalLeak;
+  const biggestLeakIdx = reduced.biggestLeakIdx;
+
   const annualLeak = totalLeak * 12;
   const severity = getSeverity(totalLeak);
   const recommendations = getRecommendations(totalLeak, answers);
-
-  const biggestLeakIdx = answers.reduce(
-    (maxIdx, val, idx) => (val > (answers[maxIdx] ?? 0) ? idx : maxIdx),
-    0,
-  );
   const biggestLeakQuestion = QUESTIONS[biggestLeakIdx]?.question;
   const biggestLeakValue = answers[biggestLeakIdx] ?? 0;
 
@@ -346,7 +373,16 @@ function Assessment() {
         aria-labelledby="as-h"
       >
         {step === "landing" && (
-          <div style={{ animation: "fadeIn 0.5s ease", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.75rem", width: "100%" }}>
+          <div
+            style={{
+              animation: "fadeIn 0.5s ease",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "1.75rem",
+              width: "100%",
+            }}
+          >
             <div className="hero__rail">
               <span className="hero__rail-dot" aria-hidden="true" />
               <span>Operations Leak Scorecard · 5 Questions · 2 Minutes</span>
@@ -359,7 +395,12 @@ function Assessment() {
             </h1>
             <p
               className="hero__p"
-              style={{ margin: 0, maxWidth: "45ch", color: "var(--color-text-dim)", textAlign: "center" }}
+              style={{
+                margin: 0,
+                maxWidth: "45ch",
+                color: "var(--color-text-dim)",
+                textAlign: "center",
+              }}
             >
               Are you losing money to missed calls, slow quotes, and unpaid invoices? Answer 5 quick
               questions to discover your exact operational leak and get personalized
@@ -372,7 +413,6 @@ function Assessment() {
             </div>
           </div>
         )}
-
 
         {step === "quiz" && (
           <div
@@ -526,9 +566,7 @@ function Assessment() {
                 }}
               >
                 <CountUpNumber target={totalLeak} duration={1500} />
-                <span style={{ opacity: 0.5 }}>
-                  /mo
-                </span>
+                <span style={{ opacity: 0.5 }}>/mo</span>
               </div>
             </div>
 
@@ -690,13 +728,17 @@ function Assessment() {
                   }}
                 >
                   ${annualLeak.toLocaleString()}
-                  <span style={{ opacity: 0.4, fontWeight: 400, fontSize: "0.6em" }}>
-                    /year
-                  </span>
+                  <span style={{ opacity: 0.4, fontWeight: 400, fontSize: "0.6em" }}>/year</span>
                 </p>
 
                 {/* Severity message */}
-                <p style={{ color: "var(--color-ink-2)", fontSize: "var(--text-md)", lineHeight: 1.55 }}>
+                <p
+                  style={{
+                    color: "var(--color-ink-2)",
+                    fontSize: "var(--text-md)",
+                    lineHeight: 1.55,
+                  }}
+                >
                   {severity.message}
                 </p>
               </div>
@@ -774,7 +816,15 @@ function Assessment() {
               >
                 Quick Recommendations
               </p>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "0.75rem" }}>
+              <ul
+                style={{
+                  listStyle: "none",
+                  padding: 0,
+                  margin: 0,
+                  display: "grid",
+                  gap: "0.75rem",
+                }}
+              >
                 {recommendations.map((rec, idx) => (
                   <li
                     key={idx}
@@ -917,7 +967,13 @@ function Assessment() {
               >
                 Want a custom plan to fix this?
               </h3>
-              <p style={{ color: "var(--color-ink-2)", marginBottom: "1.5rem", fontSize: "var(--text-md)" }}>
+              <p
+                style={{
+                  color: "var(--color-ink-2)",
+                  marginBottom: "1.5rem",
+                  fontSize: "var(--text-md)",
+                }}
+              >
                 Book a free 20-minute operations audit. We'll find exactly where the leak is
                 happening and map out the fix. No pitch.
               </p>
