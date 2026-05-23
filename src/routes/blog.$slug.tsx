@@ -1,7 +1,6 @@
 import { createFileRoute, notFound, Link } from "@tanstack/react-router";
 import { blogPosts } from "@/lib/blog-posts";
 import { LeadBar } from "@/components/LeadBar";
-import { BookingButton } from "@/components/BookingModal";
 
 export const Route = createFileRoute("/blog/$slug")({
   head: ({ params }) => {
@@ -15,9 +14,7 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: post.description },
         { name: "twitter:card", content: "summary_large_image" },
       ],
-      links: [
-        { rel: "canonical", href: `https://clockout.io/blog/${post.slug}` },
-      ],
+      links: [{ rel: "canonical", href: `https://clockout.io/blog/${post.slug}` }],
     };
   },
   component: BlogPost,
@@ -30,16 +27,10 @@ function BlogPost() {
 
   return (
     <>
-      <section
-        className="hero"
-        style={{ minHeight: "auto", paddingBottom: "var(--space-2xl)" }}
-      >
+      <section className="hero" style={{ minHeight: "auto", paddingBottom: "var(--space-2xl)" }}>
         <div className="hero__rail">
           <span className="hero__rail-dot" aria-hidden="true" />
-          <Link
-            to="/blog"
-            style={{ color: "var(--color-accent)", textDecoration: "none" }}
-          >
+          <Link to="/blog" style={{ color: "var(--color-accent)", textDecoration: "none" }}>
             ← Blog
           </Link>
           <span aria-hidden="true"> · </span>
