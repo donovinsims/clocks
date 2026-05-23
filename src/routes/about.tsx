@@ -29,6 +29,9 @@ export const Route = createFileRoute("/about")({
           "about Clockout, business automation Roscoe, Donovin automation expert, local operator Illinois, flat-fee automation, Rockford IL automation, Beloit WI automation, Winnebago County",
       },
     ],
+    links: [
+      { rel: "canonical", href: "https://clockout.io/about" },
+    ],
   }),
   component: About,
 });

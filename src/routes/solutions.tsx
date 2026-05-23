@@ -11,37 +11,37 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 
-export const Route = createFileRoute("/agents")({
+export const Route = createFileRoute("/solutions")({
   head: () => ({
     meta: [
-      { title: "Agents — Clockout | 12 Automations for Owner-Operators | Roscoe · Rockford · Beloit" },
+      { title: "Solutions — Clockout | 12 Automations for Owner-Operators | Roscoe · Rockford · Beloit" },
       {
         name: "description",
         content:
-          "Twelve targeted agents for owner-operators in Roscoe, Rockford, Beloit, and Northern Illinois. Missed-call rescue, cold-bid resurrection, no-show recovery, review machine, invoice chaser, nightly digest and more.",
+          "Twelve targeted solutions for owner-operators in Roscoe, Rockford, Beloit, and Northern Illinois. Missed-call rescue, cold-bid resurrection, no-show recovery, review machine, invoice chaser, nightly digest and more.",
       },
-      { property: "og:title", content: "Agents — 12 Automations for Owner-Operators | Clockout" },
+      { property: "og:title", content: "Solutions — 12 Automations for Owner-Operators | Clockout" },
       {
         property: "og:description",
         content:
-          "Twelve named agents. Each one plugs a specific revenue leak. Installed in 3–7 days. You own them outright. Serving Roscoe, Rockford, Beloit, and the Winnebago/Boone County corridor.",
+          "Twelve named solutions. Each one plugs a specific revenue leak. Installed in 3–7 days. You own them outright. Serving Roscoe, Rockford, Beloit, and the Winnebago/Boone County corridor.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_US" },
       { property: "og:site_name", content: "Clockout" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Agents — 12 Automations for Owner-Operators | Clockout" },
+      { name: "twitter:title", content: "Solutions — 12 Automations for Owner-Operators | Clockout" },
       {
         name: "keywords",
         content:
-          "business automation services, missed call text-back, estimate follow-up automation, no-show recovery, review request system, invoice nudge, after-hours triage, Roscoe automation, Rockford small business, Beloit WI",
+          "business automation solutions, missed call text-back, estimate follow-up automation, no-show recovery, review request system, invoice nudge, after-hours triage, Roscoe automation, Rockford small business, Beloit WI",
       },
     ],
   }),
-  component: Agents,
+  component: Solutions,
 });
 
-type Agent = {
+type Solution = {
   num: string;
   name: string;
   channel: string;
@@ -53,7 +53,7 @@ type Agent = {
   why: string;
 };
 
-const AGENTS: Agent[] = [
+const SOLUTIONS: Solution[] = [
   {
     num: "01",
     name: "Ghost Closer",
@@ -273,22 +273,22 @@ const AGENTS: Agent[] = [
   },
 ];
 
-function Agents() {
-  const [active, setActive] = useState<Agent | null>(null);
+function Solutions() {
+  const [active, setActive] = useState<Solution | null>(null);
 
   return (
     <>
       <section
         className="hero"
         style={{ minHeight: "auto", paddingBottom: "var(--space-2xl)" }}
-        aria-labelledby="ag-h"
+        aria-labelledby="solutions-h"
       >
         <div className="hero__rail">
           <span className="hero__rail-dot" aria-hidden="true" />
-          <span>The catalogue · 12 agents · tap any card</span>
+          <span>The catalogue · 12 solutions · tap any card</span>
         </div>
-        <h1 className="hero__display" id="ag-h" style={{ maxWidth: "20ch" }}>
-          <span className="hero__line">Twelve agents.</span>
+        <h1 className="hero__display" id="solutions-h" style={{ maxWidth: "20ch" }}>
+          <span className="hero__line">Twelve solutions.</span>
           <span className="hero__line">
             <em>One owner.</em>
           </span>
@@ -302,68 +302,68 @@ function Agents() {
         </p>
       </section>
 
-      <section className="agents-grid" aria-label="Agent catalogue">
-        {AGENTS.map((a) => (
+      <section className="solutions-grid" aria-label="Solutions catalogue">
+        {SOLUTIONS.map((a) => (
           <button
             key={a.num}
             type="button"
-            className="agent-card"
+            className="solution-card"
             onClick={() => setActive(a)}
             aria-haspopup="dialog"
           >
-            <p className="agent-card__num tnum">Agent {a.num}</p>
-            <h2 className="agent-card__h">{a.name}</h2>
-            <p className="agent-card__p">{a.payoff}</p>
-            <div className="agent-card__foot">
-              <span className="agent-card__tag">{a.channel}</span>
-              <span className="agent-card__open">Open <span aria-hidden="true">→</span></span>
+            <p className="solution-card__num tnum">Solution {a.num}</p>
+            <h2 className="solution-card__h">{a.name}</h2>
+            <p className="solution-card__p">{a.payoff}</p>
+            <div className="solution-card__foot">
+              <span className="solution-card__tag">{a.channel}</span>
+              <span className="solution-card__open">Open <span aria-hidden="true">→</span></span>
             </div>
           </button>
         ))}
       </section>
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
-        <DialogContent className="agent-modal" aria-describedby={undefined}>
+        <DialogContent className="solution-modal" aria-describedby={undefined}>
           {active && (
             <>
-              <DialogHeader className="agent-modal__header">
-                <p className="agent-modal__num tnum">Agent {active.num}</p>
-                <DialogTitle className="agent-modal__h">{active.name}</DialogTitle>
+              <DialogHeader className="solution-modal__header">
+                <p className="solution-modal__num tnum">Solution {active.num}</p>
+                <DialogTitle className="solution-modal__h">{active.name}</DialogTitle>
                 <DialogDescription asChild>
-                  <span className="agent-modal__tag">{active.channel}</span>
+                  <span className="solution-modal__tag">{active.channel}</span>
                 </DialogDescription>
               </DialogHeader>
 
-              <div className="agent-modal__body">
-                <blockquote className="agent-modal__quote">{active.jawDrop}</blockquote>
+              <div className="solution-modal__body">
+                <blockquote className="solution-modal__quote">{active.jawDrop}</blockquote>
 
-                <div className="agent-modal__section">
+                <div className="solution-modal__section">
                   <h3>What it does</h3>
                   <p>{active.does}</p>
                 </div>
 
-                <div className="agent-modal__section">
+                <div className="solution-modal__section">
                   <h3>How it works</h3>
-                  <ol className="agent-modal__steps">
+                  <ol className="solution-modal__steps">
                     {active.steps.map((s, i) => (
                       <li key={i}>{s}</li>
                     ))}
                   </ol>
                 </div>
 
-                <div className="agent-modal__section">
+                <div className="solution-modal__section">
                   <h3>What the owner sees</h3>
                   <p>{active.result}</p>
                 </div>
 
-                <div className="agent-modal__section">
+                <div className="solution-modal__section">
                   <h3>Why it matters</h3>
                   <p>{active.why}</p>
                 </div>
               </div>
 
-              <div className="agent-modal__footer">
-                <BookingButton className="cta cta--primary cta--lg agent-modal__cta">
+              <div className="solution-modal__footer">
+                <BookingButton className="cta cta--primary cta--lg solution-modal__cta">
                   See this working in my business
                 </BookingButton>
               </div>

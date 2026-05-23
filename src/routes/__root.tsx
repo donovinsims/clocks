@@ -74,6 +74,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
       { name: "theme-color", content: "#0d0d0d" },
+      { name: "robots", content: "index, follow" },
       { title: "Clockout — Local automation for owner-operators" },
       {
         name: "description",
@@ -89,11 +90,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Clockout — Local automation for owner-operators" },
-      { name: "description", content: "A web application for managing and interacting with Hallmark-related data and features." },
-      { property: "og:description", content: "A web application for managing and interacting with Hallmark-related data and features." },
-      { name: "twitter:description", content: "A web application for managing and interacting with Hallmark-related data and features." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fc0d9fa4-2608-4e9e-a31e-db5f752602ec/id-preview-a2c576e7--1b84fd8e-a6fc-4361-8e0d-2ec19a3cfb76.lovable.app-1779413170508.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fc0d9fa4-2608-4e9e-a31e-db5f752602ec/id-preview-a2c576e7--1b84fd8e-a6fc-4361-8e0d-2ec19a3cfb76.lovable.app-1779413170508.png" },
+
+      { property: "og:image", content: "https://clockout.io/og-image.jpg" },
+      { name: "twitter:image", content: "https://clockout.io/og-image.jpg" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -103,17 +102,64 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       {
+        src: "https://plausible.io/js/script.js",
+        defer: true,
+        "data-domain": "clockout.io",
+      },
+      {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://clockout.io/#website",
+              "url": "https://clockout.io",
+              "name": "Clockout",
+              "description": "Local-first automation for owner-operators in Roscoe, Rockford, and Beloit.",
+              "inLanguage": "en-US",
+              "publisher": {
+                "@id": "https://clockout.io/#organization"
+              }
+            },
+            {
+              "@type": "HowTo",
+              "name": "How Clockout fixes your operational leaks",
+              "description": "Three steps: free audit, one-week install, full ownership.",
+              "estimatedCost": {
+                "@type": "MonetaryAmount",
+                "currency": "USD",
+                "value": "300"
+              },
+              "totalTime": "P7D",
+              "step": [
+                {
+                  "@type": "HowToStep",
+                  "position": 1,
+                  "name": "Free 20-minute audit",
+                  "text": "We look at how your phone, bids, and follow-ups actually move. You get a written ROI report and an effort/impact matrix. No pitch."
+                },
+                {
+                  "@type": "HowToStep",
+                  "position": 2,
+                  "name": "One-week install",
+                  "text": "We build, test, and deploy the system. Flat price, known upfront. Fits how you already work — phone calls and text messages."
+                },
+                {
+                  "@type": "HowToStep",
+                  "position": 3,
+                  "name": "Full handover",
+                  "text": "Loom walkthrough. One-page 'How It Runs' doc. 30 and 60-day check-ins. No retainer. No lock-in. No platform dependency."
+                }
+              ]
+            },
             {
               "@type": "LocalBusiness",
               name: "Clockout",
               description:
                 "Local-first automation for owner-operators in Roscoe, Rockford, and Beloit. One leak, one flat-fee fix, installed in 3–7 days.",
               url: "https://clockout.io",
-              telephone: "+1-815-xxx-xxxx",
+              telephone: "+1-815-200-5932",
               image: "https://clockout.io/og-image.jpg",
               logo: "https://clockout.io/logo.jpg",
               address: {
@@ -150,7 +196,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               ],
               sameAs: [
                 "https://www.linkedin.com/company/clockout",
-                "https://cal.com/donovin",
               ],
               founder: {
                 "@type": "Person",
@@ -382,8 +427,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 {
                   "@type": "ListItem",
                   position: 4,
-                  name: "What We Fix",
-                  item: "https://clockout.io/agents",
+                  name: "Solutions",
+                  item: "https://clockout.io/solutions",
                 },
                 {
                   "@type": "ListItem",

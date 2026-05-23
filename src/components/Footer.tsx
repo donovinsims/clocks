@@ -13,10 +13,12 @@ export function Footer() {
           </p>
           <ul className="footer__links">
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/agents">Agents</Link></li>
+            <li><Link to="/solutions">Solutions</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/operator-os">Operator OS</Link></li>
             <li><Link to="/assessment">Assessment</Link></li>
+            <li><Link to="/privacy">Privacy</Link></li>
+            <li><Link to="/terms">Terms</Link></li>
             <li><a href="mailto:hello@clockout.work">hello@clockout.work</a></li>
           </ul>
         </div>

@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BookingButton } from "@/components/BookingModal";
 import { useState, useEffect, useRef, useCallback } from "react";
+import { subscribeToConvertKit } from "@/lib/convertkit";
 
 export const Route = createFileRoute("/assessment")({
   head: () => ({
@@ -17,6 +18,9 @@ export const Route = createFileRoute("/assessment")({
         content:
           "20 minutes. Written report. The exact leak, in dollars. Then you decide what to do with it.",
       },
+    ],
+    links: [
+      { rel: "canonical", href: "https://clockout.io/assessment" },
     ],
   }),
   component: Assessment,
@@ -259,6 +263,22 @@ function Assessment() {
   const [leadName, setLeadName] = useState("");
   const [leadEmail, setLeadEmail] = useState("");
   const [copied, setCopied] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
+
+  const handleSaveResults = async () => {
+    if (!leadEmail) return;
+    setSaving(true);
+    setSaveStatus("saving");
+    try {
+      await subscribeToConvertKit({ data: { email: leadEmail, firstName: leadName || undefined } });
+      setSaveStatus("saved");
+    } catch {
+      setSaveStatus("error");
+    } finally {
+      setSaving(false);
+    }
+  };
 
   const handleAnswer = (val: number, idx: number) => {
     setSelectedOptionIdx(idx);
@@ -793,60 +813,96 @@ function Assessment() {
                 marginBottom: "1.5rem",
               }}
             >
-              <p
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  fontSize: "var(--text-xs)",
-                  letterSpacing: "0.12em",
-                  textTransform: "uppercase",
-                  color: "var(--color-ink-3)",
-                  margin: "0 0 0.75rem",
-                }}
-              >
-                Save your results (optional)
-              </p>
-              <div style={{ display: "grid", gap: "0.5rem" }}>
-                <input
-                  type="text"
-                  placeholder="Your name"
-                  value={leadName}
-                  onChange={(e) => setLeadName(e.target.value)}
+              {saveStatus === "saved" ? (
+                <p
                   style={{
-                    padding: "0.75rem 1rem",
-                    backgroundColor: "var(--color-paper)",
-                    border: "1px solid var(--color-border)",
-                    borderRadius: "var(--radius-sm)",
-                    color: "var(--color-ink)",
-                    fontSize: "var(--text-md)",
-                    width: "100%",
+                    color: "var(--color-success)",
+                    margin: 0,
+                    textAlign: "center",
+                    fontWeight: 600,
                   }}
-                />
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  value={leadEmail}
-                  onChange={(e) => setLeadEmail(e.target.value)}
-                  style={{
-                    padding: "0.75rem 1rem",
-                    backgroundColor: "var(--color-paper)",
-                    border: "1px solid var(--color-border)",
-                    borderRadius: "var(--radius-sm)",
-                    color: "var(--color-ink)",
-                    fontSize: "var(--text-md)",
-                    width: "100%",
-                  }}
-                />
-              </div>
-              <p
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  fontSize: "11px",
-                  color: "var(--color-ink-3)",
-                  margin: "0.5rem 0 0",
-                }}
-              >
-                We'll send you the written report. No spam, ever.
-              </p>
+                >
+                  ✓ Sent. Check your inbox.
+                </p>
+              ) : (
+                <>
+                  <p
+                    style={{
+                      fontFamily: "var(--font-mono)",
+                      fontSize: "var(--text-xs)",
+                      letterSpacing: "0.12em",
+                      textTransform: "uppercase",
+                      color: "var(--color-ink-3)",
+                      margin: "0 0 0.75rem",
+                    }}
+                  >
+                    Save your results (optional)
+                  </p>
+                  <div style={{ display: "grid", gap: "0.5rem" }}>
+                    <input
+                      type="text"
+                      placeholder="Your name"
+                      value={leadName}
+                      onChange={(e) => setLeadName(e.target.value)}
+                      disabled={saving}
+                      style={{
+                        padding: "0.75rem 1rem",
+                        backgroundColor: "var(--color-paper)",
+                        border: "1px solid var(--color-border)",
+                        borderRadius: "var(--radius-sm)",
+                        color: "var(--color-ink)",
+                        fontSize: "var(--text-md)",
+                        width: "100%",
+                      }}
+                    />
+                    <input
+                      type="email"
+                      placeholder="Your email"
+                      value={leadEmail}
+                      onChange={(e) => setLeadEmail(e.target.value)}
+                      disabled={saving}
+                      style={{
+                        padding: "0.75rem 1rem",
+                        backgroundColor: "var(--color-paper)",
+                        border: "1px solid var(--color-border)",
+                        borderRadius: "var(--radius-sm)",
+                        color: "var(--color-ink)",
+                        fontSize: "var(--text-md)",
+                        width: "100%",
+                      }}
+                    />
+                    <button
+                      onClick={handleSaveResults}
+                      disabled={saving || !leadEmail}
+                      className="cta cta--primary"
+                      style={{ width: "100%", justifyContent: "center", minHeight: "44px" }}
+                    >
+                      {saving ? "Saving..." : "Save my results"}
+                    </button>
+                  </div>
+                  <p
+                    style={{
+                      fontFamily: "var(--font-mono)",
+                      fontSize: "11px",
+                      color: "var(--color-ink-3)",
+                      margin: "0.5rem 0 0",
+                    }}
+                  >
+                    We'll send you the written report. No spam, ever.
+                  </p>
+                  {saveStatus === "error" && (
+                    <p
+                      style={{
+                        color: "var(--color-danger, #dc2626)",
+                        margin: "0.5rem 0 0",
+                        fontSize: "0.85em",
+                      }}
+                    >
+                      Something went wrong. Please try again.
+                    </p>
+                  )}
+                </>
+              )}
             </div>
 
             {/* CTA section */}

@@ -36,10 +36,10 @@ export function Nav() {
           </span>
         </Link>
         <nav className="nav__links" aria-label="Primary">
-          <Link to="/about">About</Link>
-          <Link to="/agents">Agents</Link>
-          <Link to="/blog">Blog</Link>
+          <Link to="/solutions">Solutions</Link>
           <Link to="/operator-os">Operator OS</Link>
+          <Link to="/about">About</Link>
+          <Link to="/blog">Blog</Link>
         </nav>
         <BookingButton className="nav__cta nav__cta--desktop">Book free audit</BookingButton>
         <button
@@ -66,10 +66,10 @@ export function Nav() {
         }}
       >
         <nav className="nav__sheet-links" aria-label="Mobile primary">
-          <Link to="/about" onClick={close}>About</Link>
-          <Link to="/agents" onClick={close}>Agents</Link>
-          <Link to="/blog" onClick={close}>Blog</Link>
+          <Link to="/solutions" onClick={close}>Solutions</Link>
           <Link to="/operator-os" onClick={close}>Operator OS</Link>
+          <Link to="/about" onClick={close}>About</Link>
+          <Link to="/blog" onClick={close}>Blog</Link>
         </nav>
         <BookingButton className="cta cta--primary cta--lg nav__sheet-cta" onClick={close}>
           Book free audit

@@ -29,6 +29,9 @@ export const Route = createFileRoute("/operator-os")({
           "Operator OS, message-based assistant, iMessage assistant, owner-operator tools, business automation Roscoe, Rockford IL small business, Beloit WI automation, executive assistant owner-operator",
       },
     ],
+    links: [
+      { rel: "canonical", href: "https://clockout.io/operator-os" },
+    ],
   }),
   component: OperatorOS,
 });

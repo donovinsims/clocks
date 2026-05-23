@@ -420,7 +420,7 @@ const TIERS: Array<{
   {
     type: "Tier 01",
     h: "Single System Fix",
-    price: "$250+",
+    price: "$300+",
     priceSuffix: "one-time",
     sub: "One targeted automation. Built and deployed in 3–7 days.",
     feature: false,
@@ -467,7 +467,7 @@ export function Pricing() {
       </header>
 
       <p className="pricing__stat">
-        The average owner in this corridor loses <strong>$144,000</strong> a year to fixable leaks. The fix costs <strong>$250</strong>.
+        The average owner in this corridor loses <strong>$144,000</strong> a year to fixable leaks. The fix costs <strong>$300</strong>.
       </p>
 
       <div className="pricing__grid">

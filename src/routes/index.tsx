@@ -39,6 +39,9 @@ export const Route = createFileRoute("/")({
           "business automation Roscoe, local automation Rockford, owner-operator automation, service business automation Illinois, missed call text-back, flat-fee automation, Northern Illinois, Winnebago County, Boone County",
       },
     ],
+    links: [
+      { rel: "canonical", href: "https://clockout.io" },
+    ],
   }),
   component: Home,
 });

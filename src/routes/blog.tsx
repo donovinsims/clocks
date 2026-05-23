@@ -32,7 +32,15 @@ export const Route = createFileRoute("/blog")({
   component: Blog,
 });
 
-const POSTS = [
+type Post = {
+  trade: string;
+  leak: string;
+  title: string;
+  p: string;
+  slug?: string;
+};
+
+const POSTS: Post[] = [
   {
     trade: "HVAC",
     leak: "Missed Calls",
@@ -81,6 +89,27 @@ const POSTS = [
     title: "Barbershops: the rebook text that books the next cut before they leave the chair.",
     p: "Simple, opt-in, owned by you. Climbs revenue per chair by 8–14% without raising prices.",
   },
+  {
+    trade: "Contractors",
+    leak: "Missed Calls",
+    title: "Missed-Call Text-Back for Contractors",
+    p: "Every missed call is a lead that walked. Here's how a 60-second automated text-back catches them — before they call your competitor.",
+    slug: "missed-call-text-back-for-contractors",
+  },
+  {
+    trade: "Business Tools",
+    leak: "Platform Comparison",
+    title: "Podium vs GoHighLevel for Local Service Businesses",
+    p: "Two platforms. One is built for enterprise marketing teams. The other was born for local service operators. Here's which one wins — and why.",
+    slug: "podium-vs-gohighlevel-local-service-businesses",
+  },
+  {
+    trade: "Business Tools",
+    leak: "Tool Selection",
+    title: "Best Automation Tools for Local Service Businesses",
+    p: "A grounded tour of the tools that actually move the needle for owner-operators — from $0 setups to full-stack platforms.",
+    slug: "best-automation-tools-local-service-businesses",
+  },
 ];
 
 function Blog() {
@@ -105,7 +134,8 @@ function Blog() {
           {POSTS.map((post) => (
             <Link
               key={post.title}
-              to="/assessment"
+              to={post.slug ? "/blog/$slug" : "/assessment"}
+              params={post.slug ? { slug: post.slug } : undefined}
               className="blog__card"
               aria-label={`${post.trade} — ${post.title}`}
             >
@@ -115,7 +145,7 @@ function Blog() {
               <h2 className="blog__h">{post.title}</h2>
               <p className="blog__p">{post.p}</p>
               <span className="blog__more">
-                Get the audit instead <span aria-hidden="true">→</span>
+                {post.slug ? "Read the post →" : "Get the audit instead →"}
               </span>
             </Link>
           ))}
