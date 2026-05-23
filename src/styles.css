@@ -408,7 +408,7 @@ a { color: inherit; text-decoration: none; }
 .section-eyebrow .num { color: var(--color-accent); font-weight: 500; }
 .section-h {
   font-family: var(--font-display); font-weight: 700;
-  font-size: var(--text-4xl); line-height: var(--leading-tight);
+  font-size: var(--text-3xl); line-height: var(--leading-tight);
   letter-spacing: 0; color: var(--color-ink); margin: 0;
   max-width: 22ch; overflow-wrap: anywhere;
 }
@@ -1069,7 +1069,7 @@ a { color: inherit; text-decoration: none; }
 .finalcta__inner { max-width: 48rem; margin: 0 auto; }
 .finalcta__h {
   font-family: var(--font-display); font-weight: 800;
-  font-size: var(--text-4xl); line-height: var(--leading-tight);
+  font-size: var(--text-3xl); line-height: var(--leading-tight);
   letter-spacing: 0; margin: 0 0 var(--space-md);
 }
 .finalcta__h em {
@@ -1100,7 +1100,8 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
 }
 .leadbar__copy h3 {
-  font-family: var(--font-display); font-weight: 700; font-size: var(--text-xl);
+  font-family: var(--font-display); font-weight: 700; font-size: var(--text-2xl);
+  text-wrap: balance;
   margin: 0 0 var(--space-2xs); letter-spacing: 0;
 }
 .leadbar__copy p { margin: 0; color: var(--color-ink-3); font-size: var(--text-sm); }
@@ -1170,7 +1171,7 @@ a { color: inherit; text-decoration: none; }
 }
 .letter h1 {
   font-family: var(--font-display); font-weight: 700;
-  font-size: var(--text-4xl); line-height: var(--leading-tight);
+  font-size: var(--text-3xl); line-height: var(--leading-tight);
   letter-spacing: 0; margin: 0 0 var(--space-xl);
 }
 .letter h1 em {
@@ -1178,8 +1179,10 @@ a { color: inherit; text-decoration: none; }
   color: var(--color-accent); font-size: 1.1em;
 }
 .letter h2 {
-  font-family: var(--font-display); font-weight: 600;
-  font-size: var(--text-xl); letter-spacing: 0;
+  font-family: var(--font-display); font-weight: 700;
+  font-size: var(--text-3xl);
+  color: var(--color-ink);
+  text-wrap: balance; letter-spacing: 0;
   margin: var(--space-2xl) 0 var(--space-md);
 }
 .letter p {
@@ -1212,7 +1215,7 @@ a { color: inherit; text-decoration: none; }
   .hero__stat { width: 100%; align-items: center; text-align: center; }
 
 
-  .section-h, .finalcta__h, .letter h1 { font-size: var(--text-3xl); }
+  .section-h, .finalcta__h, .guarantee__h, .letter h1, .letter h2, .blog-post__content h2, .agent-modal__h { font-size: var(--text-3xl); }
 
   .math__grid { grid-template-columns: 1fr; }
   .math__result { grid-template-columns: 1fr; gap: var(--space-sm); }
@@ -1315,15 +1318,17 @@ a { color: inherit; text-decoration: none; }
 .blog-post__content h2 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: var(--text-xl);
+  font-size: var(--text-3xl);
+  text-wrap: balance;
   line-height: 1.2;
   margin: var(--space-2xl) 0 var(--space-md);
   color: var(--color-ink);
 }
 .blog-post__content h3 {
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: var(--text-lg);
+  font-weight: 700;
+  font-size: var(--text-2xl);
+  text-wrap: balance;
   line-height: 1.2;
   margin: var(--space-xl) 0 var(--space-sm);
   color: var(--color-ink);
@@ -1506,7 +1511,7 @@ body {
 /* Section heads: tighten the 4rem gap below H1 on phones */
 @media (max-width: 48rem) {
   .section-head { margin-bottom: var(--space-xl); }
-  .section-h, .finalcta__h, .letter h1 {
+  .section-h, .finalcta__h, .guarantee__h, .letter h1, .letter h2, .blog-post__content h2, .agent-modal__h {
     font-size: clamp(1.875rem, 5vw + 1rem, var(--text-3xl));
     max-width: 18ch;
   }
@@ -1886,7 +1891,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
 }
 .agent-card__h {
   font-family: var(--font-display); font-weight: 700;
-  font-size: var(--text-xl); letter-spacing: 0; margin: 0;
+  font-size: var(--text-2xl); letter-spacing: 0; margin: 0;
   color: var(--color-ink); line-height: 1.15;
   text-wrap: balance;
 }
@@ -1936,7 +1941,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
 }
 .agent-modal__h {
   font-family: var(--font-display); font-weight: 800;
-  font-size: var(--text-2xl); letter-spacing: 0; margin: 0;
+  font-size: var(--text-3xl); letter-spacing: 0; margin: 0;
   color: var(--color-ink); line-height: 1.1; text-wrap: balance;
 }
 .agent-modal__body {

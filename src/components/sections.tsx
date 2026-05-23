@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { BookingButton } from "@/components/BookingModal";
 
-
 function fmt(n: number) {
   return n.toLocaleString("en-US");
 }
@@ -136,17 +135,13 @@ export function CostCalculator() {
 
           <div className="math__result">
             <div>
-              <p className="math__stat-label">
-                Lost / month
-              </p>
+              <p className="math__stat-label">Lost / month</p>
               <p className="math__stat-num tnum" key={`month-${animKey}`}>
                 ${fmt(monthlyLost)}
               </p>
             </div>
             <div>
-              <p className="math__stat-label">
-                Lost / year
-              </p>
+              <p className="math__stat-label">Lost / year</p>
               <p className="math__stat-num tnum" key={`year-${animKey}`}>
                 ${fmt(yearlyLost)}
               </p>
@@ -157,10 +152,10 @@ export function CostCalculator() {
             <BookingButton className="cta cta--primary cta--lg math__cta">
               Book your free audit
             </BookingButton>
-            <p className="math__cta-sub">
-              20 minutes. No pitch. Written report either way.
+            <p className="math__cta-sub">20 minutes. No pitch. Written report either way.</p>
+            <p className="micro-cta">
+              Not ready yet? <a href="#leadbar">Get the free checklist →</a>
             </p>
-            <p className="micro-cta">Not ready yet? <a href="#leadbar">Get the free checklist →</a></p>
           </div>
           {interacted && (
             <div className="math__prompt">
@@ -227,8 +222,8 @@ export function HowItWorks() {
           <p className="how__num tnum">01 / Audit</p>
           <h3 className="how__h">Free 20-minute call.</h3>
           <p className="how__p">
-            I look at how your phone, your bids, and your follow-ups actually move. You get a written
-            ROI report and an effort/impact matrix. No pitch.
+            I look at how your phone, your bids, and your follow-ups actually move. You get a
+            written ROI report and an effort/impact matrix. No pitch.
           </p>
         </div>
         <div className="how__step">
@@ -398,11 +393,13 @@ export function Guarantee() {
           7 days to install. <em>30 days</em> to put money back in your pocket.
         </h2>
         <p className="guarantee__p">
-          We install your system in 7 days. If it doesn't put money back in your pocket within 30 days, we
-          keep working for free until it does.
+          We install your system in 7 days. If it doesn't put money back in your pocket within 30
+          days, we keep working for free until it does.
         </p>
         <BookingButton className="cta cta--primary cta--lg">Book your free audit</BookingButton>
-        <p className="micro-cta">Not ready yet? <a href="#leadbar">Get the free checklist →</a></p>
+        <p className="micro-cta">
+          Not ready yet? <a href="#leadbar">Get the free checklist →</a>
+        </p>
       </div>
     </section>
   );
@@ -448,7 +445,6 @@ const TIERS: Array<{
   },
 ];
 
-
 const GUAR = "7-day install. 30-day result guarantee. Owned outright. No retainer.";
 
 export function Pricing() {
@@ -467,7 +463,8 @@ export function Pricing() {
       </header>
 
       <p className="pricing__stat">
-        The average owner in this corridor loses <strong>$144,000</strong> a year to fixable leaks. The fix costs <strong>$300</strong>.
+        The average owner in this corridor loses <strong>$144,000</strong> a year to fixable leaks.
+        The fix costs <strong>$300</strong>.
       </p>
 
       <div className="pricing__grid">
@@ -485,14 +482,13 @@ export function Pricing() {
                 <li key={l}>{l}</li>
               ))}
             </ul>
-            <BookingButton
-              className={`cta ${t.feature ? "cta--primary" : "cta--ghost"} tier__cta`}
-            >
-
+            <BookingButton className={`cta ${t.feature ? "cta--primary" : "cta--ghost"} tier__cta`}>
               Book your free audit
             </BookingButton>
             <p className="tier__guar">{GUAR}</p>
-            <p className="micro-cta">Not ready yet? <a href="#leadbar">Get the free checklist →</a></p>
+            <p className="micro-cta">
+              Not ready yet? <a href="#leadbar">Get the free checklist →</a>
+            </p>
           </div>
         ))}
       </div>
@@ -568,7 +564,9 @@ export function FinalCTA() {
           A 20-minute call. A written report. A number that says what the leak is costing you.
         </p>
         <BookingButton className="cta cta--primary cta--lg">Book your free audit</BookingButton>
-        <p className="micro-cta">Not ready yet? <a href="#leadbar">Get the free checklist →</a></p>
+        <p className="micro-cta">
+          Not ready yet? <a href="#leadbar">Get the free checklist →</a>
+        </p>
         <p className="finalcta__guar">
           7-day install. 30-day guarantee: 10 hours a week back, or we keep working free until it
           lands.
@@ -613,12 +611,14 @@ export function Hero() {
 
       <h1 className="hero__display" id="hero-h">
         <span className="hero__line">Stop Losing Jobs to</span>
-        <span className="hero__line"><em>Voicemail.</em></span>
+        <span className="hero__line">
+          <em>Voicemail.</em>
+        </span>
       </h1>
 
       <p className="hero__subhead">
-        Contractors miss 3+ calls a week. That&rsquo;s $3,000 in lost revenue.
-        Clockout fixes it in 7 days.
+        Contractors miss 3+ calls a week. That&rsquo;s $3,000 in lost revenue. Clockout fixes it in
+        7 days.
       </p>
 
       <div className="hero__ctas">

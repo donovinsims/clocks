@@ -45,11 +45,7 @@ export function LeadBar() {
                 onChange={(e) => setEmail(e.target.value)}
                 disabled={status === "loading"}
               />
-              <button
-                type="submit"
-                className="cta cta--primary"
-                disabled={status === "loading"}
-              >
+              <button type="submit" className="cta cta--primary" disabled={status === "loading"}>
                 <span>{status === "loading" ? "Sending..." : "Get the checklist"}</span>
                 <span className="cta__arrow" aria-hidden="true">
                   →

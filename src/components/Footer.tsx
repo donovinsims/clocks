@@ -8,18 +8,32 @@ export function Footer() {
           <em>Built local.</em> Installed in 7 days. Owned by you forever.
         </p>
         <div className="footer__meta">
-          <p className="footer__line tnum">
-            Clockout · Roscoe · Rockford · Beloit · Northern IL
-          </p>
+          <p className="footer__line tnum">Clockout · Roscoe · Rockford · Beloit · Northern IL</p>
           <ul className="footer__links">
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/solutions">Solutions</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/operator-os">Operator OS</Link></li>
-            <li><Link to="/assessment">Assessment</Link></li>
-            <li><Link to="/privacy">Privacy</Link></li>
-            <li><Link to="/terms">Terms</Link></li>
-            <li><a href="mailto:hello@clockout.work">hello@clockout.work</a></li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/solutions">Solutions</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/operator-os">Operator OS</Link>
+            </li>
+            <li>
+              <Link to="/assessment">Assessment</Link>
+            </li>
+            <li>
+              <Link to="/privacy">Privacy</Link>
+            </li>
+            <li>
+              <Link to="/terms">Terms</Link>
+            </li>
+            <li>
+              <a href="mailto:hello@clockout.work">hello@clockout.work</a>
+            </li>
           </ul>
         </div>
       </div>

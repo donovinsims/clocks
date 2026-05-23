@@ -12,7 +12,10 @@ export const Route = createFileRoute("/operator-os")({
         content:
           "Message-based executive assistant for owner-operators in Roscoe, Rockford, Beloit, and Northern Illinois. Runs on your phone, your number, iMessage by default. No new app. No new login.",
       },
-      { property: "og:title", content: "Operator OS — Message-Based Assistant | Clockout | Roscoe · Rockford · Beloit" },
+      {
+        property: "og:title",
+        content: "Operator OS — Message-Based Assistant | Clockout | Roscoe · Rockford · Beloit",
+      },
       {
         property: "og:description",
         content:
@@ -29,9 +32,7 @@ export const Route = createFileRoute("/operator-os")({
           "Operator OS, message-based assistant, iMessage assistant, owner-operator tools, business automation Roscoe, Rockford IL small business, Beloit WI automation, executive assistant owner-operator",
       },
     ],
-    links: [
-      { rel: "canonical", href: "https://clockout.io/operator-os" },
-    ],
+    links: [{ rel: "canonical", href: "https://clockout.io/operator-os" }],
   }),
   component: OperatorOS,
 });
@@ -56,7 +57,9 @@ function OperatorOS() {
         <h1 className="hero__display" id="oos-h">
           <span className="hero__line">An assistant</span>
           <span className="hero__line">that lives</span>
-          <span className="hero__line"><em>in your texts.</em></span>
+          <span className="hero__line">
+            <em>in your texts.</em>
+          </span>
         </h1>
         <div className="hero__ctas">
           <BookingButton className="cta cta--primary cta--lg">
@@ -82,7 +85,9 @@ function OperatorOS() {
 
       <section className="how" aria-labelledby="oos-how-h">
         <header className="section-head">
-          <p className="section-eyebrow"><span className="num tnum">01</span> · How it runs</p>
+          <p className="section-eyebrow">
+            <span className="num tnum">01</span> · How it runs
+          </p>
           <h2 className="section-h" id="oos-how-h">
             You text it. It does the work.
           </h2>
@@ -121,7 +126,9 @@ function OperatorOS() {
       <section className="proof">
         <div className="proof__grid proof__grid--top">
           <div className="proof__copy">
-            <p className="section-eyebrow"><span className="num tnum">02</span> · Channels</p>
+            <p className="section-eyebrow">
+              <span className="num tnum">02</span> · Channels
+            </p>
             <h2 className="section-h">iMessage by default. The rest are optional.</h2>
             <p>
               You use your own phone and your own number. iMessage is the default because every
@@ -136,7 +143,9 @@ function OperatorOS() {
             </ul>
           </div>
           <div className="proof__copy">
-            <p className="section-eyebrow"><span className="num tnum">03</span> · What it isn't</p>
+            <p className="section-eyebrow">
+              <span className="num tnum">03</span> · What it isn't
+            </p>
             <h2 className="section-h">Not an app. Not a login.</h2>
             <p>
               No new platform. No new password. Nothing to remember. The assistant is just a contact
@@ -166,9 +175,6 @@ function OperatorOS() {
           <BookingButton className="cta cta--primary cta--lg">Book your free audit</BookingButton>
         </div>
       </section>
-
-
-
 
       <LeadBar />
     </div>

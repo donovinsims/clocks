@@ -22,7 +22,10 @@ export const Route = createFileRoute("/")({
         content:
           "Stop missing calls and losing jobs. Clockout installs flat-fee automation for owner-operators in Roscoe, Rockford, Beloit, and the Northern Illinois corridor. No retainer. No lock-in.",
       },
-      { property: "og:title", content: "Local Business Automation Services | Clockout | Roscoe · Rockford · Beloit" },
+      {
+        property: "og:title",
+        content: "Local Business Automation Services | Clockout | Roscoe · Rockford · Beloit",
+      },
       {
         property: "og:description",
         content:
@@ -32,16 +35,17 @@ export const Route = createFileRoute("/")({
       { property: "og:locale", content: "en_US" },
       { property: "og:site_name", content: "Clockout" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Local Business Automation Services | Clockout | Roscoe · Rockford · Beloit" },
+      {
+        name: "twitter:title",
+        content: "Local Business Automation Services | Clockout | Roscoe · Rockford · Beloit",
+      },
       {
         name: "keywords",
         content:
           "business automation Roscoe, local automation Rockford, owner-operator automation, service business automation Illinois, missed call text-back, flat-fee automation, Northern Illinois, Winnebago County, Boone County",
       },
     ],
-    links: [
-      { rel: "canonical", href: "https://clockout.io" },
-    ],
+    links: [{ rel: "canonical", href: "https://clockout.io" }],
   }),
   component: Home,
 });
