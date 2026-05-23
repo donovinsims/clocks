@@ -11,7 +11,10 @@ export const Route = createFileRoute("/blog")({
         content:
           "Plain field notes on revenue leaks for HVAC, plumbing, salons, real estate, and other owner-operators in the Roscoe, Rockford, Beloit, and Northern Illinois corridor. Short reads. Practical.",
       },
-      { property: "og:title", content: "Clockout Blog — Trade-by-Leak Field Notes | Roscoe · Rockford · Beloit" },
+      {
+        property: "og:title",
+        content: "Clockout Blog — Trade-by-Leak Field Notes | Roscoe · Rockford · Beloit",
+      },
       {
         property: "og:description",
         content:
@@ -115,17 +118,27 @@ const POSTS: Post[] = [
 function Blog() {
   return (
     <>
-      <section className="hero" style={{ minHeight: "auto", paddingBottom: "var(--space-2xl)" }} aria-labelledby="blog-h">
+      <section
+        className="hero"
+        style={{ minHeight: "auto", paddingBottom: "var(--space-2xl)" }}
+        aria-labelledby="blog-h"
+      >
         <div className="hero__rail">
           <span className="hero__rail-dot" aria-hidden="true" />
           <span>Field notes · trade × leak</span>
         </div>
         <h1 className="hero__display" id="blog-h" style={{ maxWidth: "20ch" }}>
           <span className="hero__line">Plain notes.</span>
-          <span className="hero__line"><em>Real leaks.</em></span>
+          <span className="hero__line">
+            <em>Real leaks.</em>
+          </span>
         </h1>
-        <p className="section-note" style={{ margin: "var(--space-md) auto 0", textAlign: "center" }}>
-          Short reads on the operational leaks costing owner-operators money in the Rockford corridor.
+        <p
+          className="section-note"
+          style={{ margin: "var(--space-md) auto 0", textAlign: "center" }}
+        >
+          Short reads on the operational leaks costing owner-operators money in the Rockford
+          corridor.
         </p>
       </section>
 

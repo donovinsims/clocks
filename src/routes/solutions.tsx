@@ -14,13 +14,19 @@ import {
 export const Route = createFileRoute("/solutions")({
   head: () => ({
     meta: [
-      { title: "Solutions — Clockout | 12 Automations for Owner-Operators | Roscoe · Rockford · Beloit" },
+      {
+        title:
+          "Solutions — Clockout | 12 Automations for Owner-Operators | Roscoe · Rockford · Beloit",
+      },
       {
         name: "description",
         content:
           "Twelve targeted solutions for owner-operators in Roscoe, Rockford, Beloit, and Northern Illinois. Missed-call rescue, cold-bid resurrection, no-show recovery, review machine, invoice chaser, nightly digest and more.",
       },
-      { property: "og:title", content: "Solutions — 12 Automations for Owner-Operators | Clockout" },
+      {
+        property: "og:title",
+        content: "Solutions — 12 Automations for Owner-Operators | Clockout",
+      },
       {
         property: "og:description",
         content:
@@ -30,7 +36,10 @@ export const Route = createFileRoute("/solutions")({
       { property: "og:locale", content: "en_US" },
       { property: "og:site_name", content: "Clockout" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Solutions — 12 Automations for Owner-Operators | Clockout" },
+      {
+        name: "twitter:title",
+        content: "Solutions — 12 Automations for Owner-Operators | Clockout",
+      },
       {
         name: "keywords",
         content:
@@ -65,12 +74,12 @@ const SOLUTIONS: Solution[] = [
     steps: [
       "Trigger: missed call detected via Twilio webhook.",
       "System looks up caller in CRM/Supabase — new lead vs existing customer.",
-      "If new: sends a personalized SMS (\"Hey, this is [Business], sorry we missed you — what can we help with?\").",
+      'If new: sends a personalized SMS ("Hey, this is [Business], sorry we missed you — what can we help with?").',
       "Reply is parsed with LLM to classify job type, urgency, and location.",
       "If qualified: quotes a ballpark, asks for availability, and writes the appointment to the calendar.",
     ],
     result:
-      "Owner gets a Telegram/SMS summary: \"New HVAC lead booked for Thursday 9AM. Job: furnace tune-up, Roscoe. Revenue est: $185.\"",
+      'Owner gets a Telegram/SMS summary: "New HVAC lead booked for Thursday 9AM. Job: furnace tune-up, Roscoe. Revenue est: $185."',
     why: "Captures valuable leads instantly while you are busy on-site.",
   },
   {
@@ -85,7 +94,7 @@ const SOLUTIONS: Solution[] = [
       "Monitor all estimates in CRM (sent date, status, amount, customer name).",
       "On day 3, 7, and 12 with no response: trigger an automated follow-up sequence.",
       "LLM generates a short, natural human message tailored to trade and job type.",
-      "If customer replies with hesitation, detect objection and send a \"social proof\" follow-up.",
+      'If customer replies with hesitation, detect objection and send a "social proof" follow-up.',
       "If they say yes: move them into the booking flow automatically.",
     ],
     result:
@@ -101,9 +110,9 @@ const SOLUTIONS: Solution[] = [
       "Someone doesn't show. Instead of the owner sitting in a driveway losing 2 hours, the system detects the no-show, texts the customer, reads the reply, reschedules, and fills the slot from a waitlist — all before they even pull out.",
     does: "Detects no-shows, texts the customer, and recovers the calendar slot.",
     steps: [
-      "Trigger: appointment time passes with no \"job started\" signal.",
-      "Wait 10 minutes, then send: \"Hey, wanted to make sure everything's still good for today?\"",
-      "Branch on response (No reply, \"Forgot\", or \"Emergency\") and trigger intelligent follow-up.",
+      'Trigger: appointment time passes with no "job started" signal.',
+      'Wait 10 minutes, then send: "Hey, wanted to make sure everything\'s still good for today?"',
+      'Branch on response (No reply, "Forgot", or "Emergency") and trigger intelligent follow-up.',
       "If slot opens: immediately text the #1 waitlist candidate to take the opening.",
     ],
     result:
@@ -144,7 +153,7 @@ const SOLUTIONS: Solution[] = [
       "LLM generates a plain-English, cohesive evening briefing.",
     ],
     result:
-      "Receive a single, clean WhatsApp/Telegram notification: \"Today: 3 missed calls (2 text-backs sent, 1 booked), 4 invoices outstanding ($3,200, reminders sent), 6 appointments confirmed for Tuesday.\"",
+      'Receive a single, clean WhatsApp/Telegram notification: "Today: 3 missed calls (2 text-backs sent, 1 booked), 4 invoices outstanding ($3,200, reminders sent), 6 appointments confirmed for Tuesday."',
     why: "Reclaims late nights and eliminates administrative anxiety.",
   },
   {
@@ -153,7 +162,7 @@ const SOLUTIONS: Solution[] = [
     channel: "DIGEST",
     payoff: "See exactly how much money missed calls and cold bids cost last month.",
     jawDrop:
-      "During a free assessment, you show them a live report: \"In the last 30 days, your business missed an estimated $9,600 from 8 unanswered calls and 3 cold estimates.\" It's their own data — not theory.",
+      'During a free assessment, you show them a live report: "In the last 30 days, your business missed an estimated $9,600 from 8 unanswered calls and 3 cold estimates." It\'s their own data — not theory.',
     does: "Turns operational leaks into real dollar figures for the sales conversation.",
     steps: [
       "Onboarding: ingest call logs, estimates, and job records.",
@@ -222,7 +231,7 @@ const SOLUTIONS: Solution[] = [
     num: "10",
     name: "Estimate Objection Handler",
     channel: "EMAIL / SMS",
-    payoff: "A \"too expensive\" reply gets a smart response instead of going cold.",
+    payoff: 'A "too expensive" reply gets a smart response instead of going cold.',
     jawDrop:
       "A prospect replies with a budget objection and, instead of the lead dying, they receive an immediate, professional alternative option or value proposition that saves the deal.",
     does: "Detects objections and responds with proof, clarity, or next-step options.",
@@ -297,8 +306,8 @@ function Solutions() {
           className="hero__p"
           style={{ maxWidth: "32ch", textAlign: "center", marginTop: "1.25rem" }}
         >
-          Every workflow your shop runs by hand — answered, followed up, and closed.
-          Tap a card to see what it does, what it costs, and what it saves.
+          Every workflow your shop runs by hand — answered, followed up, and closed. Tap a card to
+          see what it does, what it costs, and what it saves.
         </p>
       </section>
 
@@ -316,7 +325,9 @@ function Solutions() {
             <p className="solution-card__p">{a.payoff}</p>
             <div className="solution-card__foot">
               <span className="solution-card__tag">{a.channel}</span>
-              <span className="solution-card__open">Open <span aria-hidden="true">→</span></span>
+              <span className="solution-card__open">
+                Open <span aria-hidden="true">→</span>
+              </span>
             </div>
           </button>
         ))}

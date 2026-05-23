@@ -66,10 +66,18 @@ export function Nav() {
         }}
       >
         <nav className="nav__sheet-links" aria-label="Mobile primary">
-          <Link to="/solutions" onClick={close}>Solutions</Link>
-          <Link to="/operator-os" onClick={close}>Operator OS</Link>
-          <Link to="/about" onClick={close}>About</Link>
-          <Link to="/blog" onClick={close}>Blog</Link>
+          <Link to="/solutions" onClick={close}>
+            Solutions
+          </Link>
+          <Link to="/operator-os" onClick={close}>
+            Operator OS
+          </Link>
+          <Link to="/about" onClick={close}>
+            About
+          </Link>
+          <Link to="/blog" onClick={close}>
+            Blog
+          </Link>
         </nav>
         <BookingButton className="cta cta--primary cta--lg nav__sheet-cta" onClick={close}>
           Book free audit

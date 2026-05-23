@@ -66,7 +66,6 @@ export function BookingProvider({ children }: { children: React.ReactNode }) {
               />
             )}
           </div>
-
         </DialogContent>
       </Dialog>
     </BookingCtx.Provider>
@@ -101,4 +100,3 @@ export function BookingButton({ className, children, arrow = true, style, onClic
     </button>
   );
 }
-
