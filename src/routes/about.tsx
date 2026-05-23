@@ -93,13 +93,13 @@ function About() {
 
         <h2>How I work</h2>
 
-        <ul>
-          <li>Math before pitch. You see the cost of the leak before I quote anything.</li>
-          <li>Flat fee, one time. Known before you sign.</li>
-          <li>Installed in 3–7 days. Not months. Not "Q3."</li>
-          <li>You own it. Outright. Forever.</li>
-          <li>Local only. Northern Illinois corridor. I drive.</li>
-        </ul>
+        <div className="letter__list-paragraphs" style={{ paddingLeft: "1.25rem" }}>
+          <p>Math before pitch. You see the cost of the leak before I quote anything.</p>
+          <p>Flat fee, one time. Known before you sign.</p>
+          <p>Installed in 3–7 days. Not months. Not "Q3."</p>
+          <p>You own it. Outright. Forever.</p>
+          <p>Local only. Northern Illinois corridor. I drive.</p>
+        </div>
 
         <h2>The guarantee</h2>
 
