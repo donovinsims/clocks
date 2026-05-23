@@ -5,7 +5,7 @@ import { createServerFn } from "@tanstack/react-start";
 // For production, move the API key to an env var: KIT_API_KEY
 
 export const subscribeToConvertKit = createServerFn({ method: "POST" })
-  .validator((data: unknown) => {
+  .inputValidator((data: unknown) => {
     if (typeof data !== "object" || data === null) {
       throw new Error("Invalid request");
     }
