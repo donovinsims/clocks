@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect } from "react";
 
 export const Route = createFileRoute("/assessment")({
   head: () => ({
@@ -65,12 +64,6 @@ const ITEMS_FAQ = [
 ];
 
 function Assessment() {
-  useEffect(() => {
-    if (typeof window !== "undefined" && (window as any).Tally) {
-      (window as any).Tally.loadEmbeds();
-    }
-  }, []);
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -79,18 +72,23 @@ function Assessment() {
     <>
       <section
         className="hero"
-        style={{ minHeight: "auto", paddingBottom: "4rem" }}
+        style={{
+          minHeight: "auto",
+          paddingBottom: "4rem",
+          display: "flex",
+          justifyContent: "center",
+        }}
         aria-labelledby="as-h"
       >
         <iframe
-          data-tally-src="https://tally.so/r/RGVJ1J"
+          src="https://tally.so/r/RGVJ1J?transparentBackground=1"
           width="100%"
-          height="400"
+          height="800"
           frameBorder="0"
           marginHeight={0}
           marginWidth={0}
           title="Free Operational Audit"
-          style={{ borderRadius: "var(--radius-md)" }}
+          style={{ borderRadius: "var(--radius-md)", maxWidth: "800px" }}
         />
       </section>
 

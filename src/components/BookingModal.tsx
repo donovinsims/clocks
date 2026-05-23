@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "@tanstack/react-router";
 
 export function BookingProvider({ children }: { children: React.ReactNode }): JSX.Element {
   // No-op provider wrapper to avoid breaking dependencies
@@ -13,23 +14,21 @@ type BtnProps = {
   onClick?: () => void;
 };
 
-export function BookingButton({ className, children, arrow = true, style, onClick }: BtnProps): JSX.Element {
+export function BookingButton({
+  className,
+  children,
+  arrow = true,
+  style,
+  onClick,
+}: BtnProps): JSX.Element {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={className}
-      style={style}
-      data-tally-open="RGVJ1J"
-      data-tally-layout="modal"
-      data-tally-width="600"
-    >
+    <Link to="/assessment" className={className} style={style} onClick={onClick}>
       <span>{children}</span>
       {arrow && (
         <span className="cta__arrow" aria-hidden="true">
           →
         </span>
       )}
-    </button>
+    </Link>
   );
 }
