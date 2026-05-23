@@ -519,13 +519,26 @@ function TallyScrollLock() {
     const handleGlobalClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       if (target.closest("[data-tally-open]")) {
-        document.body.style.overflow = "hidden";
+        document.body.style.setProperty("overflow", "hidden", "important");
+        document.documentElement.style.setProperty("overflow", "hidden", "important");
+        // For mobile Safari / some mobile browsers
+        document.body.style.setProperty("position", "fixed", "important");
+        document.body.style.setProperty("width", "100%", "important");
+        document.body.style.setProperty("top", `-${window.scrollY}px`, "important");
       }
     };
 
     const handleMessage = (e: MessageEvent) => {
       if (typeof e?.data === "string" && e.data.includes("Tally.PopupClosed")) {
         document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
+        const top = document.body.style.top;
+        document.body.style.position = "";
+        document.body.style.width = "";
+        document.body.style.top = "";
+        if (top) {
+          window.scrollTo(0, parseInt(top || "0") * -1);
+        }
       }
     };
 
@@ -536,6 +549,10 @@ function TallyScrollLock() {
       document.removeEventListener("click", handleGlobalClick);
       window.removeEventListener("message", handleMessage);
       document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.top = "";
     };
   }, []);
 
