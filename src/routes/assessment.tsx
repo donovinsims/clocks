@@ -90,10 +90,10 @@ function Assessment() {
           }}
         >
           <iframe
-            data-tally-src="https://tally.so/embed/RGVJ1J?alignLeft=1&amp;dynamicHeight=1"
+            data-tally-src="https://tally.so/embed/RGVJ1J?dynamicHeight=1"
             loading="lazy"
             width="100%"
-            height="400"
+            height="244"
             frameBorder="0"
             marginHeight={0}
             marginWidth={0}
