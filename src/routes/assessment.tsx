@@ -90,14 +90,22 @@ function Assessment() {
           }}
         >
           <iframe
-            src="https://tally.so/embed/RGVJ1J?transparentBackground=1&amp;dynamicHeight=1&amp;formEventsForwarding=1"
+            data-tally-src="https://tally.so/embed/RGVJ1J?alignLeft=1&amp;dynamicHeight=1"
+            loading="lazy"
             width="100%"
-            height="800"
+            height="400"
             frameBorder="0"
             marginHeight={0}
             marginWidth={0}
-            title="Free Operational Audit"
+            title="Free Operational Audit: Spot Your Revenue Leaks"
             style={{ display: "block" }}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}
+              `.trim(),
+            }}
           />
         </div>
       </section>
