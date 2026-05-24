@@ -1946,6 +1946,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
 .agent-modal__header {
   padding: var(--space-xl) var(--space-xl) var(--space-md);
   display: flex; flex-direction: column; gap: var(--space-sm);
+  align-items: center; text-align: center;
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .agent-modal__num {
@@ -1957,6 +1958,9 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   font-family: var(--font-display); font-weight: 800;
   font-size: var(--text-2xl); letter-spacing: 0; margin: 0;
   color: var(--color-ink); line-height: 1.1; text-wrap: balance;
+}
+.agent-modal__tag {
+  margin-top: var(--space-sm);
 }
 .agent-modal__body {
   padding: var(--space-lg) var(--space-xl) var(--space-xl);
@@ -1971,7 +1975,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-accent) 25%, transparent);
   font-family: var(--font-accent); font-style: italic;
   font-size: var(--text-lg); line-height: 1.4; color: var(--color-ink);
-  text-wrap: pretty;
+  text-wrap: pretty; text-align: center;
 }
 .agent-modal__quote::before {
   content: "“"; color: var(--color-accent); font-size: 1.4em; margin-right: 4px;
@@ -2022,6 +2026,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   .agent-modal__header {
     padding: var(--space-md) var(--space-md) var(--space-sm);
     gap: var(--space-2xs);
+    align-items: center; text-align: center;
   }
   .agent-modal__h { font-size: var(--text-xl); }
   .agent-modal__body {
