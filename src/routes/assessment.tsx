@@ -107,58 +107,63 @@ function Assessment() {
               }}
             >
               <div
-                className="animate-pulse"
-                style={{ height: 14, width: "55%", background: "#ff4800", borderRadius: 4 }}
+                className="skeleton-shimmer"
+                style={{
+                  height: 14,
+                  width: "55%",
+                  borderRadius: 999,
+                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
+                }}
               />
               <div
-                className="animate-pulse"
+                className="skeleton-shimmer"
                 style={{
                   height: 14,
                   width: "75%",
-                  background: "#ff4800",
-                  borderRadius: 4,
+                  borderRadius: 999,
+                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
                   animationDelay: "0.15s",
                 }}
               />
               <div
-                className="animate-pulse"
+                className="skeleton-shimmer"
                 style={{
                   height: 40,
                   width: "100%",
-                  background: "#ff4800",
-                  borderRadius: 6,
+                  borderRadius: 10,
+                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
                   animationDelay: "0.3s",
                   marginTop: "0.25rem",
                 }}
               />
               <div
-                className="animate-pulse"
+                className="skeleton-shimmer"
                 style={{
                   height: 14,
                   width: "45%",
-                  background: "#ff4800",
-                  borderRadius: 4,
+                  borderRadius: 999,
+                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
                   animationDelay: "0.45s",
                   marginTop: "0.25rem",
                 }}
               />
               <div
-                className="animate-pulse"
+                className="skeleton-shimmer"
                 style={{
                   height: 14,
                   width: "65%",
-                  background: "#ff4800",
-                  borderRadius: 4,
+                  borderRadius: 999,
+                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
                   animationDelay: "0.6s",
                 }}
               />
               <div
-                className="animate-pulse"
+                className="skeleton-shimmer"
                 style={{
                   height: 14,
                   width: "35%",
-                  background: "#ff4800",
-                  borderRadius: 4,
+                  borderRadius: 999,
+                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
                   animationDelay: "0.75s",
                 }}
               />
