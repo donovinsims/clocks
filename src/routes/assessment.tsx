@@ -66,8 +66,30 @@ const ITEMS_FAQ = [
 
 function Assessment() {
   useEffect(() => {
-    if (typeof window !== "undefined" && (window as any).Tally) {
-      (window as any).Tally.loadEmbeds();
+    if (typeof window === "undefined") return;
+
+    const d = document;
+    const w = "https://tally.so/widgets/embed.js";
+    const v = function () {
+      if (typeof (window as any).Tally !== "undefined") {
+        (window as any).Tally.loadEmbeds();
+      } else {
+        d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) {
+          (e as HTMLIFrameElement).src = (e as HTMLIFrameElement).dataset.tallySrc || "";
+        });
+      }
+    };
+
+    if (typeof (window as any).Tally !== "undefined") {
+      v();
+    } else if (d.querySelector('script[src="' + w + '"]') == null) {
+      const s = d.createElement("script");
+      s.src = w;
+      s.onload = v;
+      s.onerror = v;
+      d.body.appendChild(s);
+    } else {
+      v();
     }
   }, []);
 
@@ -84,7 +106,7 @@ function Assessment() {
       >
         <div style={{ width: "100%", maxWidth: "var(--max-width)", margin: "0 auto" }}>
           <iframe
-            data-tally-src="https://tally.so/embed/RGVJ1J?alignLeft=1&hideTitle=1&dynamicHeight=1"
+            data-tally-src="https://tally.so/embed/RGVJ1J?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             width="100%"
             height="207"
