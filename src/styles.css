@@ -1660,7 +1660,7 @@ select {
 html, body { overflow-x: hidden; }
 
 /* ============================================================
- * Design polish v2 — OLED bg, #ff4800 brand, shadow-border
+ * Design polish v2 — OLED bg, var(--color-accent) brand, shadow-border
  * surfaces, tactile micro-interactions, text-wrap, touch
  * ergonomics, page-specific spacing. Loaded last to win.
  * ============================================================ */
@@ -1677,7 +1677,7 @@ html, body { overflow-x: hidden; }
   --color-rule:         oklch(26% 0 0);
   --color-rule-strong:  oklch(36% 0 0);
 
-  /* Brand color — #ff4800 */
+  /* Brand color — var(--color-accent) */
   --color-accent:       #ff4800;
   --color-accent-2:     #ff6a2c;
   --color-accent-soft:  #ff8a5a;
@@ -1695,7 +1695,7 @@ html, body { overflow-x: hidden; }
   /* Shadow-border surface ring */
   --ring-hair:    0 0 0 1px rgba(255, 255, 255, 0.08);
   --ring-hover:   0 0 0 1px rgba(255, 255, 255, 0.13);
-  --ring-brand:   0 0 0 1px color-mix(in srgb, #ff4800 40%, transparent);
+  --ring-brand:   0 0 0 1px color-mix(in srgb, var(--color-accent) 40%, transparent);
 }
 
 html { background: var(--color-paper); }
@@ -1703,8 +1703,8 @@ body { background: var(--color-paper); -webkit-font-smoothing: antialiased; -moz
 
 /* Bloom — brand-tinted, deep, low opacity for cohesive depth */
 .bloom { opacity: 0.18; filter: blur(120px); }
-.bloom--1 { background: radial-gradient(closest-side, color-mix(in srgb, #ff4800 70%, transparent), transparent 70%); }
-.bloom--2 { background: radial-gradient(closest-side, color-mix(in srgb, #ff6a2c 55%, transparent), transparent 70%); }
+.bloom--1 { background: radial-gradient(closest-side, color-mix(in srgb, var(--color-accent) 70%, transparent), transparent 70%); }
+.bloom--2 { background: radial-gradient(closest-side, color-mix(in srgb, var(--color-accent-2) 55%, transparent), transparent 70%); }
 body.theme-operator-os .bloom--1 { background: radial-gradient(closest-side, color-mix(in srgb, #3b82f6 70%, transparent), transparent 70%); }
 body.theme-operator-os .bloom--2 { background: radial-gradient(closest-side, color-mix(in srgb, #60a5fa 55%, transparent), transparent 70%); }
 
@@ -1741,8 +1741,8 @@ body.theme-operator-os .bloom--2 { background: radial-gradient(closest-side, col
 }
 /* Feature tier keeps brand ring */
 .tier--feature {
-  box-shadow: 0 0 0 1px color-mix(in srgb, #ff4800 45%, transparent),
-              0 12px 40px -16px color-mix(in srgb, #ff4800 35%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-accent) 45%, transparent),
+              0 12px 40px -16px color-mix(in srgb, var(--color-accent) 35%, transparent);
 }
 .fixes__grid {
   border: 0 !important;
@@ -1758,7 +1758,7 @@ body.theme-operator-os .bloom--2 { background: radial-gradient(closest-side, col
   .agent-card:hover,
   .solution-card:hover {
     box-shadow: var(--ring-hover),
-                0 14px 40px -18px color-mix(in srgb, #ff4800 45%, transparent);
+                0 14px 40px -18px color-mix(in srgb, var(--color-accent) 45%, transparent);
     transform: translateY(-2px);
     background: color-mix(in oklch, var(--color-paper-2) 90%, transparent);
   }
@@ -1805,24 +1805,24 @@ body.theme-operator-os .bloom--2 { background: radial-gradient(closest-side, col
   display: inline-flex; align-items: center; gap: 6px;
   padding: 4px 10px;
   border-radius: var(--radius-pill);
-  background: color-mix(in srgb, #ff4800 12%, transparent);
-  color: #ff4800;
-  box-shadow: 0 0 0 1px color-mix(in srgb, #ff4800 25%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  color: var(--color-accent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-accent) 25%, transparent);
   font-family: var(--font-mono); font-size: 11px;
   letter-spacing: 0.1em; text-transform: uppercase;
   width: fit-content;
 }
 
-/* Orange checkmarks / arrows / accent text — true #ff4800
+/* Orange checkmarks / arrows / accent text — true var(--color-accent)
    Scoped to :not(.theme-operator-os) so the OS page stays fully blue. */
 body:not(.theme-operator-os) .tier__list li::before,
 body:not(.theme-operator-os) .proof__list li::before,
 body:not(.theme-operator-os) .hero__rail-dot,
-body:not(.theme-operator-os) .nav__brand-dot { color: #ff4800; }
+body:not(.theme-operator-os) .nav__brand-dot { color: var(--color-accent); }
 body:not(.theme-operator-os) .hero__rail-dot,
 body:not(.theme-operator-os) .nav__brand-dot {
-  background: #ff4800;
-  box-shadow: 0 0 12px color-mix(in srgb, #ff4800 70%, transparent);
+  background: var(--color-accent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--color-accent) 70%, transparent);
 }
 
 /* Operator OS — force blue on dots, bullets, arrows */
@@ -1907,7 +1907,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   display: inline-flex; align-items: center; gap: 6px;
   transition: color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
 }
-.agent-card:hover .agent-card__open { color: #ff4800; transform: translateX(2px); }
+.agent-card:hover .agent-card__open { color: var(--color-accent); transform: translateX(2px); }
 .agent-card:active { transform: scale(0.985); }
 
 /* Modal */
@@ -1917,7 +1917,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   border-radius: var(--radius-lg);
   box-shadow: var(--ring-hair),
               0 30px 80px -20px rgba(0,0,0,0.6),
-              0 0 80px -20px color-mix(in srgb, #ff4800 25%, transparent);
+              0 0 80px -20px color-mix(in srgb, var(--color-accent) 25%, transparent);
   padding: 0;
   max-width: 640px;
   width: calc(100vw - 2rem);
@@ -1950,19 +1950,19 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   margin: 0;
   padding: var(--space-lg);
   border-radius: var(--radius-md);
-  background: color-mix(in srgb, #ff4800 8%, transparent);
-  box-shadow: 0 0 0 1px color-mix(in srgb, #ff4800 25%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-accent) 25%, transparent);
   font-family: var(--font-accent); font-style: italic;
   font-size: var(--text-lg); line-height: 1.4; color: var(--color-ink);
   text-wrap: pretty;
 }
 .agent-modal__quote::before {
-  content: "“"; color: #ff4800; font-size: 1.4em; margin-right: 4px;
+  content: "“"; color: var(--color-accent); font-size: 1.4em; margin-right: 4px;
 }
 .agent-modal__section h3 {
   font-family: var(--font-mono); font-size: var(--text-xs);
   letter-spacing: 0.12em; text-transform: uppercase;
-  color: #ff4800; margin: 0 0 var(--space-xs);
+  color: var(--color-accent); margin: 0 0 var(--space-xs);
 }
 .agent-modal__section p {
   margin: 0; color: var(--color-ink-2);
@@ -1984,7 +1984,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   content: counter(agent-step, decimal-leading-zero);
   position: absolute; left: 0; top: 0;
   font-family: var(--font-mono); font-size: 11px;
-  color: #ff4800; font-weight: 600;
+  color: var(--color-accent); font-weight: 600;
   letter-spacing: 0.04em;
 }
 .agent-modal__footer {
@@ -2072,7 +2072,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   display: inline-flex; align-items: center; gap: 6px;
   transition: color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
 }
-.solution-card:hover .solution-card__open { color: #ff4800; transform: translateX(2px); }
+.solution-card:hover .solution-card__open { color: var(--color-accent); transform: translateX(2px); }
 .solution-card:active { transform: scale(0.985); }
 
 /* Modal */
@@ -2082,7 +2082,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   border-radius: var(--radius-lg);
   box-shadow: var(--ring-hair),
               0 30px 80px -20px rgba(0,0,0,0.6),
-              0 0 80px -20px color-mix(in srgb, #ff4800 25%, transparent);
+              0 0 80px -20px color-mix(in srgb, var(--color-accent) 25%, transparent);
   padding: 0;
   max-width: 640px;
   width: calc(100vw - 2rem);
@@ -2115,19 +2115,19 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   margin: 0;
   padding: var(--space-lg);
   border-radius: var(--radius-md);
-  background: color-mix(in srgb, #ff4800 8%, transparent);
-  box-shadow: 0 0 0 1px color-mix(in srgb, #ff4800 25%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-accent) 25%, transparent);
   font-family: var(--font-accent); font-style: italic;
   font-size: var(--text-lg); line-height: 1.4; color: var(--color-ink);
   text-wrap: pretty;
 }
 .solution-modal__quote::before {
-  content: "“"; color: #ff4800; font-size: 1.4em; margin-right: 4px;
+  content: "“"; color: var(--color-accent); font-size: 1.4em; margin-right: 4px;
 }
 .solution-modal__section h3 {
   font-family: var(--font-mono); font-size: var(--text-xs);
   letter-spacing: 0.12em; text-transform: uppercase;
-  color: #ff4800; margin: 0 0 var(--space-xs);
+  color: var(--color-accent); margin: 0 0 var(--space-xs);
 }
 .solution-modal__section p {
   margin: 0; color: var(--color-ink-2);
@@ -2149,7 +2149,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
   content: counter(solution-step, decimal-leading-zero);
   position: absolute; left: 0; top: 0;
   font-family: var(--font-mono); font-size: 11px;
-  color: #ff4800; font-weight: 600;
+  color: var(--color-accent); font-weight: 600;
   letter-spacing: 0.04em;
 }
 .solution-modal__footer {
@@ -2197,7 +2197,7 @@ body.theme-operator-os .how { padding-top: var(--space-xl); border-top: 0; }
 
 /* Brand focus ring — global */
 :where(a, button, [role="button"], input, textarea, select, summary):focus-visible {
-  outline: 2px solid #ff4800;
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
   border-radius: 8px;
 }
@@ -2257,7 +2257,7 @@ input[type="password"], textarea, select {
 }
 input:focus-visible, textarea:focus-visible, select:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 2px #ff4800, 0 0 0 4px color-mix(in srgb, #ff4800 25%, transparent);
+  box-shadow: 0 0 0 2px var(--color-accent), 0 0 0 4px color-mix(in srgb, var(--color-accent) 25%, transparent);
 }
 
 /* Secondary chevron links — guarantee 44px hit area */

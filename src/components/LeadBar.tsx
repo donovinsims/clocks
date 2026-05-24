@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { subscribeToConvertKit } from "@/lib/convertkit";
 
-export function LeadBar(): JSX.Element {
+export function LeadBar() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -53,7 +53,7 @@ export function LeadBar(): JSX.Element {
                 </span>
               </button>
               {status === "error" && (
-                <p style={{ color: "var(--color-danger)", margin: 0, fontSize: "0.85em" }}>
+                <p style={{ color: "var(--color-error)", margin: 0, fontSize: "0.85em" }}>
                   {errorMsg}
                 </p>
               )}

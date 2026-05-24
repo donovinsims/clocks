@@ -1,11 +1,6 @@
 import React from "react";
 import { Link } from "@tanstack/react-router";
 
-export function BookingProvider({ children }: { children: React.ReactNode }): JSX.Element {
-  // No-op provider wrapper to avoid breaking dependencies
-  return <>{children}</>;
-}
-
 type BtnProps = {
   className?: string;
   children: React.ReactNode;
@@ -20,7 +15,7 @@ export function BookingButton({
   arrow = true,
   style,
   onClick,
-}: BtnProps): JSX.Element {
+}: BtnProps) {
   return (
     <Link to="/assessment" className={className} style={style} onClick={onClick}>
       <span>{children}</span>

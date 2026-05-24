@@ -5,28 +5,27 @@ import { useIsMobile } from "./use-mobile";
 describe("useIsMobile", () => {
   let matchMediaMock: ReturnType<typeof vi.fn>;
   const listeners: Set<() => void> = new Set();
-  const MOBILE_BREAKPOINT = 768;
 
   beforeEach(() => {
     listeners.clear();
     // Default to a desktop viewport
     window.innerWidth = 1024;
 
-    matchMediaMock = vi.fn().mockImplementation((query) => ({
+    matchMediaMock = vi.fn().mockImplementation((query: string) => ({
       matches: false,
       media: query,
       onchange: null,
       addListener: vi.fn(),
       removeListener: vi.fn(),
-      addEventListener: vi.fn((event, callback) => {
+      addEventListener: vi.fn((event: string, callback: () => void) => {
         if (event === "change") listeners.add(callback);
       }),
-      removeEventListener: vi.fn((event, callback) => {
+      removeEventListener: vi.fn((event: string, callback: () => void) => {
         if (event === "change") listeners.delete(callback);
       }),
       dispatchEvent: vi.fn(),
     }));
-    window.matchMedia = matchMediaMock;
+    window.matchMedia = matchMediaMock as unknown as (query: string) => MediaQueryList;
   });
 
   afterEach(() => {

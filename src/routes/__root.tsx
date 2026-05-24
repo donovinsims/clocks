@@ -12,7 +12,6 @@ import appCss from "../styles.css?url";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Ambient } from "@/components/Ambient";
-import { BookingProvider } from "@/components/BookingModal";
 import { Analytics } from "@vercel/analytics/react";
 
 const FONTS_URL =
@@ -514,7 +513,6 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BookingProvider>
         <Ambient />
         <a className="skip" href="#main">
           Skip to content
@@ -524,7 +522,6 @@ function RootComponent() {
           <Outlet />
         </main>
         <Footer />
-      </BookingProvider>
     </QueryClientProvider>
   );
 }

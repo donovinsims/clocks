@@ -75,10 +75,10 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
 }
 
 export default {
-  async fetch(request: Request, ...rest: unknown[]) {
+  async fetch(request: Request, ..._rest: unknown[]) {
     try {
       const handler = await getServerEntry();
-      const response = await handler.fetch(request, ...rest);
+      const response = await handler.fetch(request, ..._rest);
       return await normalizeCatastrophicSsrResponse(response);
     } catch (error) {
       console.error(error);

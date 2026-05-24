@@ -12,7 +12,7 @@ const PRESETS: Preset[] = [
   { label: "Auto shop", missed: 22, ticket: 350 },
 ];
 
-export function CostCalculator(): JSX.Element {
+export function CostCalculator() {
   const [missed, setMissed] = useState(15);
   const [ticket, setTicket] = useState(800);
   const [animKey, setAnimKey] = useState(0);
@@ -206,7 +206,7 @@ export function CostCalculator(): JSX.Element {
   );
 }
 
-export function HowItWorks(): JSX.Element {
+export function HowItWorks() {
   return (
     <section className="how" aria-labelledby="how-h">
       <header className="section-head">
@@ -247,7 +247,7 @@ export function HowItWorks(): JSX.Element {
   );
 }
 
-export function IPhoneProof(): JSX.Element {
+export function IPhoneProof() {
   return (
     <section className="proof" aria-labelledby="proof-h">
       <div className="proof__grid">
@@ -357,7 +357,7 @@ const FIXES = [
   },
 ];
 
-export function WhatYouGet(): JSX.Element {
+export function WhatYouGet() {
   return (
     <section className="fixes" aria-labelledby="fixes-h">
       <header className="section-head">
@@ -384,7 +384,7 @@ export function WhatYouGet(): JSX.Element {
   );
 }
 
-export function Guarantee(): JSX.Element {
+export function Guarantee() {
   return (
     <section className="guarantee" aria-labelledby="guar-h">
       <div className="guarantee__card">
@@ -447,7 +447,7 @@ const TIERS: Array<{
 
 const GUAR = "7-day install. 30-day result guarantee. Owned outright. No retainer.";
 
-export function Pricing(): JSX.Element {
+export function Pricing() {
   return (
     <section className="pricing" id="pricing" aria-labelledby="pricing-h">
       <header className="section-head">
@@ -523,7 +523,7 @@ const FAQS = [
   },
 ];
 
-export function FAQ(): JSX.Element {
+export function FAQ() {
   return (
     <section className="faq" id="faq" aria-labelledby="faq-h">
       <header className="section-head">
@@ -553,7 +553,7 @@ export function FAQ(): JSX.Element {
   );
 }
 
-export function FinalCTA(): JSX.Element {
+export function FinalCTA() {
   return (
     <section className="finalcta" aria-labelledby="finalcta-h">
       <div className="finalcta__inner">
@@ -576,7 +576,7 @@ export function FinalCTA(): JSX.Element {
   );
 }
 
-export function Hero(): JSX.Element {
+export function Hero() {
   const ref = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -649,7 +649,7 @@ export function Hero(): JSX.Element {
   );
 }
 
-export function TrustBar(): JSX.Element {
+export function TrustBar() {
   const names = [
     "Stateline Chamber",
     "BNI Rockford",

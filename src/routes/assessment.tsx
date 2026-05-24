@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/assessment")({
@@ -64,6 +65,7 @@ const ITEMS_FAQ = [
 ];
 
 function Assessment() {
+  const [tallyLoaded, setTallyLoaded] = useState(false);
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -87,8 +89,81 @@ function Assessment() {
             maxWidth: "800px",
             width: "100%",
             overflow: "clip",
+            position: "relative",
+            minHeight: "244px",
           }}
         >
+          {!tallyLoaded && (
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                zIndex: 1,
+                borderRadius: "var(--radius-md)",
+                padding: "1.75rem",
+                display: "flex",
+                flexDirection: "column",
+                gap: "1.25rem",
+              }}
+            >
+              <div
+                className="animate-pulse"
+                style={{ height: 14, width: "55%", background: "#ff4800", borderRadius: 4 }}
+              />
+              <div
+                className="animate-pulse"
+                style={{
+                  height: 14,
+                  width: "75%",
+                  background: "#ff4800",
+                  borderRadius: 4,
+                  animationDelay: "0.15s",
+                }}
+              />
+              <div
+                className="animate-pulse"
+                style={{
+                  height: 40,
+                  width: "100%",
+                  background: "#ff4800",
+                  borderRadius: 6,
+                  animationDelay: "0.3s",
+                  marginTop: "0.25rem",
+                }}
+              />
+              <div
+                className="animate-pulse"
+                style={{
+                  height: 14,
+                  width: "45%",
+                  background: "#ff4800",
+                  borderRadius: 4,
+                  animationDelay: "0.45s",
+                  marginTop: "0.25rem",
+                }}
+              />
+              <div
+                className="animate-pulse"
+                style={{
+                  height: 14,
+                  width: "65%",
+                  background: "#ff4800",
+                  borderRadius: 4,
+                  animationDelay: "0.6s",
+                }}
+              />
+              <div
+                className="animate-pulse"
+                style={{
+                  height: 14,
+                  width: "35%",
+                  background: "#ff4800",
+                  borderRadius: 4,
+                  animationDelay: "0.75s",
+                }}
+              />
+            </div>
+          )}
           <iframe
             data-tally-src="https://tally.so/embed/RGVJ1J?dynamicHeight=1"
             loading="lazy"
@@ -98,7 +173,8 @@ function Assessment() {
             marginHeight={0}
             marginWidth={0}
             title="Free Operational Audit: Spot Your Revenue Leaks"
-            style={{ display: "block" }}
+            style={{ display: "block", position: "relative", zIndex: tallyLoaded ? 1 : 0 }}
+            onLoad={() => setTallyLoaded(true)}
           />
           <script
             dangerouslySetInnerHTML={{
