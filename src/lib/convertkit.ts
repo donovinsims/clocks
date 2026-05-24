@@ -1,6 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 
-// ConvertKit (Kit) v3 API — server-side only.
+// ConvertKit (Kit) v4 API — server-side only.
 // The handler is tree-shaken from client bundles by @tanstack/react-start.
 // For production, set these env vars: KIT_FORM_ID, KIT_API_KEY
 
@@ -31,13 +31,13 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
 
     let res: Response;
     try {
-      res = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
+      res = await fetch(`https://api.convertkit.com/v4/forms/${formId}/subscribe`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Authorization": `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          api_key: apiKey,
           email: data.email,
         }),
         signal: controller.signal,
