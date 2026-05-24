@@ -320,6 +320,7 @@ With Task-Based Agents
 
 The Prompt
 `"Spin up task-based agents to review this:
+
 1. Agency Growth Expert
 2. SEO Specialist
 3. Conversion Expert
@@ -506,6 +507,7 @@ Lead Magnet
 High-converting opt-in concepts. Offers that bridge to paid.
 
 Skill Deep Dive: Positioning Angles
+
 > The same product can sell 100x better with a different angle. Not a different product. Not better features. Just a different way of framing what it already does.
 
 #### The 4-Step Process
@@ -561,6 +563,7 @@ Content Atomizer
 1 piece → 15+ assets. Multi-platform reach.
 
 Skill Deep Dive: Email Sequences
+
 > Most lead magnets die in the inbox. The gap between "opted in" and "bought" is where money is made or lost.
 
 #### The Welcome Sequence Framework
@@ -616,6 +619,7 @@ Production-grade web pages. No AI tells.
 How skills chain together for different outcomes.
 
 Stack 01
+
 ## Foundation Stack
 
 **"Know who you are"**
@@ -635,6 +639,7 @@ Positioning Angles Skill
 **Output:** Voice profile, 3-5 positioning angles, clear differentiation. Everything downstream builds on this.
 
 Stack 02
+
 ## Conversion Stack
 
 **"Turn visitors into customers"**
@@ -654,6 +659,7 @@ Opt-in offer, bridge to paid
 **Output:** Landing page copy, production-ready design, opt-in offer that converts.
 
 Stack 03
+
 ## Traffic Stack
 
 **"Get discovered"**
@@ -673,6 +679,7 @@ Content Atomizer Skill
 **Output:** Keyword strategy, ranking content, 15+ social assets from every piece.
 
 Stack 04
+
 ## Nurture Stack
 
 **"Build relationship over time"**
@@ -725,6 +732,7 @@ Trial → activation → expansion
 How to apply Vibe Marketing to your specific business type.
 
 Use Case 01
+
 ## Info/Education
 
 **Courses, coaching, communities, digital products**
@@ -829,6 +837,7 @@ Nurture → launch sequences
 - "What I do differently than every productivity guru"
 
 Use Case 02
+
 ## Consulting/Agency
 
 **Services, client work, B2B**
@@ -920,6 +929,7 @@ Framework visuals, results graphics
 - "3-week sprints, not 3-month retainers"
 
 Use Case 03
+
 ## E-commerce
 
 **Physical products, DTC, retail**
@@ -1006,6 +1016,7 @@ Abandoned cart, post-purchase, win-back
 - "Pass it down. Not throw it out."
 
 Use Case 04
+
 ## SaaS
 
 **Software, apps, tools**
@@ -1098,6 +1109,7 @@ Trial onboarding → conversion
 The Vibe Marketing way: AI generates, humans curate, systems compound.
 
 Traffic 01
+
 ## SEO: The Long Game
 
 **AI-assisted, human-verified. Quality over volume. Find the gaps, not the crowd.**
@@ -1170,6 +1182,7 @@ Quality Gate Checklist
 - Would you actually send this to a client?
 
 Traffic 02
+
 ## Paid: Creative at Scale
 
 **Research → Brief → Generate → Select winners. AI creates variants, you pick what converts.**
@@ -1253,6 +1266,7 @@ Google's AI assistant can help design campaigns. Feed it assets from your Glif-g
 - **Videos (5 max)** → AI Product Video + Glif
 
 Traffic 03
+
 ## Organic: The Compound Engine
 
 **One piece becomes many. Every asset compounds. The boring stuff that wins.**
@@ -1324,11 +1338,13 @@ REPEAT
 Real outputs from a real session. The demo project: "Boring Marketing."
 
 Real Outputs
+
 ## Complete Outputs
 
 **Everything below is actual output from a real build session. AI marketing for overlooked industries like manufacturing, distribution, and trades.**
 
 Output: Brand Voice Profile
+
 #### Voice Summary
 
 Sounds like a smart friend who's figured out what actually works and is sharing it without the hype. Confidently boring—embraces the unglamorous stuff that compounds over time while everyone else chases shiny tactics. Direct, practical, and refreshingly anti-bullshit.
@@ -1408,6 +1424,7 @@ The Speed Advantage
 - "The 3-week marketing build that replaced our 6-month agency retainer"
 
 The Prompts
+
 ## Every Prompt, Organized
 
 **These prompts invoke the skills. Copy them, adapt them, use them.**
@@ -1419,6 +1436,7 @@ We are creating a [TYPE OF BUSINESS] targeting [AUDIENCE].
 What makes us different: [UNIQUE APPROACH]
 
 Use the Perplexity MCP to deeply research:
+
 - Market landscape & key competitors
 - Customer pain points & positioning gaps
 - Pricing models & service packaging
@@ -1515,6 +1533,7 @@ Synthesize: Where do they agree? What needs work?`
 ```
 
 Quick Start
+
 ## Quick Start Checklist
 
 Foundation Setup

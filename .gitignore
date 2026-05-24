@@ -36,3 +36,4 @@ dist-ssr
 
 # Agent context memory
 .ctx/
+public/sitemap.xml

@@ -37,6 +37,7 @@ Ongoing dashboard access, system log reviews, and maintenance to keep automation
 My clients are owner-operators of local trade and service businesses — HVAC, plumbing, electrical, general contracting, auto repair, landscaping, cleaning services, nail salons, barbershops, and more. The qualifier is not the industry or the headcount. It is the situation: the owner is still the one answering calls, chasing leads, and doing admin at night. They're not struggling with survival. They're plateaued by operational drag.
 
 **What they're dealing with:**
+
 - Working 70+ hours a week, split between on-site craft work and after-hours admin at the kitchen table
 - Losing 30–40% of estimates to cold leads with no follow-up system
 - Missing calls worth $800–$1,200 each — and 68% of those callers never call back
@@ -44,6 +45,7 @@ My clients are owner-operators of local trade and service businesses — HVAC, p
 - No-shows with no recovery system, no text sent, no second chance
 
 **What they want:**
+
 - A system that responds to leads within 60 seconds without their involvement
 - Evenings and weekends back
 - A clear dollar amount showing exactly what each leak costs — and a fixed-price fix with a defined ROI timeline
@@ -168,6 +170,7 @@ If my brand were a person, they'd be the most competent guy in the room who neve
 ## Section 12: Tone Guidelines
 
 **Use:**
+
 - Contractions (you're, it's, that's, they've)
 - Exact dollar figures and percentages rather than approximations
 - Local geography references (Rockford, Roscoe, Beloit, Winnebago County)
@@ -178,6 +181,7 @@ If my brand were a person, they'd be the most competent guy in the room who neve
 - Plain trade-specific language (dispatch, ticket, call-back, estimate, no-show)
 
 **Avoid:**
+
 - Jargon (leverage, synergy, revolutionize, disruptive, AI-powered transformation)
 - Vague claims without dollar figures attached
 - Emojis (they signal "marketing")
@@ -194,7 +198,7 @@ If my brand were a person, they'd be the most competent guy in the room who neve
 
 ## Section 13: Call-to-Actions I Use
 
-- *PS: I do free 20-minute AI assessments for local trades businesses in Winnebago County. You get a written ROI report showing exactly where you're leaking cash. No pitch. [Link]*
+- _PS: I do free 20-minute AI assessments for local trades businesses in Winnebago County. You get a written ROI report showing exactly where you're leaking cash. No pitch. [Link]_
 - Book a free 20-minute assessment. I'll show you the math. No pitch.
 - Reply to this and I'll run the numbers for your business.
 - If you want to see what this would cost for your operation, start here: [link]
@@ -202,7 +206,7 @@ If my brand were a person, they'd be the most competent guy in the room who neve
 - Forward this to a contractor you know who's still doing all of this manually.
 - If the math lines up, the fix takes 3 days. Start with the free audit.
 
-*Simple, direct, helpful — never salesy or manipulative.*
+_Simple, direct, helpful — never salesy or manipulative._
 
 ---
 

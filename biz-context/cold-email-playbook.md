@@ -45,40 +45,45 @@ If any of these are missing, the email dies.
 Before writing a single email, identify prospects who are already showing visible signs of the leak. These are warm targets — the problem is already surfaced, you're just naming it.
 
 **Fingerprint 1: Low Google Reviews Despite Active Business**
+
 - Search "[trade] [city]" on Google Maps
 - Look for businesses with 4.0–4.5 stars but fewer than 20 reviews
 - A plumber with 8 reviews who's been open 6 years is not asking for reviews
 - This is a live, visible leak you can reference in your opening line
 
 **Fingerprint 2: Generic Voicemail During Business Hours**
+
 - Call the business between 9 AM–3 PM on a weekday
 - If it goes to a generic carrier voicemail ("The person at 815-XXX-XXXX is unavailable"), that's a missed call text-back candidate
 - Note the exact time you called — you'll use it in the email
 
 **Fingerprint 3: No Follow-Up After Requesting a Quote**
+
 - Submit a quote request via their website or Facebook
 - If you don't hear back within 24 hours, their estimate follow-up is broken
 - This is direct proof of the leak, not an assumption
 
 **Fingerprint 4: Facebook/Google Ads Running With Low Reviews**
+
 - They're paying to drive traffic into a leaking bucket
 - Ads + low reviews = they're spending money on leads they're losing at the final inch
 
 **Fingerprint 5: "We're Busy" Signals**
+
 - Facebook posts saying "sorry for slow responses" or "call us, we're slammed"
 - Google Q&A with unanswered questions
 - These signal the owner is the bottleneck
 
 ### Where to Find Prospects
 
-| Source | What to Look For | Volume |
-|---|---|---|
-| Google Maps | Trade + city searches, filter by review count | High |
-| Facebook Groups | Rockford Business Owners, Winnebago County Contractors | Medium |
-| Nextdoor | Local service recommendations with complaints about response time | Medium |
-| Yelp | Businesses with reviews mentioning "hard to reach" or "slow to respond" | Medium |
-| Chamber of Commerce Directory | statelinechamber.com business directory | Low/High quality |
-| Door-knock list | Businesses you've physically visited and identified the leak | Low/Highest quality |
+| Source                        | What to Look For                                                        | Volume              |
+| ----------------------------- | ----------------------------------------------------------------------- | ------------------- |
+| Google Maps                   | Trade + city searches, filter by review count                           | High                |
+| Facebook Groups               | Rockford Business Owners, Winnebago County Contractors                  | Medium              |
+| Nextdoor                      | Local service recommendations with complaints about response time       | Medium              |
+| Yelp                          | Businesses with reviews mentioning "hard to reach" or "slow to respond" | Medium              |
+| Chamber of Commerce Directory | statelinechamber.com business directory                                 | Low/High quality    |
+| Door-knock list               | Businesses you've physically visited and identified the leak            | Low/Highest quality |
 
 ### Prospect Qualification Checklist
 
@@ -126,18 +131,18 @@ Weekly missed calls × average ticket × 4.3 weeks = Monthly leak
 
 **By trade (use these as defaults if you don't have their specific numbers):**
 
-| Trade | Avg Ticket | Assumed Missed Calls/Week | Monthly Leak |
-|---|---|---|---|
-| HVAC | $900 | 3 | $11,610/yr |
-| Plumbing | $800 | 3 | $10,320/yr |
-| Electrical | $750 | 2 | $7,740/yr |
-| General Contracting | $1,200 | 2 | $12,384/yr |
-| Auto Repair | $450 | 4 | $9,288/yr |
-| Landscaping | $350 | 3 | $4,515/yr |
-| Cleaning | $200 | 5 | $5,160/yr |
-| Real Estate Agent | $6,000 commission | 1 | $78,000/yr |
-| Nail Salon | $80 | 8 | $16,640/yr |
-| Barbershop | $35 | 10 | $9,100/yr |
+| Trade               | Avg Ticket        | Assumed Missed Calls/Week | Monthly Leak |
+| ------------------- | ----------------- | ------------------------- | ------------ |
+| HVAC                | $900              | 3                         | $11,610/yr   |
+| Plumbing            | $800              | 3                         | $10,320/yr   |
+| Electrical          | $750              | 2                         | $7,740/yr    |
+| General Contracting | $1,200            | 2                         | $12,384/yr   |
+| Auto Repair         | $450              | 4                         | $9,288/yr    |
+| Landscaping         | $350              | 3                         | $4,515/yr    |
+| Cleaning            | $200              | 5                         | $5,160/yr    |
+| Real Estate Agent   | $6,000 commission | 1                         | $78,000/yr   |
+| Nail Salon          | $80               | 8                         | $16,640/yr   |
+| Barbershop          | $35               | 10                        | $9,100/yr    |
 
 **The stat that anchors everything:** 68% of callers who reach voicemail never call back. 62.2% of local business calls go unanswered. Waiting 30 minutes to respond drops lead qualification by 21x.
 
@@ -146,7 +151,6 @@ Weekly missed calls × average ticket × 4.3 weeks = Monthly leak
 > Mike's Plumbing, Rockford. Called at 10:47 AM on a Tuesday — went to generic voicemail. 11 Google reviews despite being open since 2018. Average plumbing ticket in Rockford: ~$800. Assume 3 missed calls/week. Monthly leak: ~$860. Annual: ~$10,320. A $500 fix pays for itself in 17 days.
 
 That math goes in the email. Not as a pitch — as a diagnostic.
-
 
 ---
 
@@ -164,6 +168,7 @@ The subject line's only job is to get the email opened. It should look like it c
 ### Subject Line Bank
 
 **Math/Observation-based (highest open rates):**
+
 - `missed calls`
 - `your voicemail`
 - `quick question about [trade]`
@@ -174,17 +179,20 @@ The subject line's only job is to get the email opened. It should look like it c
 - `called earlier`
 
 **Curiosity-gap (strong for cold):**
+
 - `found something`
 - `noticed this`
 - `quick thing`
 - `saw your business`
 
 **Local/peer signal:**
+
 - `rockford [trade]`
 - `local question`
 - `winnebago county`
 
 **Never use:**
+
 - "I can help your business"
 - "Automation for [trade]"
 - "Free assessment offer"
@@ -194,6 +202,7 @@ The subject line's only job is to get the email opened. It should look like it c
 ### A/B Test Priority
 
 Test these two against each other first:
+
 - `missed calls` vs. `your voicemail`
 
 The winner becomes your control. Test one variable at a time.
@@ -205,6 +214,7 @@ The winner becomes your control. Test one variable at a time.
 ### How to Use These Templates
 
 Every template has three zones:
+
 1. **[PERSONALIZE]** — Replace with the specific frustration fingerprint you observed
 2. **[MATH]** — Insert the pre-calculated leak number for their trade
 3. **[FIXED]** — Do not change. This is the proven structure.
@@ -214,9 +224,10 @@ Read every email out loud before sending. If it sounds like a pitch, rewrite it.
 ---
 
 ### Template 1: The Missed Call Observation
-*Best for: Prospects where you called and hit voicemail*
-*Awareness level: Problem-aware*
-*Framework: Observation → Math → Low-friction ask*
+
+_Best for: Prospects where you called and hit voicemail_
+_Awareness level: Problem-aware_
+_Framework: Observation → Math → Low-friction ask_
 
 ---
 
@@ -237,13 +248,14 @@ Worth a 20-minute call to see if the math works for your business?
 — [Your name]
 Clockout | Rockford, IL
 
-*PS: No pitch. I'll show you the exact dollar amount you're losing and whether a fix makes sense. If it doesn't, I'll tell you that.*
+_PS: No pitch. I'll show you the exact dollar amount you're losing and whether a fix makes sense. If it doesn't, I'll tell you that._
 
 ---
 
 ### Template 2: The Google Review Gap
-*Best for: Prospects with low review count despite being established*
-*Framework: Observation → Competitive pain → Math → Ask*
+
+_Best for: Prospects with low review count despite being established_
+_Framework: Observation → Competitive pain → Math → Ask_
 
 ---
 
@@ -266,13 +278,14 @@ I set up automated review request systems for local service businesses. One-time
 — [Your name]
 Clockout | Rockford, IL
 
-*PS: I'll show you the math on what the review gap is actually costing you before you spend a dollar.*
+_PS: I'll show you the math on what the review gap is actually costing you before you spend a dollar._
 
 ---
 
 ### Template 3: The Estimate Follow-Up Leak
-*Best for: Prospects in trades where estimates are common (HVAC, contracting, landscaping)*
-*Framework: Quantified problem → Mechanism → Ask*
+
+_Best for: Prospects in trades where estimates are common (HVAC, contracting, landscaping)_
+_Framework: Quantified problem → Mechanism → Ask_
 
 ---
 
@@ -296,8 +309,9 @@ Clockout | Rockford, IL
 ---
 
 ### Template 4: The After-Hours Admin Pain
-*Best for: Prospects you've identified as doing kitchen-table admin (Facebook posts, late replies, etc.)*
-*Framework: Mirror their situation → Quantify the time cost → Ask*
+
+_Best for: Prospects you've identified as doing kitchen-table admin (Facebook posts, late replies, etc.)_
+_Framework: Mirror their situation → Quantify the time cost → Ask_
 
 ---
 
@@ -321,8 +335,9 @@ Clockout | Rockford, IL
 ---
 
 ### Template 5: The Ads + Leaking Bucket
-*Best for: Prospects running Facebook or Google ads with low reviews or slow response*
-*Framework: Identify the irony → Do the math → Reframe the problem → Ask*
+
+_Best for: Prospects running Facebook or Google ads with low reviews or slow response_
+_Framework: Identify the irony → Do the math → Reframe the problem → Ask_
 
 ---
 
@@ -346,8 +361,9 @@ Clockout | Rockford, IL
 ---
 
 ### Template 6: The Real Estate Agent Version
-*Best for: Solo agents and small brokerages in Winnebago County*
-*Framework: Speed-to-lead math → Missed commission framing → Ask*
+
+_Best for: Solo agents and small brokerages in Winnebago County_
+_Framework: Speed-to-lead math → Missed commission framing → Ask_
 
 ---
 
@@ -366,7 +382,6 @@ I build missed call text-back systems for local agents — a text goes out withi
 — [Your name]
 Clockout | Rockford, IL
 
-
 ---
 
 ## Part 6: The Follow-Up Sequence
@@ -377,13 +392,13 @@ Each follow-up adds a new angle. Never "just checking in." That gives them no re
 
 ### Cadence
 
-| Touch | Timing | Angle |
-|---|---|---|
-| Email 1 | Day 0 | Initial outreach (one of the templates above) |
-| Email 2 | Day 3 | Different leak, same math |
-| Email 3 | Day 7 | Local case study / social proof |
-| Email 4 | Day 12 | Cost of inaction |
-| Email 5 | Day 18 | Breakup email |
+| Touch   | Timing | Angle                                         |
+| ------- | ------ | --------------------------------------------- |
+| Email 1 | Day 0  | Initial outreach (one of the templates above) |
+| Email 2 | Day 3  | Different leak, same math                     |
+| Email 3 | Day 7  | Local case study / social proof               |
+| Email 4 | Day 12 | Cost of inaction                              |
+| Email 5 | Day 18 | Breakup email                                 |
 
 ---
 
@@ -476,6 +491,7 @@ These are the exact objections you'll hear. Have these responses ready — in em
 **Why they say it:** They've paid for CRMs and SaaS tools that sat unused while the bill kept coming.
 
 **Response:**
+
 > "That's exactly why this is structured differently. It's a one-time build — $300–$800 depending on what we install. You own the system outright. There's no monthly fee because the infrastructure costs fractions of a cent per transaction. I'm not selling you software access. I'm building you a system."
 
 **Proof point:** n8n on a $5/month VPS + Twilio at fractions of a cent per SMS. The one-time price is possible because there's no agency overhead to cover.
@@ -487,6 +503,7 @@ These are the exact objections you'll hear. Have these responses ready — in em
 **Why they say it:** They tried Zapier or a similar tool and hit a technical wall.
 
 **Response:**
+
 > "You never touch the technology. When I hand it over, you get a one-page doc called 'How It Runs' and a Loom video walkthrough. The system runs automatically. You don't log into anything. You don't manage anything. If something breaks, I have 30 and 60-day check-in calls built in."
 
 ---
@@ -496,6 +513,7 @@ These are the exact objections you'll hear. Have these responses ready — in em
 **Why they say it:** Every prior tool required them to adapt their business to the software.
 
 **Response:**
+
 > "The system installs to fit how you already work. Your phone rings, you miss it, a text goes out automatically. You don't change anything. You don't use a new app. You don't log into a dashboard. It runs on calls and texts — the channels you're already using."
 
 ---
@@ -505,6 +523,7 @@ These are the exact objections you'll hear. Have these responses ready — in em
 **Why they say it:** Every "AI" pitch they've seen was aimed at startups and digital businesses.
 
 **Response:**
+
 > "I don't sell AI transformation. I sell a missed call text-back. When your phone goes to voicemail, a text goes out within 60 seconds. That's it. It runs on Twilio — the same SMS infrastructure that banks use to send you fraud alerts. It works on a flip phone. It works for a plumber in a crawlspace."
 
 ---
@@ -514,6 +533,7 @@ These are the exact objections you'll hear. Have these responses ready — in em
 **Why they say it:** Genuine timing concern, but also a delay tactic.
 
 **Response:**
+
 > "Busy season is exactly when the leak is most expensive. If you're missing 3 calls a week at $900 each during your peak months, that's $2,700 a month walking out the door right now. The build takes 3–7 days. We could have it running before next week."
 
 **If they push back:** "Totally understand. When does your slow season start? I'll put a reminder on my end and reach out then." Then actually do it.
@@ -525,6 +545,7 @@ These are the exact objections you'll hear. Have these responses ready — in em
 **Why they say it:** Legitimate — they share finances. Also sometimes a soft no.
 
 **Response:**
+
 > "Makes complete sense. Would it help if I sent over the ROI report so you both have the math in front of you? It's a one-page breakdown of what the leak is costing and what the fix costs. No pitch — just the numbers."
 
 Then send the report. It does the selling for you.
@@ -536,6 +557,7 @@ Then send the report. It does the selling for you.
 **Why they say it:** They've been burned by agencies that charged and delivered nothing.
 
 **Response:**
+
 > "The math is calculated before you spend a dollar. The Free Assessment shows you exactly what you're losing and exactly what the fix costs. If the ROI doesn't make sense, I'll tell you that before you pay anything. And the 30 and 60-day check-in calls are built in — if something isn't running right, we fix it."
 
 ---
@@ -545,6 +567,7 @@ Then send the report. It does the selling for you.
 **Why they say it:** They're smart and resourceful. They've tried before.
 
 **Response:**
+
 > "You probably could. The question is whether you have 20–40 hours to learn n8n, configure Twilio, debug webhooks, and maintain it — on top of running your business. Most owners who've tried it end up back to manual processes within a few weeks. That's not a knock on them. It's just not what they should be spending time on."
 
 ---
@@ -564,23 +587,28 @@ The form captures: trade, average ticket size, approximate weekly call volume, b
 ### Assessment Structure (20 minutes)
 
 **Minutes 0–3: Set the frame**
+
 > "I'm not here to pitch you anything. I'm going to show you the math on where your business is leaking money, and if a fix makes sense, I'll tell you what it costs and how long it takes. If it doesn't make sense, I'll tell you that too."
 
 **Minutes 3–10: Present the ROI report**
+
 - Show the leak calculation (missed calls × ticket × weeks)
 - Show the Effort/Impact matrix (which fix has the highest ROI for their specific situation)
 - Let them react to the numbers. Don't rush past this.
 
 **Minutes 10–15: Walk through the fix**
+
 - Explain the specific automation in plain English ("When your phone goes to voicemail, a text goes out within 60 seconds")
 - Show the "How It Runs" one-pager for a similar business
 - Explain the build timeline (3–7 days) and what they receive (workflow + Loom + doc + check-ins)
 
 **Minutes 15–18: Handle objections**
+
 - Use the objection responses above
 - The most common ones at this stage: "I need to think about it" and "I need to talk to my spouse"
 
 **Minutes 18–20: The close**
+
 > "Based on what we've looked at, a missed call text-back would recover [X] a month. The build is $[price]. It pays for itself in [X days]. Want to move forward?"
 
 If yes: take payment via Stripe link, schedule the build kickoff.
@@ -595,17 +623,20 @@ If not yet: send the ROI report via email, set a follow-up date.
 Here's the ROI report from today's assessment.
 
 **Your situation:**
+
 - Estimated missed calls per week: [X]
 - Average ticket: $[amount]
 - Monthly leak: $[amount]
 - Annual leak: $[amount]
 
 **The fix:**
+
 - Missed Call Text-Back — $[price], one-time
 - Build time: 3–7 days
 - Pays for itself in: [X days]
 
 **What you get:**
+
 - Fully configured automation (you own it outright)
 - Loom walkthrough video
 - "How It Runs" one-page doc
@@ -618,7 +649,6 @@ If you have questions, reply here or call me at [number].
 — [Your name]
 Clockout | Rockford, IL
 
-
 ---
 
 ## Part 9: Influence Principles Baked Into Every Email
@@ -626,31 +656,37 @@ Clockout | Rockford, IL
 These are the Cialdini principles running underneath every template. Understanding them helps you adapt on the fly.
 
 ### Reciprocity — Give Before You Ask
+
 Every email delivers a free diagnostic insight. The math on their leak is a gift. The assessment is a gift. You're not asking for money — you're offering to show them where they're bleeding. The obligation to reciprocate is what drives the reply.
 
 **In practice:** Lead with the calculation. "Here's what this is costing you" before "here's what I sell."
 
 ### Authority — Specificity Is Credibility
+
 You don't have a logo or a case study library yet. Your authority comes from knowing their numbers better than they do. Exact dollar amounts, exact percentages, exact local geographies. "68% of callers who hit voicemail never call back" is more authoritative than "most people don't call back."
 
 **In practice:** Never round numbers. Never use vague claims. Every stat gets a specific figure.
 
 ### Social Proof — Local and Specific
+
 "A Rockford HVAC owner recovered $1,200 in week one" is more powerful than "our clients see great results." When you have case studies, use them. Until then, use the stats as proxy proof.
 
 **In practice:** Reference local businesses and local geographies. "A [trade] owner in [Rockford/Roscoe/Beloit]" is more credible than "a client of ours."
 
 ### Liking — Peer-to-Peer, Not Vendor-to-Client
+
 The email should read like it came from someone who understands their world. Use their language: dispatch, ticket, estimate, no-show, on the job. Never use: leverage, synergy, AI-powered, optimize.
 
 **In practice:** Read every email out loud. If it sounds like a vendor, rewrite it. If it sounds like a peer at the supply house, send it.
 
 ### Commitment & Consistency — Small Yes First
+
 The ask is always the 20-minute assessment. Not a sale. Not a demo. Not a 30-minute call. The smaller the first commitment, the easier it is to say yes. Once they've said yes to the assessment, they've committed to hearing the math. The math closes the deal.
 
 **In practice:** Never ask for more than a 20-minute conversation in the first email. The assessment is the foot in the door.
 
 ### Scarcity — Real, Not Manufactured
+
 You're a solo operator. You can only run a limited number of assessments per week. That's genuine scarcity. Use it when it's true — don't manufacture it.
 
 **In practice:** "I have two assessment slots open this week" is honest and creates urgency. "Limited time offer" is not your voice and will kill trust.
@@ -662,16 +698,19 @@ You're a solo operator. You can only run a limited number of assessments per wee
 ### The Daily Routine (1–2 hours)
 
 **Morning (30 min): Research and prep**
+
 1. Identify 5 new prospects using the Frustration Fingerprint system
 2. For each: note the specific fingerprint, calculate the leak, build the prospect record
 3. Confirm you have a specific opening line for each (not a template swap — a real observation)
 
 **Mid-morning (30 min): Send**
+
 1. Write and send 5 first-touch emails (personalized from templates)
 2. Process any replies from previous outreach
 3. Send any follow-ups due today per the cadence
 
 **Afternoon (30 min): Follow-up and pipeline**
+
 1. Check for new replies
 2. Book any assessment requests immediately
 3. Update your prospect tracker with status changes
@@ -679,15 +718,15 @@ You're a solo operator. You can only run a limited number of assessments per wee
 
 ### Volume Targets
 
-| Activity | Daily | Weekly |
-|---|---|---|
-| New prospects researched | 5 | 25 |
-| First-touch emails sent | 5 | 25 |
-| Follow-ups sent | 3–5 | 15–25 |
-| Replies handled | varies | — |
-| Assessments booked | 1–2 | 5–10 |
-| Assessments completed | 1 | 5 |
-| Deals closed | — | 2–4 |
+| Activity                 | Daily  | Weekly |
+| ------------------------ | ------ | ------ |
+| New prospects researched | 5      | 25     |
+| First-touch emails sent  | 5      | 25     |
+| Follow-ups sent          | 3–5    | 15–25  |
+| Replies handled          | varies | —      |
+| Assessments booked       | 1–2    | 5–10   |
+| Assessments completed    | 1      | 5      |
+| Deals closed             | —      | 2–4    |
 
 ### Prospect Tracker (Google Sheets columns)
 
@@ -704,24 +743,28 @@ Status options: `researched` → `emailed` → `replied` → `assessment booked`
 Run every email through this checklist:
 
 **Voice check:**
+
 - [ ] Does it sound like a peer, not a vendor?
 - [ ] Read it out loud — does it sound human?
 - [ ] Is "you/your" used more than "I/we"?
 - [ ] Zero jargon (leverage, synergy, AI-powered, optimize)?
 
 **Specificity check:**
+
 - [ ] Is there at least one specific dollar figure?
 - [ ] Is there a specific local geography reference?
 - [ ] Is the opening line specific to THIS business (not a template swap)?
 - [ ] Is the math calculated for their trade, not a generic number?
 
 **Structure check:**
+
 - [ ] Does it lead with their world, not your product?
 - [ ] Is the ask a 20-minute assessment (not a sale, not a 30-min call)?
 - [ ] Is there a PS with the no-pitch framing?
 - [ ] Is it under 150 words? (Ideal: 100–130)
 
 **Influence check:**
+
 - [ ] Does it deliver a free insight (reciprocity)?
 - [ ] Does it use a specific stat or local reference (authority)?
 - [ ] Is the ask low-friction (commitment)?
@@ -734,12 +777,12 @@ If any box is unchecked, fix it before sending.
 
 ### Metrics That Matter
 
-| Metric | Target | If Below Target |
-|---|---|---|
-| Open rate | 60%+ | Fix subject lines — test `missed calls` vs `your voicemail` |
-| Reply rate | 20%+ | Fix the opening line — not specific enough to their situation |
-| Assessment booking rate | 50% of replies | Fix the ask — may be too high-friction |
-| Assessment-to-close rate | 80% | Fix the math presentation or objection handling |
+| Metric                   | Target         | If Below Target                                               |
+| ------------------------ | -------------- | ------------------------------------------------------------- |
+| Open rate                | 60%+           | Fix subject lines — test `missed calls` vs `your voicemail`   |
+| Reply rate               | 20%+           | Fix the opening line — not specific enough to their situation |
+| Assessment booking rate  | 50% of replies | Fix the ask — may be too high-friction                        |
+| Assessment-to-close rate | 80%            | Fix the math presentation or objection handling               |
 
 ### When to Adjust
 
@@ -757,27 +800,32 @@ If any box is unchecked, fix it before sending.
 ## Part 13: Voice Reference — Words to Use and Avoid
 
 ### Always Use
+
 `fix` / `install` / `system` / `recover` / `plug the leak` / `text-back` / `dispatch` / `ticket` / `estimate` / `no-show` / `on the job` / `one-time` / `you own it` / `plain-english` / `local` / `Rockford` / `Roscoe` / `Beloit` / `Winnebago County`
 
 ### Never Use
+
 `leverage` / `synergy` / `revolutionize` / `AI-powered` / `disruptive` / `optimize` / `streamline` / `empower` / `transformation` / `ecosystem` / `cutting-edge` / `robust` / `comprehensive` / `utilize` / `innovative`
 
 ### Sentence Structure
+
 - Short declarative sentences. 8–14 words.
 - One idea per paragraph. Max 3 sentences.
 - Math blocks: `3 missed calls × $800 = $2,400/month`
 - No emojis. No exclamation marks. No corporate capitalization.
 
 ### The PS Pattern
+
 Every email ends with a PS. One sentence. Bold italic. No pitch.
 
-*PS: I do free 20-minute assessments for local [trade] businesses in Winnebago County. You get a written ROI report showing exactly where you're leaking cash. No pitch. [Cal.com link]*
+_PS: I do free 20-minute assessments for local [trade] businesses in Winnebago County. You get a written ROI report showing exactly where you're leaking cash. No pitch. [Cal.com link]_
 
 ---
 
 ## Appendix: Quick-Reference Card
 
 **The 5-step email formula:**
+
 1. Specific observation about their business (the fingerprint)
 2. The math (missed calls × ticket = monthly leak)
 3. One sentence on what you do
@@ -791,6 +839,7 @@ Day 0 → Day 3 → Day 7 → Day 12 → Day 18 (breakup)
 Frame → Math → Fix → Objections → Ask
 
 **The core stats (memorize these):**
+
 - 62.2% of local business calls go unanswered
 - 68% of voicemail callers never call back
 - Waiting 30 min to respond drops lead qualification by 21x
