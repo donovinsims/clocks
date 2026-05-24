@@ -22,7 +22,12 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
     const apiKey = process.env.KIT_API_KEY;
     const formId = process.env.KIT_FORM_ID;
 
+    console.log("[ConvertKit] Handler called with email:", data.email);
+    console.log("[ConvertKit] API Key present:", !!apiKey);
+    console.log("[ConvertKit] Form ID present:", !!formId);
+
     if (!apiKey || !formId) {
+      console.error("[ConvertKit] Missing credentials - API Key:", !!apiKey, "Form ID:", !!formId);
       throw new Error("Kit API key or Form ID is not configured.");
     }
 
@@ -31,6 +36,7 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
 
     let res: Response;
     try {
+      console.log("[ConvertKit] Making API request to:", `https://api.convertkit.com/v3/forms/${formId}/subscribe`);
       res = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
         method: "POST",
         headers: {
@@ -42,7 +48,9 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
         }),
         signal: controller.signal,
       });
+      console.log("[ConvertKit] API response status:", res.status);
     } catch (err) {
+      console.error("[ConvertKit] API request error:", err);
       if ((err as Error).name === "AbortError") {
         throw new Error("API request timed out. Please try again.");
       }
@@ -57,5 +65,7 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
       throw new Error("Failed to subscribe. Please try again.");
     }
 
+    const responseBody = await res.json();
+    console.log("[ConvertKit] Success! Response:", JSON.stringify(responseBody));
     return { ok: true };
   });
