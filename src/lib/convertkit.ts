@@ -31,14 +31,14 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
 
     let res: Response;
     try {
-      res = await fetch(`https://api.convertkit.com/v4/forms/${formId}/subscribe`, {
+      res = await fetch(`https://api.kit.com/v4/forms/${formId}/subscribers`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${apiKey}`,
+          "X-Kit-Api-Key": apiKey,
         },
         body: JSON.stringify({
-          email: data.email,
+          email_address: data.email,
         }),
         signal: controller.signal,
       });
