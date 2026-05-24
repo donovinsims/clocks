@@ -14,6 +14,7 @@ import { Footer } from "@/components/Footer";
 import { Ambient } from "@/components/Ambient";
 import { BookingProvider } from "@/components/BookingModal";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const FONTS_URL =
   "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800;900&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap";
@@ -503,6 +504,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <Analytics />
+        <SpeedInsights />
         <Scripts />
       </body>
     </html>
