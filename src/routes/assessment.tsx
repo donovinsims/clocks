@@ -90,7 +90,7 @@ function Assessment() {
           }}
         >
           <iframe
-            src="https://tally.so/r/RGVJ1J?transparentBackground=1"
+            src="https://tally.so/embed/RGVJ1J?transparentBackground=1&amp;hideTitle=1&amp;alignLeft=1&amp;dynamicHeight=1"
             width="100%"
             height="800"
             frameBorder="0"
