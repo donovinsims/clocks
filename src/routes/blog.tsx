@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LeadBar } from "@/components/LeadBar";
 import { BookingButton } from "@/components/BookingModal";
+import { blogPosts } from "@/lib/blog-posts";
 
 export const Route = createFileRoute("/blog")({
   head: () => ({
@@ -29,17 +30,25 @@ export const Route = createFileRoute("/blog")({
         property: "og:image",
         content:
           "https://clockout.us/api/og?title=" +
-          encodeURIComponent("Clockout Blog — Trade-by-Leak Field Notes | Roscoe · Rockford · Beloit") +
+          encodeURIComponent(
+            "Clockout Blog — Trade-by-Leak Field Notes | Roscoe · Rockford · Beloit",
+          ) +
           "&description=" +
-          encodeURIComponent("Trade-by-leak notes for local owner-operators. Short reads. Practical. No fluff. Real stories from the Rockford, Roscoe, and Beloit corridor."),
+          encodeURIComponent(
+            "Trade-by-leak notes for local owner-operators. Short reads. Practical. No fluff. Real stories from the Rockford, Roscoe, and Beloit corridor.",
+          ),
       },
       {
         name: "twitter:image",
         content:
           "https://clockout.us/api/og?title=" +
-          encodeURIComponent("Clockout Blog — Trade-by-Leak Field Notes | Roscoe · Rockford · Beloit") +
+          encodeURIComponent(
+            "Clockout Blog — Trade-by-Leak Field Notes | Roscoe · Rockford · Beloit",
+          ) +
           "&description=" +
-          encodeURIComponent("Trade-by-leak notes for local owner-operators. Short reads. Practical. No fluff. Real stories from the Rockford, Roscoe, and Beloit corridor."),
+          encodeURIComponent(
+            "Trade-by-leak notes for local owner-operators. Short reads. Practical. No fluff. Real stories from the Rockford, Roscoe, and Beloit corridor.",
+          ),
       },
       {
         name: "keywords",
@@ -51,86 +60,6 @@ export const Route = createFileRoute("/blog")({
   }),
   component: Blog,
 });
-
-type Post = {
-  trade: string;
-  leak: string;
-  title: string;
-  p: string;
-  slug?: string;
-};
-
-const POSTS: Post[] = [
-  {
-    trade: "HVAC",
-    leak: "Missed Calls",
-    title: "HVAC shops in Rockford: every missed call in February is worth $1,400.",
-    p: "The math on after-hours emergency calls in the corridor — and the 60-second text-back that catches them.",
-  },
-  {
-    trade: "Plumbing",
-    leak: "Estimate Follow-Up",
-    title: "Why your plumbing quotes go cold at the 48-hour mark.",
-    p: "A three-touch sequence that closes 18–30% of bids you'd otherwise lose to the next call on the list.",
-  },
-  {
-    trade: "Salons",
-    leak: "No-Shows",
-    title: "Nail salons: the same-day rebook flow that saves Saturday.",
-    p: "An empty chair on a Saturday is the most expensive hour you own. Here's how to fill it automatically.",
-  },
-  {
-    trade: "Real Estate",
-    leak: "Lead Routing",
-    title: "Solo agents in Boone County: the inbound lead triage system.",
-    p: "Hot buyers ring. Tire-kickers wait. The simple rule that stops you reacting to every Zillow ping.",
-  },
-  {
-    trade: "Auto Repair",
-    leak: "Review Requests",
-    title: "How a Rockford shop went 41 → 112 Google reviews in four months.",
-    p: "One text. Sent the hour the job ends. Direct link to the Google profile. That's the whole post.",
-  },
-  {
-    trade: "Contractors",
-    leak: "Invoice Chasing",
-    title: "The polite invoice nudge that gets paid at day 7 instead of day 47.",
-    p: "Three messages. Plain English. No app for the customer to download. Stops you doing it at 10 PM.",
-  },
-  {
-    trade: "Landscaping",
-    leak: "After-Hours Triage",
-    title: "Landscapers: stop reacting to every inbound message at dinner.",
-    p: "How to sort emergencies, quotes, and noise so your phone doesn't run your evenings.",
-  },
-  {
-    trade: "Barbershops",
-    leak: "Rebooking",
-    title: "Barbershops: the rebook text that books the next cut before they leave the chair.",
-    p: "Simple, opt-in, owned by you. Climbs revenue per chair by 8–14% without raising prices.",
-  },
-  {
-    trade: "Contractors",
-    leak: "Missed Calls",
-    title: "Missed-Call Text-Back for Contractors",
-    p: "Every missed call is a lead that walked. Here's how a 60-second automated text-back catches them — before they call your competitor.",
-    slug: "missed-call-text-back-for-contractors",
-  },
-  {
-    trade: "Business Tools",
-    leak: "Platform Comparison",
-    title: "Podium vs GoHighLevel for Local Service Businesses",
-    p: "Two platforms. One is built for enterprise marketing teams. The other was born for local service operators. Here's which one wins — and why.",
-    slug: "podium-vs-gohighlevel-local-service-businesses",
-  },
-  {
-    trade: "Business Tools",
-    leak: "Tool Selection",
-    title: "Best Automation Tools for Local Service Businesses",
-    p: "A grounded tour of the tools that actually move the needle for owner-operators — from $0 setups to full-stack platforms.",
-    slug: "best-automation-tools-local-service-businesses",
-  },
-];
 
 function Blog() {
   return (
@@ -161,11 +90,11 @@ function Blog() {
 
       <section className="blog">
         <div className="blog__grid">
-          {POSTS.map((post) => (
+          {blogPosts.map((post) => (
             <Link
-              key={post.title}
-              to={post.slug ? "/blog/$slug" : "/assessment"}
-              params={post.slug ? { slug: post.slug } : undefined}
+              key={post.slug}
+              to="/blog/$slug"
+              params={{ slug: post.slug }}
               className="blog__card"
               aria-label={`${post.trade} — ${post.title}`}
             >
@@ -173,10 +102,8 @@ function Blog() {
                 {post.trade} <span aria-hidden="true">×</span> {post.leak}
               </p>
               <h2 className="blog__h">{post.title}</h2>
-              <p className="blog__p">{post.p}</p>
-              <span className="blog__more">
-                {post.slug ? "Read the post →" : "Get the audit instead →"}
-              </span>
+              <p className="blog__p">{post.description}</p>
+              <span className="blog__more">Read the post →</span>
             </Link>
           ))}
         </div>

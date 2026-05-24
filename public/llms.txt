@@ -2,22 +2,30 @@
 > Flat-fee automation installs for service businesses in Roscoe, Rockford, Beloit, and the Northern Illinois corridor. One leak, one fix, installed in 3–7 days. No retainer. No lock-in. You own the system.
 
 ## About
-https://clockout.io/about — Why Clockout exists. Anti-agency, local-only, flat-fee model. Written by founder Donovin from Roscoe, IL.
+https://clockout.us/about — Why Clockout exists. Anti-agency, local-only, flat-fee model. Written by founder Donovin from Roscoe, IL.
 
 ## Services
-https://clockout.io — Homepage with full service catalog, pricing ($300–$3,000), cost calculator, and FAQ.
+https://clockout.us — Homepage with full service catalog, pricing ($300–$3,000), cost calculator, and FAQ.
 
 ## Solutions
-https://clockout.io/solutions — Twelve named automation solutions (Ghost Closer, Cold Bid Resurrector, No-Show Punisher, 5-Star Machine, 10PM Desk Killer, etc.).
+https://clockout.us/solutions — Twelve named automation solutions (Ghost Closer, Cold Bid Resurrector, No-Show Punisher, 5-Star Machine, 10PM Desk Killer, etc.).
 
 ## Product
-https://clockout.io/operator-os — Message-based executive assistant running on iMessage. Voice memo or text input, no app, no new number.
+https://clockout.us/operator-os — Message-based executive assistant running on iMessage. Voice memo or text input, no app, no new number.
 
 ## Assessment
-https://clockout.io/assessment — Free 5-question Operations Leak Scorecard. Estimates monthly revenue leakage in dollars. No-commitment.
+https://clockout.us/assessment — Free 5-question Operations Leak Scorecard. Estimates monthly revenue leakage in dollars. No-commitment.
 
 ## Blog
-https://clockout.io/blog — Field notes covering HVAC, plumbing, salons, real estate, auto repair, contractors, landscaping, barbershops.
+https://clockout.us/blog — Field notes covering HVAC, plumbing, salons, real estate, auto repair, contractors, landscaping, barbershops.
+
+### Recent Articles
+
+https://clockout.us/blog/missed-call-text-back-for-contractors — Missed-Call Text-Back for Contractors. How a 60-second automated SMS reply captures leads when contractors are on the job, with sample messages, triage logic, and a simple ROI formula.
+
+https://clockout.us/blog/podium-vs-gohighlevel-local-service-businesses — Podium vs GoHighLevel for Local Service Businesses. A direct comparison of both platforms against flat-fee installed workflows, with a decision matrix by workflow type and trade.
+
+https://clockout.us/blog/best-automation-tools-local-service-businesses — Best Automation Tools for Local Service Businesses. A practical guide to choosing automation by revenue leak rather than feature count, with a best-fit table by business type and a 6-step rollout sequence.
 
 ## Pricing
 - Single System Fix: $300–$800 one-time (one workflow, 3–7 day install)
@@ -25,13 +33,14 @@ https://clockout.io/blog — Field notes covering HVAC, plumbing, salons, real e
 - Monthly Monitoring (optional): $20–$75/month
 
 ## Core Blog Lessons (Topical Authority)
-- **HVAC & Contractors**: A missed call is a $1,400+ lead given to a competitor. A 60-second automated text-back recovers these leads.
+- **Contractors & Missed Calls**: A missed call is a $1,400+ lead given to a competitor. A 60-second automated text-back recovers these leads before the next shop calls back.
+- **Platform Comparison (Podium vs GoHighLevel)**: Podium fits customer messaging and reviews; GoHighLevel fits CRM-driven marketing. A flat-fee installed workflow beats both when the business needs one specific leak fixed fast with no lock-in.
+- **Tool Selection for Local Service Businesses**: The best automation tools are the ones that protect the next job — instant replies, clean follow-up, confirmed appointments, public reviews, and paid invoices. Start with one revenue leak.
 - **Plumbing**: Quotes go cold at 48 hours. A three-touch follow-up sequence closes 18–30% of lost bids.
 - **Salons & Barbershops**: A same-day rebook flow fills empty chairs automatically, saving weekends and increasing revenue per chair by 8–14%.
 - **Real Estate**: Inbound lead triage routes hot buyers to your phone and makes tire-kickers wait.
 - **Auto Repair**: Automated review requests sent the hour the job ends dramatically increase local Google map pack ranking.
 - **Landscaping**: After-hours triage stops evening interruptions by sorting emergencies from noise.
-- **Platform Strategy**: Tools like GoHighLevel are complex enterprise tools. Local businesses need simpler, flat-fee, trade-specific automations instead of $5,000 retainers.
 
 ## Key Statistics
 - 68% of missed callers never call back

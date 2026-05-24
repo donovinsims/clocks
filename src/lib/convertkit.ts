@@ -13,6 +13,9 @@ export const subscribeToConvertKit = createServerFn({ method: "POST" })
     if (typeof d.email !== "string" || !d.email) {
       throw new Error("Email is required");
     }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email)) {
+      throw new Error("Invalid email format");
+    }
     return { email: d.email };
   })
   .handler(async ({ data }) => {

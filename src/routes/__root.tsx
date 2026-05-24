@@ -116,11 +116,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     scripts: [
       {
-        src: "https://plausible.io/js/script.js",
-        defer: true,
-        "data-domain": "clockout.us",
-      },
-      {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
@@ -175,8 +170,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 "Local-first automation for owner-operators in Roscoe, Rockford, and Beloit. One leak, one flat-fee fix, installed in 3–7 days.",
               url: "https://clockout.us",
               telephone: "+1-815-200-5932",
-              image: "https://clockout.us/og-image.jpg",
-              logo: "https://clockout.us/logo.jpg",
+              image: "https://clockout.us/api/og?title=Clockout&description=Local%20automation%20for%20owner-operators",
+              logo: "https://clockout.us/api/og?title=Clockout&description=Local%20automation%20for%20owner-operators",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Roscoe",
@@ -214,53 +209,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 "@type": "Person",
                 name: "Donovin",
               },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "28",
-                bestRating: "5",
-              },
-              review: [
-                {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                  },
-                  author: {
-                    "@type": "Person",
-                    name: "Mike R.",
-                  },
-                  reviewBody:
-                    "Donovin installed the missed-call text-back on a Tuesday. By Friday we'd booked three jobs we would have lost. The math was real.",
-                },
-                {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                  },
-                  author: {
-                    "@type": "Person",
-                    name: "Sarah K.",
-                  },
-                  reviewBody:
-                    "I stopped doing review requests at 9 PM. The system does it the hour the job ends. We went from 41 to 112 Google reviews in four months.",
-                },
-                {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                  },
-                  author: {
-                    "@type": "Person",
-                    name: "Tom B.",
-                  },
-                  reviewBody:
-                    "Flat price. Done in five days. No login I had to remember, no monthly bill, no agency calling me about retainers. That's the whole sell.",
-                },
-              ],
+
             },
             {
               "@type": "Service",
