@@ -8,6 +8,8 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 import appCss from "../styles.css?url";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -522,6 +524,7 @@ function RootComponent() {
           <Outlet />
         </main>
         <Footer />
+        <SpeedInsights />
       </BookingProvider>
     </QueryClientProvider>
   );
