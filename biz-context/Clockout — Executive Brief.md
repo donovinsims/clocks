@@ -40,4 +40,3 @@ These are supported by adjacent fixes like no-show recovery and other workflow a
 Clockout is not positioned as a generic automation agency or AI consultant. It is positioned as the local operator’s practical system installer — the person who shows up, identifies where the business is bleeding time or money, and installs the fix quickly with plain-English math, full ownership, and no hype.[2][1]
 
 That positioning works because it matches exactly what the market wants: specific leaks, specific fixes, fixed pricing, fast implementation, and local accountability. Every assessment, install, and case study reinforces the same promise — stop the bleeding, recover revenue, and get your evenings back.[2][1]
-

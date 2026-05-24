@@ -23,6 +23,7 @@ The average week is 70+ hours. Mornings start on a job site — in a crawlspace,
 
 **Their emotional state:**
 A compound of specific frustrations layered over years:
+
 - **Dread** at the gut-level: working 70 hours a week and still watching profitable jobs walk to a competitor because a call went unanswered
 - **Helpless frustration**: doing the work to earn a bid and losing it to silence because there was no time to follow up
 - **Resentment and exhaustion**: the business was supposed to create freedom; instead it consumes every evening
@@ -37,6 +38,7 @@ The math they haven't done yet. They sense they're losing money to missed calls 
 ## Goals & Aspirations
 
 **What they're trying to achieve:**
+
 - A business that responds to leads and recovers no-shows automatically, without their constant attention
 - Evenings and weekends back — not because business slowed down, but because the admin runs without them
 - A clear ROI calculation showing exactly what each operational leak costs and what it would take to plug it
@@ -54,6 +56,7 @@ To: operator with systems that run 24/7 — not dependent on their attention, no
 ## Pain Points & Frustrations
 
 **Specific problems that need solving:**
+
 1. Missed calls while on-site — 68% of those callers never call back; each missed call represents $800–$1,200 in lost revenue
 2. Estimates going cold with no automated follow-up sequence
 3. No-shows with no recovery process — no text sent, no second attempt, revenue gone
@@ -69,6 +72,7 @@ To: operator with systems that run 24/7 — not dependent on their attention, no
 3. **DIY tools (Zapier, similar platforms):** Too technically complex without dedicated learning time. No one to configure, test, or maintain it. The business owner reverted to manual processes within weeks.
 
 **Objections they'll raise:**
+
 - "Any new system will become another expensive monthly subscription I don't use"
 - "This will be too complicated for me to manage after you leave"
 - "I'll have to change how I run everything to make this work"
@@ -83,12 +87,14 @@ To: operator with systems that run 24/7 — not dependent on their attention, no
 ## Behavioral Characteristics
 
 **Where they consume information:**
+
 - Local Facebook groups (Rockford Business Owners, Winnebago County Contractors, equivalent Boone/Stephenson groups)
 - Word of mouth at the local supply house, BNI chapter, or Chamber of Commerce meeting
 - Direct email — but only if it's short, specific, and doesn't smell like a mass campaign
 - LinkedIn articles if the content is operational and math-based, not inspirational
 
 **How they make decisions:**
+
 - Skeptically. They've been burned by agencies and software before. Trust is built through specificity, local presence, and proof — not promises.
 - Math-first. If the ROI calculation is clear and the risk is low, the decision becomes logical rather than emotional.
 - Peer-validated. A neighbor or supply house contact who used the service carries more weight than any marketing message.
@@ -99,13 +105,15 @@ Late majority to skeptic. They don't adopt new tools early. They adopt when the 
 
 **Content they engage with vs. ignore:**
 
-*Engage:*
+_Engage:_
+
 - Posts with exact dollar figures and real local examples
 - Step-by-step systems with numbered breakdowns
 - "Here's what this costs you" math before any solution is presented
 - Content from someone who understands their specific trade context
 
-*Ignore:*
+_Ignore:_
+
 - Inspirational business content with no operational specificity
 - Marketing agency case studies targeting e-commerce or digital brands
 - Software reviews aimed at tech-forward companies
@@ -116,6 +124,7 @@ Late majority to skeptic. They don't adopt new tools early. They adopt when the 
 ## Content Strategy Implications
 
 **Voice and tone that resonates:**
+
 - Peer-to-peer, never expert-to-client
 - Short sentences with math embedded
 - Blame on the system and the industry, never on the operator
@@ -123,6 +132,7 @@ Late majority to skeptic. They don't adopt new tools early. They adopt when the 
 - Local geography references that signal real presence
 
 **Content formats that work best:**
+
 - "Leak Diagnosis" posts: one specific problem, the math, the fix in 3–5 steps
 - Local case studies with exact dollar figures and real outcomes
 - ROI breakdowns structured as before/after math blocks
@@ -130,18 +140,21 @@ Late majority to skeptic. They don't adopt new tools early. They adopt when the 
 - PS-format CTAs appended to every piece — one sentence, no pitch
 
 **CTAs that drive engagement:**
+
 - Free 20-minute assessment with no pitch framing
 - "I'll run the numbers for your business" — offer to do the math first
 - "Reply to this" for low-friction first contact
 - "Forward to a contractor you know" — social proof amplifier
 
 **Language they use (mirror this):**
+
 - "Dispatch," "call-back," "estimate," "ticket," "no-show," "invoice"
 - "Busy season," "slow season," "on-site," "on the road"
 - "My phone," "my crew," "my truck"
 - "I've tried that," "it didn't stick," "I ended up going back to doing it myself"
 
 **Language to avoid:**
+
 - "Leverage," "synergy," "scalable solution," "growth hacking"
 - "AI-powered," "disruptive," "ecosystem," "transformation"
 - "Optimize," "streamline," "empower," "revolutionize"
@@ -152,12 +165,14 @@ Late majority to skeptic. They don't adopt new tools early. They adopt when the 
 ## Success Metrics
 
 **Engagement indicators that matter:**
+
 - Comments asking "how does this work for [specific trade]?"
 - DMs requesting the Free Assessment link
 - Shares into local contractor Facebook groups
 - Replies from owners with specific, painful operational details (this is a warm lead signal)
 
 **Conversion indicators to track:**
+
 - Free AI Assessments booked
 - Assessment-to-Single System Fix close rate
 - Single System Fix-to-Operations Stack upsell rate

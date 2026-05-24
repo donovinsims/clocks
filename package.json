@@ -6,8 +6,8 @@
   "scripts": {
     "test": "vitest run",
     "dev": "vite dev",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
+    "build": "node scripts/sitemap.js && vite build",
+    "build:dev": "node scripts/sitemap.js && vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",

@@ -15,17 +15,20 @@ You have three options depending on your setup. Pick whichever fits.
 If you use Claude Code, Cursor, Codex CLI, Windsurf, or similar:
 
 **Claude Code:**
+
 1. Create the folder: `mkdir -p ~/.claude/skills/direct-response-copy`
 2. Save this file as `SKILL.md` inside that folder
 3. Restart Claude Code — the skill auto-loads
 4. Just ask Claude to write copy and it'll use the skill automatically
 
 **Cursor:**
+
 1. Create `.cursor/rules/` in your project root
 2. Save this file as `direct-response-copy.mdc` inside that folder
 3. The skill activates automatically when you ask for copy
 
 **Codex CLI / Gemini CLI:**
+
 1. Save this file and append it to your `AGENTS.md` or `GEMINI.md` file
 2. The AI will reference it when writing copy
 
@@ -50,6 +53,7 @@ If you use Claude Code, Cursor, Codex CLI, Windsurf, or similar:
 ### What to ask it
 
 Once the skill is loaded, try prompts like:
+
 - "Write a landing page for [your product]"
 - "Write 10 headline variations for [your offer]"
 - "Punch up this copy: [paste your draft]"
@@ -60,6 +64,7 @@ Once the skill is loaded, try prompts like:
 The skill handles headlines, opening lines, curiosity gaps, pain quantification, founder stories, testimonials, CTAs, and full page flows — all in a voice that sounds human, not AI.
 
 ---
+
 ---
 
 # Direct Response Copy
@@ -369,6 +374,7 @@ Longer. Conversational. Building through parallel structure.
 Both work. The key is knowing when to punch and when to breathe.
 
 **The pattern:**
+
 - Hook (short, sharp)
 - Expand (breathe, add context)
 - Land it (kicker that punctuates)
@@ -384,6 +390,7 @@ Almost every high-converting creator page includes a first-person story. The for
 > "Hey, it's Marc 👋 In 2018, I believed I was Mark Zuckerberg, built a startup for 1 year, and got 0 users... A few years after my burnout, I restarted the journey differently: I shipped like a madman. 16 startups in 2 years. Now I'm happy and earn $45,000 a month."
 
 Why this works:
+
 - Self-deprecating humor ("I believed I was Mark Zuckerberg") disarms skepticism
 - Specific numbers ("16 startups in 2 years," "$45,000 a month") prove results
 - The implicit message: I was where you are. I found the answer. Here it is.
@@ -401,6 +408,7 @@ Generic testimonials ("Great product!") carry zero persuasive weight. Structure 
 > **[Before state] + [action taken] + [specific outcome] + [timeframe] + [emotional reaction]**
 
 Examples:
+
 - "I shipped in 6 days as a noob coder. It would have taken me months. I wanna cry 🥲"
 - "I managed to exit and sell for 5 figures in a few weeks. Best investment I've made in so long."
 - "We were able to buy our first business within 4 months of joining."
@@ -437,12 +445,12 @@ Even simpler, for handling objections:
 
 Weak CTAs command action. Strong CTAs describe the benefit:
 
-| Weak | Strong |
-|------|--------|
-| "Sign Up" | "Get ShipFast" |
+| Weak         | Strong                          |
+| ------------ | ------------------------------- |
+| "Sign Up"    | "Get ShipFast"                  |
 | "Learn More" | "See the exact template I used" |
-| "Subscribe" | "Send me the first lesson free" |
-| "Buy Now" | "Start building" |
+| "Subscribe"  | "Send me the first lesson free" |
+| "Buy Now"    | "Start building"                |
 
 Below the CTA, add friction reducers:
 
@@ -457,18 +465,22 @@ Pattern: **[Risk reversal] + [Social proof] + [Speed/ease]**
 Patterns that signal "written by someone who lives online, not a marketing team":
 
 **Revenue transparency:**
+
 - "Now I'm happy and earn $45,000 a month"
 - Specific numbers that would make corporate uncomfortable
 
 **Honest limitations:**
+
 - "One note: 3D model generation isn't great yet"
 - Acknowledging imperfection builds authenticity
 
 **Strategic emoji:**
+
 - "I wanna cry 🥲"
 - Use sparingly but deliberately
 
 **In-group language:**
+
 - "Ship like a madman"
 - "Indie hacker" / "solopreneur"
 - Language your audience uses with each other
@@ -499,6 +511,7 @@ You don't need all ten every time. But this is the complete arc when you need it
 Readers are getting better at spotting AI-generated content. These patterns destroy trust instantly.
 
 **Overused words:**
+
 - "delve" / "dive into" / "dig into"
 - "comprehensive" / "robust" / "cutting-edge"
 - "utilize" (just say "use")
@@ -509,6 +522,7 @@ Readers are getting better at spotting AI-generated content. These patterns dest
 - "landscape" / "navigate" / "streamline"
 
 **Overused phrases:**
+
 - "In today's fast-paced world..."
 - "It's important to note that..."
 - "When it comes to..."
@@ -518,12 +532,14 @@ Readers are getting better at spotting AI-generated content. These patterns dest
 - "Let's dive in" / "Without further ado"
 
 **Punctuation tells:**
+
 - Too many em-dashes (limit to 1-2 per piece, use periods instead)
 - Long sentences with 4+ commas (break them up)
 - Colons in titles repeatedly
 - Semicolons where periods would work
 
 **Structural tells:**
+
 - Every paragraph is the same length
 - Every bullet point starts the same way
 - Overly organized with too many headings
@@ -531,6 +547,7 @@ Readers are getting better at spotting AI-generated content. These patterns dest
 - Numbered lists where the numbers don't matter
 
 **Voice tells:**
+
 - Passive voice throughout
 - No "I" or "you" anywhere
 - Hedging: "some may find," "it's possible that," "can potentially"
@@ -542,6 +559,7 @@ Readers are getting better at spotting AI-generated content. These patterns dest
 Read your copy out loud. If you stumble, a reader will too. If it sounds like a textbook, rewrite it.
 
 Real humans:
+
 - Use contractions
 - Write sentence fragments sometimes
 - Have opinions without hedging
@@ -553,9 +571,11 @@ Real humans:
 ## Example transformation
 
 **Generic:**
+
 > "Our comprehensive SaaS boilerplate helps developers launch faster with cutting-edge features and best practices built in."
 
 **Internet-native:**
+
 > "Ship your startup in days, not weeks.
 >
 > You know the drill. You've got an idea, you're excited, and then you spend the next month setting up authentication, payment processing, email templates, and DNS records. By the time the boring stuff is done, you've lost momentum. Or worse, someone else shipped first.
@@ -587,6 +607,7 @@ If any answer is no, rewrite that part.
 The goal isn't to hide that you're selling. It's to sell like a human, with honesty, specificity, and respect for the reader's intelligence.
 
 ---
+
 ---
 
 # REFERENCE MATERIAL
@@ -594,6 +615,7 @@ The goal isn't to hide that you're selling. It's to sell like a human, with hone
 The following sections provide deeper frameworks and extensive examples.
 
 ---
+
 ---
 
 # Classic Direct Response Frameworks
@@ -609,6 +631,7 @@ From "Breakthrough Advertising." The most important framework for knowing what t
 Your headline and approach must match where your reader is:
 
 ### Level 1: Unaware
+
 They don't know they have a problem.
 
 **Your job:** Lead with identity or emotion, not the problem.
@@ -616,6 +639,7 @@ They don't know they have a problem.
 **Example:** "The diary of a bored housewife" (not selling anything yet, just connecting)
 
 ### Level 2: Problem-Aware
+
 They know they have a problem but don't know solutions exist.
 
 **Your job:** Name the problem vividly, then introduce that solutions exist.
@@ -623,6 +647,7 @@ They know they have a problem but don't know solutions exist.
 **Example:** "Are you ever tongue-tied at a party?" (Dale Carnegie)
 
 ### Level 3: Solution-Aware
+
 They know solutions exist but don't know your product.
 
 **Your job:** Show your specific mechanism or approach is different/better.
@@ -630,6 +655,7 @@ They know solutions exist but don't know your product.
 **Example:** "A new way to remove wrinkles without surgery"
 
 ### Level 4: Product-Aware
+
 They know your product but haven't bought yet.
 
 **Your job:** Overcome objections, add proof, create urgency.
@@ -637,6 +663,7 @@ They know your product but haven't bought yet.
 **Example:** "Now with 2x the cleaning power" or "Join 10,000 happy customers"
 
 ### Level 5: Most Aware
+
 They know your product and want it. Just need a push.
 
 **Your job:** Make it easy. Price, offer, availability.
@@ -652,22 +679,28 @@ They know your product and want it. Just need a push.
 The father of tested, measured advertising. Core principles:
 
 ### 1. Advertising is salesmanship in print
+
 "The only purpose of advertising is to make sales."
 
 ### 2. Reason-why copy
+
 Don't just claim. Explain WHY your product works. Hopkins spent 3 weeks researching Schlitz beer to find the "reason why" (the way they purified water). Every beer did it. Only Schlitz talked about it.
 
 ### 3. Specificity creates believability
+
 "Cleans 99.6% of bacteria" beats "Cleans almost all bacteria."
 Numbers. Details. Process. These create belief.
 
 ### 4. Offer service, not salesmanship
+
 "I never ask people to buy. The ads all offer service, perhaps a free sample. They sound altruistic. But they get a reading and action."
 
 ### 5. Test everything
+
 Use coupons, codes, split tests. "Almost any question can be answered, cheaply, quickly, and finally, by a test campaign."
 
 ### 6. Headlines do the heavy lifting
+
 "If you have 10 hours to spend on a piece of copy, spend 8 of them on the headline."
 
 ---
@@ -677,9 +710,11 @@ Use coupons, codes, split tests. "Almost any question can be answered, cheaply, 
 Ogilvy took Hopkins' principles and added brand-building sophistication.
 
 ### The Rolls-Royce Principle
+
 "At 60 miles an hour, the loudest noise in this new Rolls-Royce comes from the electric clock."
 
 This headline works because:
+
 - It's specific (60 miles, electric clock)
 - It SHOWS don't tells (doesn't say "quiet car")
 - It's borrowed credibility (from a magazine review)
@@ -690,18 +725,21 @@ Ogilvy spent 3 weeks researching. The headline came from a magazine quote. He wr
 ### Key Ogilvy principles:
 
 **On headlines:**
+
 - "On average, 5x as many people read the headline as read the body copy."
 - "Include the brand name in the headline."
 - "Headlines with news are remembered 22% more."
 - "Specifics are more credible than generalities."
 
 **On copy:**
+
 - "Write the way you talk. Naturally."
 - "Do not address your readers as though they were gathered together in a stadium. Address them as individuals."
 - "Tell the truth, but make the truth fascinating."
 - "Give facts. Readers remember facts, not adjectives."
 
 **On images:**
+
 - "Story appeal" in photos gets attention. The eye patch in Hathaway shirt ads worked because people wondered "what's the story?"
 - Photos of the product in use outperform product shots alone.
 
@@ -712,11 +750,13 @@ Ogilvy spent 3 weeks researching. The headline came from a magazine quote. He wr
 Halbert wrote from prison to his son. Raw, practical, street-smart.
 
 ### 1. Find a starving crowd first
+
 "What unique advantage would you want if opening a restaurant? The answer isn't location or great food. It's a starving crowd."
 
 Find people who desperately want what you're selling. The offer matters more than the copy.
 
 ### 2. Write to one person
+
 Use "you" and "I." Date your letters. Use the person's name. Create intimacy.
 
 "Did you know that your family name was recorded with a coat-of-arms in ancient heraldic archives more than seven centuries ago?"
@@ -724,15 +764,19 @@ Use "you" and "I." Date your letters. Use the person's name. Create intimacy.
 This opened his most successful letter ever (600 million sent).
 
 ### 3. Tell stories, not pitches
+
 The Boron Letters themselves are stories. His ads were stories. Stories disarm skepticism and create emotional connection.
 
 ### 4. Handwrite great ads
+
 Copy successful ads by hand to internalize the rhythm and structure. Don't type. Write.
 
 ### 5. Read your copy aloud
+
 "As you do that, you will hear the words that are lumpy and bumpy, like walking over a stony path. Those need fixing."
 
 ### 6. AIDA still works
+
 Attention → Interest → Desire → Action
 "The simple formulas work because human psychology doesn't change."
 
@@ -743,15 +787,18 @@ Attention → Interest → Desire → Action
 Caples tested obsessively. His data-backed principles:
 
 ### The Piano Headline
+
 "They Laughed When I Sat Down at the Piano... But When I Started to Play!"
 
 Why it worked:
+
 - It's a STORY in 15 words
 - Universal emotion (being laughed at, then vindicated)
 - Curiosity (what happened next?)
 - Self-selection (anyone who's wanted to learn music relates)
 
 ### Caples' headline rules:
+
 1. Self-interest: Show them what's in it for them
 2. News: Announce something new
 3. Curiosity: But never curiosity alone. Curiosity + benefit.
@@ -759,11 +806,13 @@ Why it worked:
 5. Quick and easy: People want shortcuts
 
 ### His most important finding:
+
 "The headline is 80% of the advertisement."
 
 One headline can outpull another by 19.5x. Same product. Same offer. Different headline = 1,950% difference in response.
 
 ### What makes headlines fail:
+
 - Trying to be clever instead of clear
 - Forgetting self-interest
 - Vague claims instead of specific benefits
@@ -775,6 +824,7 @@ One headline can outpull another by 19.5x. Same product. Same offer. Different h
 Mail-order master. Sold BluBlockers, calculators, gadgets through long-copy print ads.
 
 ### The Slippery Slide
+
 "Your readers should be so compelled to read your copy that they cannot stop reading until they read all of it as if sliding down a slippery slide."
 
 The job of the headline is to get them to read the first sentence.
@@ -782,6 +832,7 @@ The job of the first sentence is to get them to read the second.
 And so on.
 
 ### Every element has one job
+
 1. Headline: Get attention, draw to subheadline
 2. Subheadline: Give more info, draw into copy
 3. First sentence: Short, easy to read
@@ -789,7 +840,9 @@ And so on.
 5. CTA: Tell them exactly what to do
 
 ### Seeds of curiosity
+
 End paragraphs with hooks:
+
 - "But there's more."
 - "Let me explain."
 - "Here's why this matters."
@@ -798,7 +851,9 @@ End paragraphs with hooks:
 These pull readers into the next section.
 
 ### 31 psychological triggers
+
 Sugarman identified 31 triggers that make people buy. The biggest:
+
 - **Honesty:** "If you're honest in your copy, it shows."
 - **Proof:** Never make claims bigger than your proof.
 - **Specificity:** "$1,237" beats "over $1,000"
@@ -806,7 +861,9 @@ Sugarman identified 31 triggers that make people buy. The biggest:
 - **Story:** Humans are wired for narrative
 
 ### The buying environment
+
 Your copy must create the right "buying environment." This includes:
+
 - Layout and design that feels appropriate
 - Price anchoring
 - Logical flow that answers objections as they arise
@@ -819,11 +876,13 @@ Your copy must create the right "buying environment." This includes:
 Master of mail-order letters. His principles:
 
 ### Enter the conversation in their mind
+
 "Always enter the conversation already taking place in the customer's mind."
 
 You don't create desire. You channel existing desire toward your product.
 
 ### The 6 essentials of every letter:
+
 1. Opening that grabs attention
 2. Description or explanation
 3. Argument for why they should buy
@@ -832,6 +891,7 @@ You don't create desire. You channel existing desire toward your product.
 6. Clear call to action
 
 ### Visualization
+
 Make them SEE themselves using the product, enjoying the benefit. Paint the picture vividly.
 
 ---
@@ -850,6 +910,7 @@ All the greats agree on these fundamentals:
 8. **Honesty and proof** beat hype every time
 
 ---
+
 ---
 
 # Headline Formulas and Examples
@@ -863,6 +924,7 @@ Headlines do 80% of the work. One headline can outpull another by 19.5x. These a
 > **[Action verb] + [Specific outcome] + [Timeframe or contrast]**
 
 Examples:
+
 - "Ship your startup in days, not weeks"
 - "Build a $10K/month business in 90 days"
 - "Save 4 hours per person every single week"
@@ -879,16 +941,19 @@ John Caples' most famous:
 > "They Laughed When I Sat Down at the Piano... But When I Started to Play!"
 
 Why it works:
+
 - Complete story in 15 words
 - Universal emotion (embarrassment → triumph)
 - Creates curiosity about what happened
 - Self-selects the right reader
 
 **Variations:**
+
 - "They laughed when I started my cleaning business... but when I quit my day job..."
 - "They grinned when the waiter spoke to me in French... but their laughter changed to amazement at my reply"
 
 **The formula:**
+
 > "They [doubted/laughed/dismissed] when I [action]... But when I [result]..."
 
 ---
@@ -900,15 +965,18 @@ Ogilvy's Rolls-Royce:
 > "At 60 miles an hour, the loudest noise in this new Rolls-Royce comes from the electric clock."
 
 Why it works:
+
 - "60 miles" is specific, not "high speed"
 - "Electric clock" is specific, not "interior"
 - Shows don't tells (doesn't say "quiet car")
 - Reader concludes "this must be quiet" themselves
 
 **The formula:**
+
 > [Specific number/metric] + [Unexpected comparison or detail]
 
 **Modern examples:**
+
 - "I tested 47 headlines. One pattern beat everything else by 3x."
 - "We analyzed 2.7 million cold emails. Here's what the top 1% do differently."
 - "After 10 years and $45M in sales, I've found exactly 3 things that matter."
@@ -922,16 +990,19 @@ Simple and bulletproof:
 > "How to [Achieve desired outcome]"
 
 **Examples:**
+
 - "How to Win Friends and Influence People"
 - "How to Write Copy That Sells"
 - "How to Make $1,000 in Your First Week"
 
 **Variations:**
+
 - "How to [outcome] without [common pain]"
 - "How to [outcome] in [timeframe]"
 - "How to [outcome] even if [objection]"
 
 **Examples with variations:**
+
 - "How to Lose Weight Without Giving Up Your Favorite Foods"
 - "How to Build a 6-Figure Business in 12 Months"
 - "How to Get Clients Even If You're Just Starting Out"
@@ -945,16 +1016,19 @@ Questions they're already asking themselves:
 > "Do You Make These Mistakes in English?"
 
 Legendary ad ran for 40 years. Works because:
+
 - Reader immediately thinks "what mistakes?"
 - Self-selects (only interested people keep reading)
 - Creates curiosity gap
 
 **The formula:**
+
 > "Do you [common mistake/struggle]?"
 > "Are you [undesirable state]?"
 > "What if you could [desirable outcome]?"
 
 **Examples:**
+
 - "Do You Close the Bathroom Door Even When You're the Only One Home?"
 - "Are You Still Trading Time for Money?"
 - "What if Your Next Landing Page Converted at 30%?"
@@ -968,11 +1042,13 @@ Implies insider knowledge:
 > "The Secret of Making People Like You"
 
 **The formula:**
+
 > "The Secret of [Desirable outcome]"
 > "The Secret [Industry insiders/experts] Don't Want You to Know"
 > "[Number] Secrets of [Successful group]"
 
 **Examples:**
+
 - "The Secret of Writing Headlines That Get Clicked"
 - "7 Secrets of Top Copywriters"
 - "The Secret Formula Behind $100M Ads"
@@ -988,11 +1064,13 @@ Hopkins' favorite. Explain WHY:
 > "Why Some People Almost Always Make Money in the Stock Market"
 
 **The formula:**
+
 > "Why [Desirable outcome happens]"
 > "Why [Surprising statement]"
 > "[Number] Reasons Why [Claim]"
 
 **Examples:**
+
 - "Why Your Ads Aren't Working (And What to Do Instead)"
 - "Why I Switched from [Popular option] to [Your option]"
 - "5 Reasons Why Smart Marketers Are Abandoning Facebook"
@@ -1006,20 +1084,24 @@ Numbers stop the scroll:
 > "101 Ways to Save Money on Your Taxes"
 
 **Why numbers work:**
+
 - Specific = credible
 - Promise clear, bounded value
 - Easy to scan
 
 **The formula:**
+
 > "[Number] [Ways/Tips/Secrets/Mistakes] to [Outcome]"
 
 **Best numbers:**
+
 - Odd numbers outperform even (7 beats 6)
 - Specific beats round (37 beats 40)
 - Higher can work for comprehensive guides (101 tips)
 - Lower works for "essentials" (3 things that matter)
 
 **Examples:**
+
 - "7 Copywriting Mistakes That Kill Conversions"
 - "37 Headline Formulas That Get Clicked"
 - "The 3 Things Every Landing Page Needs"
@@ -1033,11 +1115,13 @@ Fear of loss is powerful:
 > "Don't Even Think About Buying a Home Until You Read This"
 
 **The formula:**
+
 > "Don't [Action] Until [Condition]"
 > "[Number] Mistakes [Audience] Make"
 > "Warning: [Danger statement]"
 
 **Examples:**
+
 - "Don't Write Another Ad Until You Read This"
 - "5 Mistakes New Copywriters Make (And How to Avoid Them)"
 - "Warning: Your Landing Page Is Losing 73% of Visitors"
@@ -1051,11 +1135,13 @@ Timely + relevant:
 > "What [Current event] Means for [Your audience]"
 
 **The formula:**
+
 > "[Current event/trend] + [Your angle]"
 > "The [Year] Guide to [Topic]"
 > "[Trend] Is Dead. Here's What's Replacing It."
 
 **Examples:**
+
 - "What the Google Update Means for Your SEO Strategy"
 - "The 2024 Guide to Cold Email That Actually Works"
 - "Traditional Marketing Is Dead. Here's What's Replacing It."
@@ -1069,11 +1155,13 @@ Before → After in one line:
 > "From Broke Musician to $100K/Year Music Teacher"
 
 **The formula:**
+
 > "From [Bad state] to [Good state]"
 > "How I Went from [Before] to [After]"
 > "[Before] → [After]: [How]"
 
 **Examples:**
+
 - "From Zero to $10K MRR in 6 Months"
 - "How I Went from 0 Followers to 100K in One Year"
 - "Freelancer to Agency Owner: My 3-Year Journey"
@@ -1087,11 +1175,13 @@ Challenge conventional wisdom:
 > "Everything You Know About [Topic] Is Wrong"
 
 **The formula:**
+
 > "[Common belief] Is Wrong. Here's Why."
 > "Stop [Common advice]"
 > "Why [Contrarian position]"
 
 **Examples:**
+
 - "Stop Trying to Go Viral"
 - "Why I Stopped A/B Testing (And What I Do Instead)"
 - "Everything You Know About SEO Is Wrong"
@@ -1107,9 +1197,11 @@ Sometimes simple wins:
 > "We're Looking for Writers"
 
 **The formula:**
+
 > [Direct statement of value or offer]
 
 **Examples:**
+
 - "Get Better at Copywriting"
 - "Marketing Help for Startups"
 - "Write Faster. Convert More."
@@ -1152,6 +1244,7 @@ Keep these on file:
 - "Are You Ever Tongue-Tied at a Party?" (Dale Carnegie)
 
 ---
+
 ---
 
 # Opening Lines and Hooks
@@ -1171,11 +1264,13 @@ Open by challenging what they believe or do:
 > "Most marketing advice is designed to make you feel busy, not successful."
 
 **Why it works:**
+
 - Stops the scroll
 - Creates tension
 - Self-selects readers who suspect you might be right
 
 **The formula:**
+
 > "You've been [doing X] wrong."
 > "Most [advice/people/companies] [get this wrong]."
 > "[Common belief] is actually [wrong/backwards/dangerous]."
@@ -1199,6 +1294,7 @@ The reader is IN the scene before they know they're reading an ad.
 > "It was 2 AM and I was still coding. The launch was in 6 hours. I had no idea if anyone would show up."
 
 **The formula:**
+
 > [Specific moment] + [Tension or curiosity] + [Implied transformation]
 
 ---
@@ -1214,11 +1310,13 @@ Vulnerability disarms skepticism:
 > "I made every mistake in the book. Spent $50,000 on ads that didn't work. Launched products nobody wanted."
 
 **Why it works:**
+
 - Honesty creates trust
 - Reader thinks "they're like me"
 - Sets up the transformation
 
 **The formula:**
+
 > "I'll be honest..."
 > "Here's something I rarely admit..."
 > "I made every mistake..."
@@ -1236,11 +1334,13 @@ Lead with proof:
 > "I've sent 600 million of these letters. Here's what I learned."
 
 **Why it works:**
+
 - Specific numbers create credibility
 - Reader wants to know how
 - Anchors the transformation to a real result
 
 **The formula:**
+
 > "[Specific result] + [Implied 'here's how']"
 
 ---
@@ -1256,11 +1356,13 @@ Enter the conversation in their head:
 > "Do you ever wonder why some people seem to effortlessly attract clients while you're struggling to get noticed?"
 
 **Why it works:**
+
 - If the question matches their reality, they're hooked
 - Creates internal "yes" response
 - Self-selects the right reader
 
 **The formula:**
+
 > "Have you ever [common struggle]?"
 > "Do you ever wonder why [comparison/frustration]?"
 > "What would you do with [desirable outcome]?"
@@ -1278,11 +1380,13 @@ Flip conventional wisdom:
 > "I'm going to tell you something nobody else will: your product doesn't matter."
 
 **Why it works:**
+
 - Pattern interrupt
 - Creates "wait, what?" response
 - Reader has to keep going to understand
 
 **The formula:**
+
 > "Stop [doing what everyone says to do]."
 > "The best [X] advice is [opposite of expected]."
 > "[Extreme or surprising statement]."
@@ -1302,11 +1406,13 @@ Future-pace them into the transformation:
 > "Imagine never having to explain your business again because your website does it perfectly."
 
 **Why it works:**
+
 - Engages visualization
 - Reader experiences the benefit emotionally
 - Creates desire before the pitch
 
 **The formula:**
+
 > "Imagine [specific desirable scenario]."
 > "Picture this: [vivid future state]."
 
@@ -1323,11 +1429,13 @@ Break expectations completely:
 > "I'm going to try to talk you OUT of buying this."
 
 **Why it works:**
+
 - Reverse psychology
 - Creates curiosity
 - Breaks the "sales pitch" pattern
 
 **The formula:**
+
 > "[Opposite of what they expect from sales copy]"
 
 ---
@@ -1343,11 +1451,13 @@ Creates immediacy and credibility:
 > "Last Tuesday at exactly 2:14 PM, something happened that changed how I think about marketing."
 
 **Why it works:**
+
 - Feels personal, not scripted
 - Creates intimacy
 - Reader feels they're getting something fresh
 
 **The formula:**
+
 > "[Specific time/place] + [What you're about to share]"
 
 ---
@@ -1365,11 +1475,13 @@ Sugarman's approach: first sentence should be stupidly easy to read:
 > "Let me explain."
 
 **Why it works:**
+
 - No friction to start reading
 - Creates momentum
 - Reader is into paragraph two before they realize it
 
 **The formula:**
+
 > [2-4 word sentence that creates curiosity or makes a claim]
 
 ---
@@ -1385,11 +1497,13 @@ Quantify the problem or opportunity:
 > "The average landing page converts at 2.35%. The top 10% convert at 11.45%. That gap? It's not traffic. It's copy."
 
 **Why it works:**
+
 - Makes abstract problems concrete
 - Numbers feel objective/trustworthy
 - Creates clear gap they want to close
 
 **The formula:**
+
 > "[Problem math] = [Painful total]"
 > "The gap between [average] and [top] is [specific difference]."
 
@@ -1501,6 +1615,7 @@ You've told them what they'll get. Now they want it.
 End paragraphs with hooks that pull into the next section:
 
 **Transition phrases:**
+
 - "But that's not even the best part."
 - "Here's where it gets interesting."
 - "Let me explain why."
@@ -1524,6 +1639,7 @@ Psychologist George Loewenstein's research:
 > "Curiosity arises when we're aware of a gap in our knowledge."
 
 To create curiosity:
+
 1. Make them aware there's something they don't know
 2. Make them want to know it
 3. Delay the answer just long enough
@@ -1533,6 +1649,7 @@ To create curiosity:
 > "Most copywriters make this mistake. It's costing them thousands of dollars in lost conversions. And they have no idea."
 
 You've created three gaps:
+
 - What mistake?
 - How much is it costing them?
 - Why don't they know?
@@ -1556,18 +1673,23 @@ The strong versions create specific questions the reader needs answered.
 ## Open Loops in Email Subject Lines
 
 **Open loop:** "The $50,000 mistake I made last year"
+
 - What mistake? You have to open to find out.
 
 **Open loop:** "This one change added 247 subscribers in a week"
+
 - What change? Open to find out.
 
 **Open loop:** "Don't make this launch mistake (I almost did)"
+
 - What mistake? What happened? Open.
 
 **Too vague (bad):** "Quick question"
+
 - No specific gap. Could be anything.
 
 **Too complete (bad):** "5 tips for writing better emails"
+
 - No gap. You already know what it is.
 
 ---
@@ -1579,6 +1701,7 @@ The strong versions create specific questions the reader needs answered.
 If you tease "the one thing that changed everything" and never deliver, readers feel cheated. They won't trust you again.
 
 **The timing:**
+
 - Small loops: close within 1-3 paragraphs
 - Medium loops: close within the section
 - Big loops: close by the end of the piece
@@ -1592,6 +1715,7 @@ If you tease "the one thing that changed everything" and never deliver, readers 
 You can stack loops, but manage them carefully:
 
 **Opening:**
+
 > "I'm going to share three things with you today.
 >
 > The first is obvious. You probably already know it.
@@ -1625,22 +1749,26 @@ The "but that's not all" creates a micro-loop. They need to see what else.
 What NOT to do:
 
 **Being too vague:**
+
 > "Something amazing happened..."
 
 Too generic. No specific gap.
 
 **Being too complete:**
+
 > "I made $50,000 by selling an online course about productivity."
 
 No gap left. You answered everything.
 
 **Creating gaps you don't close:**
+
 > "The secret I'm about to share will change everything..."
 > [Never actually shares the secret]
 
 This is manipulation. It destroys trust.
 
 **Clickbait:**
+
 > "You won't BELIEVE what happened next!"
 
 Creates gap but signals low-quality content. Sophisticated readers bounce.
@@ -1652,6 +1780,7 @@ Creates gap but signals low-quality content. Sophisticated readers bounce.
 Curiosity is about **information asymmetry**.
 
 You know something they want to know. Your job is to:
+
 1. Make them aware of the gap
 2. Make the answer seem valuable
 3. Deliver on the promise
@@ -1659,6 +1788,7 @@ You know something they want to know. Your job is to:
 Do this ethically, and you'll hold attention through any length of copy.
 
 ---
+
 ---
 
 # Flow Techniques: The Slippery Slide
@@ -1713,11 +1843,13 @@ A chain of short phrases that smooth transitions between paragraphs:
 **How they work:**
 
 Without bucket brigade:
+
 > "Most landing pages fail because they focus on features, not benefits.
 >
 > Benefits are what the customer actually cares about."
 
 With bucket brigade:
+
 > "Most landing pages fail because they focus on features, not benefits.
 >
 > Here's the thing: Benefits are what the customer actually cares about."
@@ -1733,14 +1865,17 @@ Sugarman's technique for ending paragraphs:
 Instead of ending paragraphs flatly, end with a hook:
 
 **Without seed:**
+
 > "This is the first principle of good headlines."
 
 **With seed:**
+
 > "This is the first principle of good headlines. But the second principle is where most people fail."
 
 The reader HAS to continue to find out the second principle.
 
 **Seed phrases:**
+
 - "But there's more."
 - "Let me explain."
 - "And that's not all."
@@ -1750,6 +1885,7 @@ The reader HAS to continue to find out the second principle.
 - "But that's not even the best part."
 
 **Placement:**
+
 - At the end of subheads
 - When switching between ideas
 - Before slow sections (to maintain momentum)
@@ -1782,6 +1918,7 @@ The word "technique" bridges the gap. Smoother than starting fresh.
 Logical flow. Point A leads to Point B leads to Point C.
 
 **Broken flow:**
+
 > "Energy prices are rising.
 >
 > You should invest in cryptocurrency."
@@ -1789,6 +1926,7 @@ Logical flow. Point A leads to Point B leads to Point C.
 Wait, what? How did we get from energy to crypto? The reader's brain stumbles.
 
 **Fixed flow:**
+
 > "Energy prices are rising.
 >
 > In fact, prices are rising everywhere. Inflation is eating into your savings.
@@ -1808,6 +1946,7 @@ Each point connects to the next. The reader slides from energy prices to crypto 
 Transition words that signal logical connections:
 
 **Cause and effect:**
+
 - Therefore
 - As a result
 - Because of this
@@ -1815,6 +1954,7 @@ Transition words that signal logical connections:
 - That's why
 
 **Contrast:**
+
 - But
 - However
 - On the other hand
@@ -1822,6 +1962,7 @@ Transition words that signal logical connections:
 - Despite this
 
 **Addition:**
+
 - Also
 - Moreover
 - Furthermore
@@ -1829,12 +1970,14 @@ Transition words that signal logical connections:
 - Not only that
 
 **Example:**
+
 - For instance
 - For example
 - Consider this
 - Take [X]
 
 **Emphasis:**
+
 - In fact
 - Indeed
 - The truth is
@@ -1850,16 +1993,19 @@ These signal to the reader's brain how this paragraph relates to the last one.
 Sugarman's rule: The first sentence should be short and easy to read.
 
 **Long first sentence:**
+
 > "When you think about all the different ways that marketing has changed over the past decade, it's remarkable how many new channels have emerged."
 
 Heavy. Requires commitment to start.
 
 **Short first sentence:**
+
 > "Marketing has changed."
 
 Easy. You're already reading. Now you'll read the next sentence.
 
 **More short openers:**
+
 - "Here's the problem."
 - "It's simple."
 - "This works."
@@ -1908,9 +2054,11 @@ Mark Ford's principle: Each paragraph should make ONE point.
 If you're making two points, you need two paragraphs.
 
 **Muddled:**
+
 > "Headlines are important and you should always test them, plus make sure to use specific numbers because specificity builds credibility and don't forget to match the headline to your audience's awareness level."
 
 **Clear:**
+
 > "Headlines do 80% of the work.
 >
 > Always test at least 5. One will outperform the others by 2-10x.
@@ -1970,6 +2118,7 @@ How the classics translate to landing pages, tweets, and creator brands.
 > Now I'm happy and earn $45,000 a month."
 
 **Why it works:**
+
 - Self-deprecating ("I believed I was Mark Zuckerberg")
 - Specific failure (0 users)
 - Specific success ($45,000/month, 16 startups in 2 years)
@@ -1980,6 +2129,7 @@ How the classics translate to landing pages, tweets, and creator brands.
 > "After nearly two decades on Wall Street, I realized the real path to wealth is in unsexy businesses—laundromats, car washes, HVAC."
 
 **Why it works:**
+
 - Credibility (Wall Street)
 - Contrarian insight (unsexy > sexy)
 - Specific examples (laundromats, car washes, HVAC)
@@ -1997,6 +2147,7 @@ How the classics translate to landing pages, tweets, and creator brands.
 > There's an easier way."
 
 **Why it works:**
+
 - Makes vague problem (launching is hard) concrete (22+ hours)
 - Lists specific micro-tasks they recognize
 - Reader can calculate: "Is this worth $199 to skip?"
@@ -2006,6 +2157,7 @@ How the classics translate to landing pages, tweets, and creator brands.
 > "Imagine the scene: you and your team get an urgent email, so you rapidly reply. But just after you hit send, your team replies as well. In the best case, you look disorganized. In the worst case, you contradict each other."
 
 **Why it works:**
+
 - Vivid scenario they've experienced
 - Paints the emotional pain (embarrassment)
 - Makes abstract problem (email chaos) tangible
@@ -2029,6 +2181,7 @@ How the classics translate to landing pages, tweets, and creator brands.
 > "We were able to buy our first business within 4 months of joining."
 
 **Why they work:**
+
 - Specific timeframes (6 days, 4 months)
 - Specific outcomes (5 figures, bought a business)
 - Emotional language (wanna cry, best investment)
@@ -2055,6 +2208,7 @@ How the classics translate to landing pages, tweets, and creator brands.
 > "If you could, you would have already. 🤷🏻"
 
 **Why it works:**
+
 - Flips from "please buy" to "prove you're worthy"
 - Creates velvet rope effect
 - Pre-filters bad customers
@@ -2065,12 +2219,14 @@ How the classics translate to landing pages, tweets, and creator brands.
 ## Benefit-Oriented CTAs
 
 **Weak (command action):**
+
 - Sign Up
 - Learn More
 - Buy Now
 - Subscribe
 
 **Strong (describe benefit):**
+
 - Get ShipFast
 - Start building
 - Enter your new home
@@ -2078,6 +2234,7 @@ How the classics translate to landing pages, tweets, and creator brands.
 - Send me the first lesson free
 
 **Below-CTA friction reducers:**
+
 > "$199 once. Join 2,600+ marketers. 2 minutes to install."
 
 **Formula:** [Risk reversal] + [Social proof] + [Speed/ease]
@@ -2095,6 +2252,7 @@ Internet-native voice marker. Creates trust through specific vulnerability:
 > "The Vibe Marketing community did $400k+ in 9 months."
 
 **Why it works:**
+
 - Specific numbers corporate would never share
 - Proves claims with real data
 - Creates aspirational but believable target
@@ -2112,6 +2270,7 @@ Another trust marker:
 > "Fair warning: setup takes about 30 minutes the first time."
 
 **Why it works:**
+
 - Honesty about imperfection builds credibility
 - Shows you're not hiding anything
 - Makes other claims more believable
@@ -2129,6 +2288,7 @@ Internet-native, not professional-sanitized:
 > "Hey, it's Marc 👋"
 
 **Rules:**
+
 - Sparingly (1-2 per page, not every sentence)
 - To add emotional tone
 - Where a human would naturally use them
@@ -2147,6 +2307,7 @@ Signals "I'm one of you":
 - "GTM" (Go to Market)
 
 **Why it works:**
+
 - Creates belonging
 - Filters for the right audience
 - Builds instant rapport with insiders
@@ -2164,6 +2325,7 @@ Signals "I'm one of you":
 > "Stop building for months. Start shipping in days."
 
 **The structure:**
+
 > [Before: slow/painful] → [After: fast/easy]
 
 In six words, you've painted transformation.
@@ -2192,16 +2354,16 @@ Not every page uses all nine. But this is the complete playbook.
 
 **Signals "internet-native, not corporate":**
 
-| Corporate | Internet-native |
-|-----------|-----------------|
-| "Significant revenue" | "$45,000/month" |
-| "Many satisfied customers" | "2,894 makers" |
-| "Get started today" | "Start building" |
-| No limitations mentioned | "3D generation isn't great yet" |
-| Stock photo testimonials | "I wanna cry 🥲" |
-| "We at [Company]..." | "Hey, it's Marc 👋" |
-| Formal language | "Ship like a madman" |
-| Rounded numbers | "$47,329" (specific) |
+| Corporate                  | Internet-native                 |
+| -------------------------- | ------------------------------- |
+| "Significant revenue"      | "$45,000/month"                 |
+| "Many satisfied customers" | "2,894 makers"                  |
+| "Get started today"        | "Start building"                |
+| No limitations mentioned   | "3D generation isn't great yet" |
+| Stock photo testimonials   | "I wanna cry 🥲"                |
+| "We at [Company]..."       | "Hey, it's Marc 👋"             |
+| Formal language            | "Ship like a madman"            |
+| Rounded numbers            | "$47,329" (specific)            |
 
 ---
 
@@ -2210,12 +2372,14 @@ Not every page uses all nine. But this is the complete playbook.
 Modern internet-native copy is classic direct response + authenticity markers.
 
 The principles haven't changed since Hopkins:
+
 - Specific beats vague
 - Benefits beat features
 - Stories beat pitches
 - Proof beats claims
 
 What's different:
+
 - Personal voice over corporate voice
 - Revenue transparency
 - Honest limitations
@@ -2227,4 +2391,4 @@ The fundamentals are 100 years old. The packaging is 2024.
 
 ---
 
-*Built by [The Boring Marketer](https://thevibemarketer.com). This is one of 17 AI skills in the Vibe Skills Pack — covering copywriting, SEO, email sequences, content strategy, ad creative, and more.*
+_Built by [The Boring Marketer](https://thevibemarketer.com). This is one of 17 AI skills in the Vibe Skills Pack — covering copywriting, SEO, email sequences, content strategy, ad creative, and more._

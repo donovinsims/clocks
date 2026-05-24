@@ -1,5 +1,3 @@
-
-
 # Clockout — Offer Doc
 
 **Core Avatar:** I help owner-operators of local service businesses (HVAC, plumbing, electrical, general contracting, auto repair, landscaping, cleaning, personal services) who are currently running their business on memory, texts, and spreadsheets while losing profitable jobs to missed calls, who want to recover the revenue and time being bled away by operational chaos, but are struggling because every tool they've tried required them to change how they work, cost too much per month, and ended up sitting unused. The qualifier is not the industry or the headcount — it is the situation: the owner is still the bottleneck.
@@ -232,28 +230,28 @@ All Departments (Solo Founder Stage):
 
 # Clockout — Tech Stack
 
-|#|Function|Tool|What it's used for|
-|---|---|---|---|
-|1|Email hosting|Gmail|Primary inbox for client comms, assessment delivery, follow-up|
-|2|Email marketing / sequences|Gmail · ConvertKit|7-step post-assessment nurture sequence — platform TBD; options loaded and available|
-|3|Newsletter hosting|Substack or ConvertKit, TBD|[Confirm if used for Clockout specifically vs. personal brand]|
-|4|Internal team communication|N/A — solo operator|—|
-|5|Video calls / meetings|Zoom + Granola|Assessment walkthroughs and ROI report delivery|
-|6|Async video messaging|Loom|"How It Runs" client handoff video after every install|
-|7|DM automation|[CONFIRM]|—|
-|8|Workflow automations|Hermes agent, OpenClaw, Paperclip (AI agents), n8n (self-hosted VPS)|Core automation engine for all client builds|
-|8a|Workflow automations (secondary)|Make.com|Simpler client builds where n8n is overkill|
-|9|Landing pages / opt-in pages|Vercel|Hosts Free AI Assessment booking page|
-|10|Main website|Vercel|[Confirm if separate from landing page or same instance]|
-|11|Domain registration|Spaceship|—|
-|12|CRM / lead tracking|DenchClaw (run local with OpenClaw underneath)|Prospect status, assessment dates, ROI figures, follow-up triggers|
-|13|Call scheduling|Cal.com|Free AI Assessment bookings|
-|14|Surveys / forms|Tally|Pre-assessment intake, discovery forms|
-|15|Testimonial collection|Senja|Client testimonial capture and display|
-|16|Checkout / payment pages|Stripe|One-time project checkout|
-|17|Payment processing|Stripe · Venmo|One-time setups and monthly monitoring|
-|18|Business banking|[NOT IN SOURCE — confirm with founder]|—|
-|19|Bookkeeping / accounting|[NOT IN SOURCE — confirm with founder]|—|
+| #   | Function                         | Tool                                                                 | What it's used for                                                                   |
+| --- | -------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 1   | Email hosting                    | Gmail                                                                | Primary inbox for client comms, assessment delivery, follow-up                       |
+| 2   | Email marketing / sequences      | Gmail · ConvertKit                                                   | 7-step post-assessment nurture sequence — platform TBD; options loaded and available |
+| 3   | Newsletter hosting               | Substack or ConvertKit, TBD                                          | [Confirm if used for Clockout specifically vs. personal brand]                       |
+| 4   | Internal team communication      | N/A — solo operator                                                  | —                                                                                    |
+| 5   | Video calls / meetings           | Zoom + Granola                                                       | Assessment walkthroughs and ROI report delivery                                      |
+| 6   | Async video messaging            | Loom                                                                 | "How It Runs" client handoff video after every install                               |
+| 7   | DM automation                    | [CONFIRM]                                                            | —                                                                                    |
+| 8   | Workflow automations             | Hermes agent, OpenClaw, Paperclip (AI agents), n8n (self-hosted VPS) | Core automation engine for all client builds                                         |
+| 8a  | Workflow automations (secondary) | Make.com                                                             | Simpler client builds where n8n is overkill                                          |
+| 9   | Landing pages / opt-in pages     | Vercel                                                               | Hosts Free AI Assessment booking page                                                |
+| 10  | Main website                     | Vercel                                                               | [Confirm if separate from landing page or same instance]                             |
+| 11  | Domain registration              | Spaceship                                                            | —                                                                                    |
+| 12  | CRM / lead tracking              | DenchClaw (run local with OpenClaw underneath)                       | Prospect status, assessment dates, ROI figures, follow-up triggers                   |
+| 13  | Call scheduling                  | Cal.com                                                              | Free AI Assessment bookings                                                          |
+| 14  | Surveys / forms                  | Tally                                                                | Pre-assessment intake, discovery forms                                               |
+| 15  | Testimonial collection           | Senja                                                                | Client testimonial capture and display                                               |
+| 16  | Checkout / payment pages         | Stripe                                                               | One-time project checkout                                                            |
+| 17  | Payment processing               | Stripe · Venmo                                                       | One-time setups and monthly monitoring                                               |
+| 18  | Business banking                 | [NOT IN SOURCE — confirm with founder]                               | —                                                                                    |
+| 19  | Bookkeeping / accounting         | [NOT IN SOURCE — confirm with founder]                               | —                                                                                    |
 
 _(Only rows confirmed in source files are populated. All [NOT IN SOURCE] fields should be filled in by the founder before saving to Project.)_
 
@@ -279,10 +277,10 @@ _(Only rows confirmed in source files are populated. All [NOT IN SOURCE] fields 
 - **Capitalization Quirks:** Standard casing for professionalism, but zero "Corporate Case" (do not capitalize words like Synergy, Ecosystem, or Transformation).
 - **Sentence Variety:** Declarative dominant. Statements of fact, math, and time.
 - **Formatting Patterns:**
-    - **Numbered Lists:** Universal. Every post breaks down a fix into 3–5 steps.
-    - **Bold Headers:** Short, direct phrases introducing the phase (e.g., **Phase 1: Quantify the leak**).
-    - **Math/ROI Blocks:** Literal math blocks instead of abstract claims (e.g., _3 missed calls × $800 = $2,400 lost_).
-    - **Time/Cost Investment Callouts:** Used to eliminate friction (e.g., _Time to build: 3 days. Cost: $500 flat._).
+  - **Numbered Lists:** Universal. Every post breaks down a fix into 3–5 steps.
+  - **Bold Headers:** Short, direct phrases introducing the phase (e.g., **Phase 1: Quantify the leak**).
+  - **Math/ROI Blocks:** Literal math blocks instead of abstract claims (e.g., *3 missed calls × $800 = $2,400 lost*).
+  - **Time/Cost Investment Callouts:** Used to eliminate friction (e.g., *Time to build: 3 days. Cost: $500 flat.*).
 - **Line Spacing:** Double-spaced. Aggressive white space for exhausted readers scanning on their phones.
 - **Emoji Usage:** None. Emojis signal "marketing." Clockout delivers operations math.
 
@@ -290,20 +288,20 @@ _(Only rows confirmed in source files are populated. All [NOT IN SOURCE] fields 
 
 - **Core Tension Formula:** You are working 70 hours a week doing great work → but your analog setup is actively losing you thousands → here is the $300 fix.
 - **Belief Reframe Pattern:** Positions the reader's "tech trauma" as valid. Software agencies failed them because the software didn't fit the truck. Clockout fits the truck.
-- **Shame Avoidance:** Blame goes to "the old way of doing things" or "greedy $3k/mo marketing agencies," never the operator. The operator is doing the real work; the _system_ is failing them.
-- **Social Proof Mechanism:** Localized, numeric proof woven in: _"A Rockford HVAC guy we worked with." "Recovered $1,200 on day one."_
+- **Shame Avoidance:** Blame goes to "the old way of doing things" or "greedy $3k/mo marketing agencies," never the operator. The operator is doing the real work; the *system* is failing them.
+- **Social Proof Mechanism:** Localized, numeric proof woven in: *"A Rockford HVAC guy we worked with." "Recovered $1,200 on day one."*
 - **Authority Establishment:** Built entirely through specificity. Exact local geographies, exact dollar amounts, exact tool names (n8n, Twilio). No vague promises.
 - **Identity Transformation Arc:** Reader enters feeling overwhelmed and bleeding cash → exits feeling in control, with a clear understanding of the math and the fix.
 - **Urgency Triggers:**
-    - Financial bleeding: _"You lost a $1,200 job yesterday while you were in a crawlspace."_
-    - Speed of execution: _"This takes 3 days to install."_
+  - Financial bleeding: *"You lost a $1,200 job yesterday while you were in a crawlspace."*
+  - Speed of execution: *"This takes 3 days to install."*
 - **Curiosity Gaps:** Titles promise the exposure of a blind spot (_"The $500/mo leak hiding in your dispatch process"_).
 - **Cognitive Load Reduction:** Zero jargon. You don't sell "AI LLMs via webhooks." You sell a "missed call text-back."
 
 ### Rhythm and Flow
 
 - **Opening Pattern:** 1 blunt market observation + 1 specific financial consequence + the promise of a system.
-    - _Example:_ "Most local contractors are still dispatching and quoting by text message. When those leads go cold, thousands of dollars walk out the door. Here is the exact follow-up system you can install this week to fix it."
+  - *Example:* "Most local contractors are still dispatching and quoting by text message. When those leads go cold, thousands of dollars walk out the door. Here is the exact follow-up system you can install this week to fix it."
 - **Sentence Rhythm:** Short declarative (the problem). Slightly longer explanatory (the math). Short declarative (the fix).
 - **Transition Style:** No formal transitions. Use headers or bolded text to jump directly to the next logical step.
 - **Closing Pattern:** Philosophical reframe about time/operations → Post-Script (PS) CTA for the Free AI Assessment.
@@ -312,16 +310,16 @@ _(Only rows confirmed in source files are populated. All [NOT IN SOURCE] fields 
 ### Linguistic Fingerprints
 
 - **Signature Phrases:**
-    - _"Hiding in plain sight"_
-    - _"The math is dead simple"_
-    - _"Plug the leak"_
-    - _"Fixed price. Done in days. You own it."_
-    - _"You don't need a $3k/mo agency. You need a $500 fix."_
-    - _"It practically pays for itself by Friday."_
+  - _"Hiding in plain sight"_
+  - _"The math is dead simple"_
+  - _"Plug the leak"_
+  - _"Fixed price. Done in days. You own it."_
+  - _"You don't need a $3k/mo agency. You need a $500 fix."_
+  - _"It practically pays for itself by Friday."_
 - **Metaphor Style:** Blue-collar/industrial. "Leaking bucket," "plugging holes," "engine," "blueprint," "installing a system."
 - **Word Choices:**
-    - _Preferred:_ fix, install, system, revenue, recover, plain-english, local, operator, trades, text-back, dispatch
-    - _Avoided:_ leverage, synergy, revolutionize, AI-powered transformation, disruptive, prompt engineering, agents
+  - *Preferred:* fix, install, system, revenue, recover, plain-english, local, operator, trades, text-back, dispatch
+  - *Avoided:* leverage, synergy, revolutionize, AI-powered transformation, disruptive, prompt engineering, agents
 - **Tonal Anchors:** Confidently boring, localized, peer-to-peer, ruthlessly practical.
 - **Number Usage:** Extreme precision. Use exact digits: "$800 ticket," "68% of missed calls," "3 days to build."
 
@@ -329,33 +327,33 @@ _(Only rows confirmed in source files are populated. All [NOT IN SOURCE] fields 
 
 - **Primary Framework:** Expose the Leak → Do the Math → Provide the Ordered Fix → Offer the Assessment.
 - **Trust Building Sequence:**
-    1. Acknowledge a specific, painful operational failure (e.g., doing paperwork at 10 PM).
-    2. Quantify what that failure costs in real dollars (demonstrates business acumen).
-    3. Provide the step-by-step logic of the fix (demystifies the "AI" aspect).
-    4. Prove the speed and cost of the install (removes the fear of SaaS retainers).
-    5. Close with a PS offering a zero-risk 20-minute ROI report.
+  1. Acknowledge a specific, painful operational failure (e.g., doing paperwork at 10 PM).
+  2. Quantify what that failure costs in real dollars (demonstrates business acumen).
+  3. Provide the step-by-step logic of the fix (demystifies the "AI" aspect).
+  4. Prove the speed and cost of the install (removes the fear of SaaS retainers).
+  5. Close with a PS offering a zero-risk 20-minute ROI report.
 - **PS CTA Pattern:**
-    - _Format:_ Bold italic text, one sentence.
-    - _Example:_ _**PS: I do free 20-minute AI assessments for local trades businesses in Winnebago County. You get a written ROI report showing exactly where you're leaking cash. No pitch. [Link]**_
+  - *Format:* Bold italic text, one sentence.
+  - *Example:* ***PS: I do free 20-minute AI assessments for local trades businesses in Winnebago County. You get a written ROI report showing exactly where you're leaking cash. No pitch. [Link]***
 - **Authority Signals:**
-    - Local geography mentions (Rockford, Beloit, Roscoe)
-    - Industry-specific ticket sizes (HVAC swap, plumbing emergency)
-    - Transparency about exactly how it's built
+  - Local geography mentions (Rockford, Beloit, Roscoe)
+  - Industry-specific ticket sizes (HVAC swap, plumbing emergency)
+  - Transparency about exactly how it's built
 
 ### Replication Blueprint (The Clockout Article/Post Template)
 
 - **Step 1: The Frustration Hook (1–2 sentences)**
-    - "Most [tradesmen/operators] lose [X amount/percentage] because they [do manual task/miss a step]."
+  - "Most [tradesmen/operators] lose [X amount/percentage] because they [do manual task/miss a step]."
 - **Step 2: The Math Diagnosis (2–3 sentences)**
-    - Break down the exact cost of that failure using local averages. Show them the bleeding.
+  - Break down the exact cost of that failure using local averages. Show them the bleeding.
 - **Step 3: The Promise (1 sentence)**
-    - "Here is the [number]-step system I build to plug this exact leak."
+  - "Here is the [number]-step system I build to plug this exact leak."
 - **Step 4: The Numbered System (3–5 items)**
-    - Bold label + 2-sentence explanation of the mechanism. (e.g., **1. The Trigger:** When a call goes to voicemail, Twilio fires a webhook.)
+  - Bold label + 2-sentence explanation of the mechanism. (e.g., **1. The Trigger:** When a call goes to voicemail, Twilio fires a webhook.)
 - **Step 5: The "You Own It" Bottom Line (1–2 sentences)**
-    - Reiterate that this is a one-time build, not a subscription.
+  - Reiterate that this is a one-time build, not a subscription.
 - **Step 6: PS CTA**
-    - Bold italic PS pointing to the Free Assessment or a "reply to this email" prompt.
+  - Bold italic PS pointing to the Free Assessment or a "reply to this email" prompt.
 
 **Title Formulas:**
 

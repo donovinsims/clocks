@@ -32,6 +32,7 @@ Owner-operated local businesses in Roscoe, Rockford, Machesny Park, Loves Park, 
 **Do not filter by employee count or revenue.** The situation is the only filter. A one-person nail salon and a 20-person HVAC company can have identical problems.
 
 **Examples of strong fits:**
+
 - HVAC, plumbing, electrical, general contracting, auto repair (primary proof cases in copy)
 - Real estate agents and small brokerages
 - One-person home service trades (woodwork, landscaping, handyman)
@@ -39,6 +40,7 @@ Owner-operated local businesses in Roscoe, Rockford, Machesny Park, Loves Park, 
 - Any local owner in Winnebago County answering their own calls, doing their own follow-up, working nights on admin
 
 **Their real problems:**
+
 - Missed calls while on-site — 68% of callers never call back; $800–$1,200 per missed call
 - Estimates and quotes going cold with no follow-up system
 - No-shows with zero recovery process
@@ -52,14 +54,14 @@ Owner-operated local businesses in Roscoe, Rockford, Machesny Park, Loves Park, 
 
 ## Site Architecture
 
-| Page | Main Goal | Secondary Goal | Visual Style |
-|------|-----------|----------------|--------------|
-| `/` | Convert | Prove the cost and the fix | Long-form, clean, high-contrast |
-| `/about` | Build trust | Remove agency fear | Personal letter, narrow column |
-| `/agents` | Impress | Show breadth of capability | Card grid, modal details |
-| `/blog` | Educate + attract search traffic | Build authority | Simple article feed |
-| `/blog/[slug]` | Convert readers | Explain one problem deeply | Readable article format |
-| `/assessment` | Book the call | Reduce hesitation | Minimal, distraction-free |
+| Page           | Main Goal                        | Secondary Goal             | Visual Style                    |
+| -------------- | -------------------------------- | -------------------------- | ------------------------------- |
+| `/`            | Convert                          | Prove the cost and the fix | Long-form, clean, high-contrast |
+| `/about`       | Build trust                      | Remove agency fear         | Personal letter, narrow column  |
+| `/agents`      | Impress                          | Show breadth of capability | Card grid, modal details        |
+| `/blog`        | Educate + attract search traffic | Build authority            | Simple article feed             |
+| `/blog/[slug]` | Convert readers                  | Explain one problem deeply | Readable article format         |
+| `/assessment`  | Book the call                    | Reduce hesitation          | Minimal, distraction-free       |
 
 **Primary CTA on every page:** Book a Free AI Assessment → `https://cal.com/donovin`
 
@@ -70,18 +72,23 @@ Owner-operated local businesses in Roscoe, Rockford, Machesny Park, Loves Park, 
 ## Page Layouts
 
 ### `/` — Home
+
 Long-form sales letter. One job: convert skeptical local operators by showing the pain, the cost, and the fix. Numbers-first. Not an agency site. Sections: hero, operating cost breakdown, how it works, what you get, proof, anti-agency statement, FAQ, final CTA. Wide spacing, bold headings, no clutter.
 
 ### `/about` — Founder trust page
+
 Narrow single-column. Reads like a personal letter from a local operator. Answers: "Who is this guy, and can I trust him?" Sections: blunt intro, why software failed local businesses, how you operate, soft CTA. One photo, minimal text width, anti-agency feel.
 
 ### `/agents` — Automations showcase
-Gallery of automations you can build for clients. Not a closer — a "holy sh*t, this is possible" moment for non-technical owners. Sections: hero, grid of automation cards, modal/detail views, final CTA. Card-based layout, icons/tags, clear ROI language per card.
+
+Gallery of automations you can build for clients. Not a closer — a "holy sh\*t, this is possible" moment for non-technical owners. Sections: hero, grid of automation cards, modal/detail views, final CTA. Card-based layout, icons/tags, clear ROI language per card.
 
 ### `/blog` — Local education hub
+
 SEO and trust engine. Captures search traffic through operational case-study posts about missed calls, cold leads, no-shows, and manual admin. Built using content strategy from the `coreyhaines31/marketingskills` repo — specifically the page-CRO, copywriting, and marketing-psychology skills. Sections: hero, article list, featured local examples. Simple readable cards, strong post titles.
 
 **Blog content rules:**
+
 - Every post opens with the problem and the dollar cost
 - Every post explains the system in plain English
 - Every post ends with a PS CTA to the Free Assessment
@@ -89,33 +96,40 @@ SEO and trust engine. Captures search traffic through operational case-study pos
 - Title formulas: "How a $X fix recovered $Y/month for a local [business type]" or "The $X operating cost hiding in your [process]"
 
 ### `/blog/[slug]` — Individual post
+
 Opens with the problem, shows the cost, explains the system, ends with a CTA. Narrow reading width, numbered steps, strong PS at the bottom.
 
 ### `/assessment` — Booking page
+
 Full conversion page. Copy-only layout. No video. No distractions. Structured as follows:
 
 **Section 1 — Hero**
 Main promise + supporting line + primary CTA button.
+
 - Promise: A 20-minute audit that shows exactly where your business is losing money.
 - Supporting line: Written ROI report delivered same day. No pitch. No obligation.
 - CTA: Book the Free Assessment → `https://cal.com/donovin`
 
 **Section 2 — Problem → Opportunity → Promise**
+
 - Problem: You know you're losing jobs to missed calls and cold leads. You just don't know the exact number.
 - Opportunity: One 20-minute call shows you the dollar amount — and the fix.
 - Promise: Walk away with a written report showing where you're bleeding cash and what a fix would cost and return.
 
 **Section 3 — What you get**
+
 - 20-minute live walkthrough of your operations (phone or in-person)
 - Written ROI report showing the monthly cost of each operational leak
 - Effort/Impact matrix ranking every fix by ease and dollar return
 - No sales pitch at the end — just the numbers
 
 **Section 4 — Who this is / is not for**
+
 - IS FOR: Owner-operated local businesses in Roscoe, Rockford, Machesny Park, Loves Park, and South Beloit. Any size. Any industry. You answer your own calls. You do your own follow-up. You've tried a tool before and gone back to doing it manually.
 - NOT FOR: Businesses with a dedicated admin staff handling follow-up and scheduling. Businesses looking for a marketing agency. Businesses looking for a managed monthly service.
 
 **Section 5 — Investment + ROI framing + guarantee + what happens next**
+
 - Investment: Free (future ramp to $150–$250)
 - ROI framing: If one recovered call pays $800–$1,200, the report pays for itself before you spend anything.
 - Guarantee: If the numbers don't justify a fix, you'll know in 20 minutes — before you spend a dollar.
@@ -128,10 +142,12 @@ Main promise + supporting line + primary CTA button.
 
 **Section 6 — Testimonials**
 Three placeholder testimonials in this format (owner replaces with real ones):
+
 > "[Specific outcome] in [timeframe]. I didn't expect the number to be that high."
 > — [First name], [Business type], [City]
 
 **Section 7 — FAQ**
+
 - "Is this actually free?" — Yes. 20 minutes. Written report. No pitch.
 - "What if my business isn't in the trades?" — If your phone is your front desk, this applies to you.
 - "What if I've tried automation before and it didn't work?" — Prior tools failed because they required you to change how you work. This installs to fit how you already operate.
@@ -215,13 +231,13 @@ clockout-site/
 
 ## Integrations
 
-| Service | Purpose | Notes |
-|---------|---------|-------|
+| Service | Purpose                    | Notes                                                                     |
+| ------- | -------------------------- | ------------------------------------------------------------------------- |
 | Cal.com | Free AI Assessment booking | URL: `https://cal.com/donovin` — Embed on `/assessment`, link in all CTAs |
-| Vercel | Hosting | Auto-deploy from main branch |
-| Senja | Testimonials | Embed widget on homepage and `/assessment` |
-| Tally | Pre-assessment intake form | Linked after Cal.com booking confirmation |
-| Stripe | Payment pages | Not on main site — separate checkout URLs |
+| Vercel  | Hosting                    | Auto-deploy from main branch                                              |
+| Senja   | Testimonials               | Embed widget on homepage and `/assessment`                                |
+| Tally   | Pre-assessment intake form | Linked after Cal.com booking confirmation                                 |
+| Stripe  | Payment pages              | Not on main site — separate checkout URLs                                 |
 
 ---
 
