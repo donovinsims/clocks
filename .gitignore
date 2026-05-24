@@ -37,3 +37,8 @@ dist-ssr
 # Agent context memory
 .ctx/
 public/sitemap.xml
+
+# Environment variables
+.env
+.env.*
+!.env.template
