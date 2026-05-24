@@ -23,12 +23,28 @@ export const Route = createFileRoute("/about")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "About Clockout — Local Automation from Roscoe, IL" },
       {
+        property: "og:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("About Clockout — Local Automation from Roscoe, IL") +
+          "&description=" +
+          encodeURIComponent("Not an agency. Not a SaaS. A local automation operator from Roscoe, IL who shows up, finds the leak, and installs the fix in a week. Serving Rockford, Beloit, and the I-39 corridor."),
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("About Clockout — Local Automation from Roscoe, IL") +
+          "&description=" +
+          encodeURIComponent("Not an agency. Not a SaaS. A local automation operator from Roscoe, IL who shows up, finds the leak, and installs the fix in a week. Serving Rockford, Beloit, and the I-39 corridor."),
+      },
+      {
         name: "keywords",
         content:
           "about Clockout, business automation Roscoe, Donovin automation expert, local operator Illinois, flat-fee automation, Rockford IL automation, Beloit WI automation, Winnebago County",
       },
     ],
-    links: [{ rel: "canonical", href: "https://clockout.io/about" }],
+    links: [{ rel: "canonical", href: "https://clockout.us/about" }],
   }),
   component: About,
 });

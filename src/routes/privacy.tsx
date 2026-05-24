@@ -9,8 +9,31 @@ export const Route = createFileRoute("/privacy")({
         content:
           "Clockout privacy policy. How we collect, use, and protect your information. Serving Roscoe, Rockford, Beloit, and Northern Illinois.",
       },
+      { property: "og:title", content: "Privacy Policy — Clockout | Roscoe · Rockford · Beloit" },
+      {
+        property: "og:description",
+        content:
+          "Clockout privacy policy. How we collect, use, and protect your information. Serving Roscoe, Rockford, Beloit, and Northern Illinois.",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        property: "og:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Privacy Policy — Clockout | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Clockout privacy policy. How we collect, use, and protect your information. Serving Roscoe, Rockford, Beloit, and Northern Illinois."),
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Privacy Policy — Clockout | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Clockout privacy policy. How we collect, use, and protect your information. Serving Roscoe, Rockford, Beloit, and Northern Illinois."),
+      },
     ],
-    links: [{ rel: "canonical", href: "https://clockout.io/privacy" }],
+    links: [{ rel: "canonical", href: "https://clockout.us/privacy" }],
   }),
   component: Privacy,
 });

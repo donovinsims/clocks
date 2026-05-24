@@ -41,11 +41,28 @@ export const Route = createFileRoute("/solutions")({
         content: "Solutions — 12 Automations for Owner-Operators | Clockout",
       },
       {
+        property: "og:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Solutions — 12 Automations for Owner-Operators | Clockout") +
+          "&description=" +
+          encodeURIComponent("Twelve named solutions. Each one plugs a specific revenue leak. Installed in 3–7 days. You own them outright. Serving Roscoe, Rockford, Beloit, and the Winnebago/Boone County corridor."),
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Solutions — 12 Automations for Owner-Operators | Clockout") +
+          "&description=" +
+          encodeURIComponent("Twelve named solutions. Each one plugs a specific revenue leak. Installed in 3–7 days. You own them outright. Serving Roscoe, Rockford, Beloit, and the Winnebago/Boone County corridor."),
+      },
+      {
         name: "keywords",
         content:
           "business automation solutions, missed call text-back, estimate follow-up automation, no-show recovery, review request system, invoice nudge, after-hours triage, Roscoe automation, Rockford small business, Beloit WI",
       },
     ],
+    links: [{ rel: "canonical", href: "https://clockout.us/solutions" }],
   }),
   component: Solutions,
 });

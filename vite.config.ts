@@ -13,5 +13,15 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
-  plugins: [nitro()],
+  plugins: [
+    nitro({
+      handlers: [
+        {
+          route: "/api/og",
+          handler: "./src/server/routes/og.tsx",
+          lazy: true,
+        },
+      ],
+    }),
+  ],
 });

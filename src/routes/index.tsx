@@ -40,12 +40,28 @@ export const Route = createFileRoute("/")({
         content: "Local Business Automation Services | Clockout | Roscoe · Rockford · Beloit",
       },
       {
+        property: "og:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Local Business Automation Services | Clockout | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Free 20-minute operations audit. Flat-fee install in 3–7 days. 30-day guarantee or we keep working free. Serving Roscoe, Rockford, Loves Park, Machesney Park, South Beloit, and Beloit, WI."),
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Local Business Automation Services | Clockout | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Free 20-minute operations audit. Flat-fee install in 3–7 days. 30-day guarantee or we keep working free. Serving Roscoe, Rockford, Loves Park, Machesney Park, South Beloit, and Beloit, WI."),
+      },
+      {
         name: "keywords",
         content:
           "business automation Roscoe, local automation Rockford, owner-operator automation, service business automation Illinois, missed call text-back, flat-fee automation, Northern Illinois, Winnebago County, Boone County",
       },
     ],
-    links: [{ rel: "canonical", href: "https://clockout.io" }],
+    links: [{ rel: "canonical", href: "https://clockout.us" }],
   }),
   component: Home,
 });

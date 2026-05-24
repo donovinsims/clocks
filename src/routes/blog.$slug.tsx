@@ -13,8 +13,10 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:title", content: post.title },
         { property: "og:description", content: post.description },
         { name: "twitter:card", content: "summary_large_image" },
+        { property: "og:image", content: `https://clockout.us/api/og?title=${encodeURIComponent(post.title)}&description=${encodeURIComponent(post.description)}` },
+        { name: "twitter:image", content: `https://clockout.us/api/og?title=${encodeURIComponent(post.title)}&description=${encodeURIComponent(post.description)}` },
       ],
-      links: [{ rel: "canonical", href: `https://clockout.io/blog/${post.slug}` }],
+      links: [{ rel: "canonical", href: `https://clockout.us/blog/${post.slug}` }],
     };
   },
   component: BlogPost,

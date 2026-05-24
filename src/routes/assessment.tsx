@@ -16,8 +16,24 @@ export const Route = createFileRoute("/assessment")({
         content:
           "20 minutes. Written report. The exact leak, in dollars. Then you decide what to do with it.",
       },
+      {
+        property: "og:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Free Operations Audit — Clockout") +
+          "&description=" +
+          encodeURIComponent("20 minutes. Written report. The exact leak, in dollars. Then you decide what to do with it."),
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Free Operations Audit — Clockout") +
+          "&description=" +
+          encodeURIComponent("20 minutes. Written report. The exact leak, in dollars. Then you decide what to do with it."),
+      },
     ],
-    links: [{ rel: "canonical", href: "https://clockout.io/assessment" }],
+    links: [{ rel: "canonical", href: "https://clockout.us/assessment" }],
   }),
   component: Assessment,
 });
@@ -95,78 +111,29 @@ function Assessment() {
         >
           {!tallyLoaded && (
             <div
+              className="ph-item"
               style={{
                 position: "absolute",
                 inset: 0,
                 zIndex: 1,
                 borderRadius: "var(--radius-md)",
-                padding: "1.75rem",
-                display: "flex",
-                flexDirection: "column",
-                gap: "1.25rem",
               }}
             >
-              <div
-                className="skeleton-shimmer"
-                style={{
-                  height: 14,
-                  width: "55%",
-                  borderRadius: 999,
-                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
-                }}
-              />
-              <div
-                className="skeleton-shimmer"
-                style={{
-                  height: 14,
-                  width: "75%",
-                  borderRadius: 999,
-                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
-                  animationDelay: "0.15s",
-                }}
-              />
-              <div
-                className="skeleton-shimmer"
-                style={{
-                  height: 40,
-                  width: "100%",
-                  borderRadius: 10,
-                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
-                  animationDelay: "0.3s",
-                  marginTop: "0.25rem",
-                }}
-              />
-              <div
-                className="skeleton-shimmer"
-                style={{
-                  height: 14,
-                  width: "45%",
-                  borderRadius: 999,
-                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
-                  animationDelay: "0.45s",
-                  marginTop: "0.25rem",
-                }}
-              />
-              <div
-                className="skeleton-shimmer"
-                style={{
-                  height: 14,
-                  width: "65%",
-                  borderRadius: 999,
-                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
-                  animationDelay: "0.6s",
-                }}
-              />
-              <div
-                className="skeleton-shimmer"
-                style={{
-                  height: 14,
-                  width: "35%",
-                  borderRadius: 999,
-                  background: "linear-gradient(90deg, rgba(255,255,255,0.04) 35%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.04) 65%)",
-                  animationDelay: "0.75s",
-                }}
-              />
+              <div className="ph-col-12" style={{ padding: 0 }}>
+                <div className="ph-row">
+                  <div className="ph-col-6 big" />
+                  <div className="ph-col-6 empty big" />
+                  <div className="ph-col-8" />
+                  <div className="ph-col-4 empty" />
+                  <div className="ph-col-12 big" />
+                  <div className="ph-col-4" />
+                  <div className="ph-col-8 empty" />
+                  <div className="ph-col-8" />
+                  <div className="ph-col-4 empty" />
+                  <div className="ph-col-4" />
+                  <div className="ph-col-8 empty" />
+                </div>
+              </div>
             </div>
           )}
           <iframe

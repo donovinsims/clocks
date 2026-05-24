@@ -26,11 +26,28 @@ export const Route = createFileRoute("/blog")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Clockout Blog — Trade-by-Leak Field Notes" },
       {
+        property: "og:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Clockout Blog — Trade-by-Leak Field Notes | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Trade-by-leak notes for local owner-operators. Short reads. Practical. No fluff. Real stories from the Rockford, Roscoe, and Beloit corridor."),
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Clockout Blog — Trade-by-Leak Field Notes | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Trade-by-leak notes for local owner-operators. Short reads. Practical. No fluff. Real stories from the Rockford, Roscoe, and Beloit corridor."),
+      },
+      {
         name: "keywords",
         content:
           "owner-operator blog, business automation Roscoe, HVAC automation Rockford, plumbing automation, salon automation, real estate lead routing, auto repair review requests, Northern Illinois business tips, Winnebago County",
       },
     ],
+    links: [{ rel: "canonical", href: "https://clockout.us/blog" }],
   }),
   component: Blog,
 });

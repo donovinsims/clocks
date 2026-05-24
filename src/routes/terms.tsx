@@ -9,8 +9,31 @@ export const Route = createFileRoute("/terms")({
         content:
           "Clockout terms of service. Flat-fee automation installs for owner-operators in Roscoe, Rockford, Beloit, and Northern Illinois.",
       },
+      { property: "og:title", content: "Terms of Service — Clockout | Roscoe · Rockford · Beloit" },
+      {
+        property: "og:description",
+        content:
+          "Clockout terms of service. Flat-fee automation installs for owner-operators in Roscoe, Rockford, Beloit, and Northern Illinois.",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        property: "og:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Terms of Service — Clockout | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Clockout terms of service. Flat-fee automation installs for owner-operators in Roscoe, Rockford, Beloit, and Northern Illinois."),
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Terms of Service — Clockout | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Clockout terms of service. Flat-fee automation installs for owner-operators in Roscoe, Rockford, Beloit, and Northern Illinois."),
+      },
     ],
-    links: [{ rel: "canonical", href: "https://clockout.io/terms" }],
+    links: [{ rel: "canonical", href: "https://clockout.us/terms" }],
   }),
   component: Terms,
 });

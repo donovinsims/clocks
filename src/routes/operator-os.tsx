@@ -27,12 +27,28 @@ export const Route = createFileRoute("/operator-os")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Operator OS — Message-Based Assistant | Clockout" },
       {
+        property: "og:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Operator OS — Message-Based Assistant | Clockout | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Text-driven assistant on iMessage. Optional Google Voice, Telegram, WhatsApp, Slack. You own it. Serving owner-operators in Rockford, Roscoe, Beloit, and the I-39 corridor."),
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Operator OS — Message-Based Assistant | Clockout | Roscoe · Rockford · Beloit") +
+          "&description=" +
+          encodeURIComponent("Text-driven assistant on iMessage. Optional Google Voice, Telegram, WhatsApp, Slack. You own it. Serving owner-operators in Rockford, Roscoe, Beloit, and the I-39 corridor."),
+      },
+      {
         name: "keywords",
         content:
           "Operator OS, message-based assistant, iMessage assistant, owner-operator tools, business automation Roscoe, Rockford IL small business, Beloit WI automation, executive assistant owner-operator",
       },
     ],
-    links: [{ rel: "canonical", href: "https://clockout.io/operator-os" }],
+    links: [{ rel: "canonical", href: "https://clockout.us/operator-os" }],
   }),
   component: OperatorOS,
 });

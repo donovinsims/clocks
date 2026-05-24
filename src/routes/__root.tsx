@@ -91,8 +91,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Clockout — Local automation for owner-operators" },
 
-      { property: "og:image", content: "https://clockout.io/og-image.jpg" },
-      { name: "twitter:image", content: "https://clockout.io/og-image.jpg" },
+      {
+        property: "og:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Clockout — Local automation for owner-operators") +
+          "&description=" +
+          encodeURIComponent("Flat-fee installs for local service businesses. No retainer. No lock-in. 30-day guarantee."),
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://clockout.us/api/og?title=" +
+          encodeURIComponent("Clockout — Local automation for owner-operators") +
+          "&description=" +
+          encodeURIComponent("Flat-fee installs for local service businesses. No retainer. No lock-in. 30-day guarantee."),
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -104,7 +118,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         src: "https://plausible.io/js/script.js",
         defer: true,
-        "data-domain": "clockout.io",
+        "data-domain": "clockout.us",
       },
       {
         type: "application/ld+json",
@@ -113,14 +127,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://clockout.io/#website",
-              url: "https://clockout.io",
+              "@id": "https://clockout.us/#website",
+              url: "https://clockout.us",
               name: "Clockout",
               description:
                 "Local-first automation for owner-operators in Roscoe, Rockford, and Beloit.",
               inLanguage: "en-US",
               publisher: {
-                "@id": "https://clockout.io/#organization",
+                "@id": "https://clockout.us/#organization",
               },
             },
             {
@@ -159,10 +173,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               name: "Clockout",
               description:
                 "Local-first automation for owner-operators in Roscoe, Rockford, and Beloit. One leak, one flat-fee fix, installed in 3–7 days.",
-              url: "https://clockout.io",
+              url: "https://clockout.us",
               telephone: "+1-815-200-5932",
-              image: "https://clockout.io/og-image.jpg",
-              logo: "https://clockout.io/logo.jpg",
+              image: "https://clockout.us/og-image.jpg",
+              logo: "https://clockout.us/logo.jpg",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Roscoe",
@@ -409,31 +423,31 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: "https://clockout.io",
+                  item: "https://clockout.us",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Free Operations Audit",
-                  item: "https://clockout.io/assessment",
+                  item: "https://clockout.us/assessment",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: "Operator OS",
-                  item: "https://clockout.io/operator-os",
+                  item: "https://clockout.us/operator-os",
                 },
                 {
                   "@type": "ListItem",
                   position: 4,
                   name: "Solutions",
-                  item: "https://clockout.io/solutions",
+                  item: "https://clockout.us/solutions",
                 },
                 {
                   "@type": "ListItem",
                   position: 5,
                   name: "Blog",
-                  item: "https://clockout.io/blog",
+                  item: "https://clockout.us/blog",
                 },
               ],
             },
