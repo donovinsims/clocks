@@ -80,7 +80,26 @@ function Assessment() {
         }}
         aria-labelledby="as-h"
       >
-
+        <div
+          style={{
+            background: "var(--color-paper)",
+            borderRadius: "var(--radius-md)",
+            maxWidth: "800px",
+            width: "100%",
+            overflow: "clip",
+          }}
+        >
+          <iframe
+            src="https://tally.so/embed/RGVJ1J?transparentBackground=1&amp;dynamicHeight=1&amp;formEventsForwarding=1"
+            width="100%"
+            height="800"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            title="Free Operational Audit"
+            style={{ display: "block" }}
+          />
+        </div>
       </section>
 
       <section className="how">
