@@ -15,6 +15,7 @@ export default defineConfig({
   },
   plugins: [
     nitro({
+      preset: process.env.VERCEL ? "vercel" : undefined,
       handlers: [
         {
           route: "/api/og",
