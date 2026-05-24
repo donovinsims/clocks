@@ -71,8 +71,8 @@ function Assessment() {
     const d = document;
     const w = "https://tally.so/widgets/embed.js";
     const v = function () {
-      if (typeof (window as any).Tally !== "undefined") {
-        (window as any).Tally.loadEmbeds();
+      if (typeof (window as unknown as { Tally?: unknown }).Tally !== "undefined") {
+        (window as { Tally?: { loadEmbeds: () => void } }).Tally?.loadEmbeds();
       } else {
         d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) {
           (e as HTMLIFrameElement).src = (e as HTMLIFrameElement).dataset.tallySrc || "";
@@ -80,7 +80,7 @@ function Assessment() {
       }
     };
 
-    if (typeof (window as any).Tally !== "undefined") {
+    if (typeof (window as unknown as { Tally?: unknown }).Tally !== "undefined") {
       v();
     } else if (d.querySelector('script[src="' + w + '"]') == null) {
       const s = d.createElement("script");
@@ -106,6 +106,8 @@ function Assessment() {
       >
         <div style={{ width: "100%", maxWidth: "var(--max-width)", margin: "0 auto" }}>
           <iframe
+            style={{ background: "transparent", colorScheme: "dark" }}
+            allowTransparency={true}
             data-tally-src="https://tally.so/embed/RGVJ1J?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             width="100%"
